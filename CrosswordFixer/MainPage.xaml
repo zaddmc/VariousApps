@@ -6,8 +6,16 @@
     <Grid
         x:Name="maingrid"
         
+        RowDefinitions="*,*,*,*,*"
+        ColumnDefinitions="*,*,*"
         >
-        
+        <Grid
+            x:Name="crossGrid"
+            
+            >
+            
+            
+        </Grid>
         
         
     </Grid>
