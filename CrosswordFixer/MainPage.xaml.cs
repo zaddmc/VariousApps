@@ -12,14 +12,15 @@ public partial class MainPage : ContentPage {
 
 
 
-		Construction.GridMaker();
 	}
 
+	private void Button_Clicked(object sender, EventArgs e) {
 
-
-
-
-
-
+		var action = DisplayActionSheet("Choose method to insert values", null, null, "ReadFile", "ManuelInput");
+		if (action != null) {
+			Construction.GridInput(action.Result);
+			Construction.GridMaker();
+		}
+	}
 }
 

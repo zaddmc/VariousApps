@@ -7,14 +7,35 @@ namespace CrosswordFixer {
 
         public static void GridMaker() {
 
-            // not final just testing
-            FileReader("\\Resources\\Crosswords\\test1.csv");
 
-            
-            
+
+
+
             MainPage.CrossGrid.AddRowDefinition(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
 
             MainPage.CrossGrid.AddColumnDefinition(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+
+        }
+        public static async void GridInput(string inputType) {
+
+            switch (inputType.ToLower()) {
+                default:
+
+                    break;
+                case "readfile":
+                    var result = await FilePicker.Default.PickAsync(PickOptions.Default);
+
+                    if (result != null && result.FileName.EndsWith("csv"))
+                        // not final just testing
+                        FileReader(result.FullPath);
+                    break;
+                case "manueltypeing":
+
+                    break;
+            }
+
+
+
 
         }
         private static void FileReader(string file) {

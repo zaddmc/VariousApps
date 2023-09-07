@@ -16,8 +16,13 @@
             
             
         </Grid>
-        
-        
+
+        <Button
+            Clicked="Button_Clicked"
+            
+            />
+
+
     </Grid>
    
 </ContentPage>
