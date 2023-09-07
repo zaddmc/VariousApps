@@ -8,10 +8,10 @@ namespace CrosswordFixer {
         public static void GridMaker() {
 
             // not final just testing
-            FileReader(@"C:\Users\david\Source\Repos\zaddmc\CrosswordFixer\CrosswordFixer\Resources\Crosswords\test1.csv");
+            FileReader("\\Resources\\Crosswords\\test1.csv");
 
-
-
+            
+            
             MainPage.CrossGrid.AddRowDefinition(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
 
             MainPage.CrossGrid.AddColumnDefinition(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
@@ -68,7 +68,6 @@ namespace CrosswordFixer {
         private static void ReadLetters(StreamReader sr) {
             List<string[]> listOfLetters = new();
 
-            int i = 0;
             while (true) {
                 string toBeAllocated = sr.ReadLine();
 
@@ -76,7 +75,6 @@ namespace CrosswordFixer {
                     break;
 
                 listOfLetters.Add(toBeAllocated.ToLower().Split(','));
-                i++;
             }
 
             Letters = listOfLetters.ToArray();

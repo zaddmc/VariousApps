@@ -10,6 +10,9 @@ public partial class MainPage : ContentPage {
 		CrossGrid = crossGrid;
 		MainGrid = maingrid;
 
+
+
+		Construction.GridMaker();
 	}
 
 
