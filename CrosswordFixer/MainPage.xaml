@@ -6,13 +6,14 @@
     <Grid
         x:Name="maingrid"
         
-        RowDefinitions="*,*,8*,*,*"
+        RowDefinitions="*,10*,*"
         ColumnDefinitions="*,6*,*"
         >
         <Grid
             x:Name="crossGrid"
-            Grid.Row="2"
+            Grid.Row="1"
             Grid.Column="1"
+            BackgroundColor="Gray"
             >
             
             
@@ -20,8 +21,38 @@
 
         <Button
             Clicked="Button_Clicked"
-            
+            Text="Input values"
+                TextColor="Black"
             />
+        <VerticalStackLayout
+            Grid.Row="1"
+            VerticalOptions="Center"
+            >
+            <Button
+                Text="Editor Mode: disabled"
+                x:Name="EditMode"
+                Clicked="EditMode_Clicked"
+                TextColor="Black"
+                />
+
+
+        </VerticalStackLayout>
+        
+        
+        <VerticalStackLayout
+            Grid.Row="1"
+            Grid.Column="2"
+            VerticalOptions="Center"
+            >
+            <Button
+                Text="Start Test Algorithim"
+                x:Name="startTest"
+                Clicked="startTest_Clicked"
+                TextColor="Black"
+                />
+
+
+        </VerticalStackLayout>
 
 
     </Grid>

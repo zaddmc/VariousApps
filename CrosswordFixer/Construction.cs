@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 namespace CrosswordFixer {
     internal class Construction {
-        private static string[][] Letters { get; set; } // The first bracket is Row/y while the second is Col/x
-        private static string[] PotentielWords { get; set; }
+        public static string[][] Letters { get; set; } // The first bracket is Row/y while the second is Col/x
+        public static string[] PotentielWords { get; set; }
 
 
         public static void GridMaker() {
@@ -15,7 +15,7 @@ namespace CrosswordFixer {
                 MainPage.CrossGrid.AddRowDefinition(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
                 if (Letters[i].Length > maxi)
                     maxi = Letters[i].Length;
-            
+
             }
 
             for (int i = 0; i < maxi; i++) {
@@ -28,25 +28,27 @@ namespace CrosswordFixer {
 
             for (int i = 0; i < Letters.Length; i++) {
                 for (int j = 0; j < Letters[i].Length; j++) {
-                    MainPage.CrossGrid.Add(TileGenerator(Letters[i][j]), j, i);
+                    MainPage.CrossGrid.Add(TileGenerator(j, i), j, i);
                 }
             }
 
 
 
         }
-        private static Label TileGenerator(string letter) {
+        private static Label TileGenerator(int x, int y) {
             Label tile = new Label
             {
                 BackgroundColor = MainPage.ColorTheme[0],
                 // HeightRequest = 50,
                 // WidthRequest = 50,
                 Margin = 2,
-                Text = letter.ToUpper(),
+                Text = Letters[x][y].ToUpper(),
                 TextColor = Colors.Black,
                 HorizontalTextAlignment = TextAlignment.Center,
                 VerticalTextAlignment = TextAlignment.Center
             };
+
+            MainPage.Tiles.Add(new Position(x, y).ToString(), tile);
 
             return tile;
         }
@@ -133,6 +135,18 @@ namespace CrosswordFixer {
             }
 
             Letters = listOfLetters.ToArray();
+        }
+
+    }
+    public class Position {
+        public int x;
+        public int y;
+        public Position(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+        public override string ToString() {
+            return string.Format("x:{0}, y:{1}", x, y);
         }
 
     }
