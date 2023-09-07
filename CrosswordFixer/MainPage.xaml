@@ -6,12 +6,13 @@
     <Grid
         x:Name="maingrid"
         
-        RowDefinitions="*,*,*,*,*"
-        ColumnDefinitions="*,*,*"
+        RowDefinitions="*,*,8*,*,*"
+        ColumnDefinitions="*,6*,*"
         >
         <Grid
             x:Name="crossGrid"
-            
+            Grid.Row="2"
+            Grid.Column="1"
             >
             
             

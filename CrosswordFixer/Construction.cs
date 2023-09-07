@@ -7,16 +7,50 @@ namespace CrosswordFixer {
 
         public static void GridMaker() {
 
+            if (Letters == null)
+                throw new ArgumentException("order problem i guess");
+
+            int maxi = 0;
+            for (int i = 0; i < Letters.Length; i++) {
+                MainPage.CrossGrid.AddRowDefinition(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+                if (Letters[i].Length > maxi)
+                    maxi = Letters[i].Length;
+            
+            }
+
+            for (int i = 0; i < maxi; i++) {
+                MainPage.CrossGrid.AddColumnDefinition(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            }
 
 
 
 
-            MainPage.CrossGrid.AddRowDefinition(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
 
-            MainPage.CrossGrid.AddColumnDefinition(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            for (int i = 0; i < Letters.Length; i++) {
+                for (int j = 0; j < Letters[i].Length; j++) {
+                    MainPage.CrossGrid.Add(TileGenerator(Letters[i][j]), j, i);
+                }
+            }
+
+
 
         }
-        public static async void GridInput(string inputType) {
+        private static Label TileGenerator(string letter) {
+            Label tile = new Label
+            {
+                BackgroundColor = MainPage.ColorTheme[0],
+                // HeightRequest = 50,
+                // WidthRequest = 50,
+                Margin = 2,
+                Text = letter.ToUpper(),
+                TextColor = Colors.Black,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center
+            };
+
+            return tile;
+        }
+        public static async Task<bool> GridInput(string inputType) {
 
             switch (inputType.ToLower()) {
                 default:
@@ -36,7 +70,7 @@ namespace CrosswordFixer {
 
 
 
-
+            return true;
         }
         private static void FileReader(string file) {
 
