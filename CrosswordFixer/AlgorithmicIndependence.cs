@@ -1,7 +1,10 @@
-﻿namespace CrosswordFixer
-{
-    internal class AlgorithmicIndependence
-    {
+
+﻿namespace CrosswordFixer {
+    public class AlgorithmicIndependence {
+
+﻿namespace CrosswordFixer {
+    public class AlgorithmicIndependence {
+
         // asbjorn is weak
         private static int number = 0;
 
