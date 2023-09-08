@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 namespace CrosswordFixer {
-    internal class Construction {
+    public class Construction {
         public static string[][] Letters { get; set; } // The first bracket is Row/y while the second is Col/x
         public static string[] PotentielWords { get; set; }
 

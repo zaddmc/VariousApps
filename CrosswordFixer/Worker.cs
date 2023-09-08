@@ -1,5 +1,5 @@
 ﻿namespace CrosswordFixer {
-    internal class Worker {
+    public class Worker {
         static private List<Label> selectedTiles = new List<Label>();
 
 
