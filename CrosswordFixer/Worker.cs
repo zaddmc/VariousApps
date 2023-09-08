@@ -3,21 +3,22 @@
         static private List<Label> selectedTiles = new List<Label>();
 
 
-        public static void PickRoot(int col, int row) {
+        public static string PickRoot(int col, int row) {
             Label chosenTile = MainPage.Tiles[new Position(col, row).ToString()];
 
             chosenTile.BackgroundColor = Colors.IndianRed;
 
             selectedTiles.Add(chosenTile);
-
+            return chosenTile.Text;
         }
-        public static void AddBranch(int col, int row) {
+        public static string AddBranch(int col, int row) {
             Label chosenTile = MainPage.Tiles[new Position(col, row).ToString()];
 
             chosenTile.BackgroundColor = Colors.YellowGreen;
 
             selectedTiles.Add(chosenTile);
 
+            return chosenTile.Text;
         }
         public static void UnSelectAll() {
             while (selectedTiles.Count > 0) {
