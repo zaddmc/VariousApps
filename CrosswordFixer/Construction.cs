@@ -38,7 +38,8 @@ namespace CrosswordFixer {
         private static Label TileGenerator(int x, int y) {
             Label tile = new Label
             {
-                BackgroundColor = MainPage.ColorTheme[0],
+                BackgroundColor = Color.FromArgb("ffffff"),
+                StyleId = "ffffff",
                 // HeightRequest = 50,
                 // WidthRequest = 50,
                 Margin = 2,

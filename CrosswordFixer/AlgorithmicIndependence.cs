@@ -1,5 +1,3 @@
-//using Construction;
-
 namespace CrosswordFixer {
     public class AlgorithmicIndependence {
 
@@ -68,7 +66,7 @@ namespace CrosswordFixer {
         }
         public static (bool buh, int idkman) SimpleAICheckAround(int i, int j, List<string> cwords, int listnumber, int charnumber) {
             for (int k = -1; k < 2; k++) {
-                if (Worker.PickRoot(i-1, j+k) == cwords[listnumber][1].ToString()) { //checker det næste bågstav ved de 3 neder under root, AKA en række ned
+                if (Worker.PickRoot(i - 1, j + k) == cwords[listnumber][1].ToString()) { //checker det næste bågstav ved de 3 neder under root, AKA en række ned
                     SimpleAICheckNext(i, j, k, cwords, listnumber, charnumber);
 
                 }
@@ -82,36 +80,75 @@ namespace CrosswordFixer {
             if (Worker.PickRoot(i + k, j) == cwords[listnumber][charnumber].ToString())
                 if (Worker.PickRoot(i, j + k) == cwords[listnumber][cwords[listnumber].Length].ToString())
 
-                   
 
-            //cwords[listnumber][gghg
-            //[cwords[listnumber].Length].ToString;
-            
-            
-            /*switch (idkman) {
-            case -1:
-                if (Worker.PickRoot(i - 1, j) == cwords[listnumber][charnumber].ToString()) { //checker oppe venstre
 
-                }
-                break;
-            case 0:
-                if (Worker.PickRoot(i - 0, j) == cwords[listnumber][charnumber].ToString()) { //checker oppe midden
+                    //cwords[listnumber][gghg
+                    //[cwords[listnumber].Length].ToString;
 
-                }
-                break;
-            case 1:
-                if (Worker.PickRoot(i + 1, j) == cwords[listnumber][charnumber].ToString()) { //checker oppe højre
 
-                }
-                break;
-            default:
+                    /*switch (idkman) {
+                    case -1:
+                        if (Worker.PickRoot(i - 1, j) == cwords[listnumber][charnumber].ToString()) { //checker oppe venstre
 
-                break;
+                        }
+                        break;
+                    case 0:
+                        if (Worker.PickRoot(i - 0, j) == cwords[listnumber][charnumber].ToString()) { //checker oppe midden
 
-        }*/
-            if (i == 0) { }
+                        }
+                        break;
+                    case 1:
+                        if (Worker.PickRoot(i + 1, j) == cwords[listnumber][charnumber].ToString()) { //checker oppe højre
+
+                        }
+                        break;
+                    default:
+
+                        break;
+
+                }*/
+                    if (i == 0) { }
 
             return (true);
+        }
+
+        public class ZaddAI { // the zaddest ai ever
+            public static int minWordLength = int.MaxValue; // fuck asbjron
+            public static int maxWordLength = 0;
+
+            public static void Start() {
+                MinMaxWordLength();
+
+
+
+            }
+            private static void MinMaxWordLength() {
+                List<string> list = Construction.PotentielWords.ToList();
+                for (int i = 0; i < list.Count; i++) {
+                    if (list[i].Length < minWordLength) {
+                        minWordLength = list[i].Length;
+                    }
+                    if (list[i].Length > maxWordLength) {
+                        maxWordLength = list[i].Length;
+                    }
+                }
+            }
+            private static bool Compare() {
+                if (Worker.CWord().Length < minWordLength || Worker.CWord().Length > maxWordLength) {
+                    return false;
+                }
+
+
+                for (int i = 0; i < Construction.PotentielWords.Length; i++) {
+
+                    if (Worker.CWord() == Construction.PotentielWords[i]) {
+                        Worker.MarkAsGreen();
+                        return true;
+                    }
+                }
+
+                return false;
+            }
         }
     }
 }
