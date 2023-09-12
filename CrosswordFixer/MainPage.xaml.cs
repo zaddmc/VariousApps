@@ -78,7 +78,7 @@ public partial class MainPage : ContentPage {
                 AlgorithmicIndependence.JustForTesting();
                 break;
             case "fishing":
-                AlgorithmicIndependence.JustForTesting();
+                AlgorithmicIndependence.SimpleAI();
                 break;
         }
 
