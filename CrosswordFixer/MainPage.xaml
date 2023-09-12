@@ -43,14 +43,9 @@
             Grid.Row="1"
             Grid.Column="2"
             VerticalOptions="Center"
+            x:Name="initiazeButtons"
             >
-            <Button
-                Text="Start Test Algorithim"
-                x:Name="startTest"
-                Clicked="startTest_Clicked"
-                TextColor="Black"
-                />
-
+            
 
         </VerticalStackLayout>
 
