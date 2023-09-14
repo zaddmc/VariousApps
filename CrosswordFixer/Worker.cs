@@ -1,13 +1,12 @@
 ﻿namespace CrosswordFixer {
     public class Worker {
         static private List<Label> selectedTiles = new(); //List of all the tiles that is green. it is when there is a potentiel word/correct word.
-        static public List<String> selectedString = new();
 
         public static string CWord() { //all seleted tiles get set together to a word. Use it to compare words to your string
-            string theWord = selectedString[0];
+            string theWord = selectedTiles[0].Text;
 
-            for (int i = 1; i < selectedString.Count(); i++) {
-                theWord = theWord + selectedString[i];
+            for (int i = 1; i < selectedTiles.Count(); i++) {
+                theWord += selectedTiles[i].Text;
             }
 
             return theWord;
@@ -18,7 +17,6 @@
             chosenTile.BackgroundColor = Colors.IndianRed;
 
             selectedTiles.Add(chosenTile);
-            selectedString.Add(chosenTile.Text);
             return chosenTile.Text;
         }
         public static string AddBranch(int col, int row) {                          //Changes the position to yellow
@@ -27,7 +25,6 @@
             chosenTile.BackgroundColor = Colors.YellowGreen;
 
             selectedTiles.Add(chosenTile);
-            selectedString.Add(chosenTile.Text);
 
             return chosenTile.Text;
         }
@@ -35,7 +32,6 @@
             while (selectedTiles.Count > 0) {                                   //also makes the tiles white
                 selectedTiles.First().BackgroundColor = Color.FromArgb(selectedTiles.First().StyleId);
                 selectedTiles.Remove(selectedTiles.First());
-                selectedString.Remove(selectedString.First());
             }
         }
         public static void UnSelectBranch() {                               //Unselects the branch and goes back to the root
@@ -43,7 +39,6 @@
             while (selectedTiles.Count > 1) {
                 selectedTiles.Last().BackgroundColor = Color.FromArgb(selectedTiles.Last().StyleId);
                 selectedTiles.Remove(selectedTiles.Last());
-                selectedString.Remove(selectedString.Last());
             }
         }
         public static void MarkAsGreen() {                              //makes the tiles in the tiles list green permanently

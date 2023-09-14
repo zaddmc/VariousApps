@@ -15,8 +15,9 @@ namespace CrosswordFixer {
             MainPage.StartButtons.Add(button);
         }
         public static void MakeButtons() {
-            DoButton("testing");
-            DoButton("fishing");
+            DoButton("Testing");
+            DoButton("Simple");
+            DoButton("Zadd");
         }
 
 
@@ -24,18 +25,35 @@ namespace CrosswordFixer {
 
 
         public static void JustForTesting() {
+            /*
             for (int i = 0; i < Construction.Letters.Length - 5; i++) {
                 Worker.UnSelectAll();
                 Worker.PickRoot(number, 0);
                 for (int j = 0; j < 2; j++) {
                     Worker.AddBranch(i, j);
                 }
-
+                string fish= Worker.CWord();
+                int lol = 0;
             }
+            */
+
+            Worker.PickRoot(1, 5);
+            Worker.AddBranch(4, 6);
+            Worker.AddBranch(7, 6);
+            Worker.AddBranch(12, 0);
+            Worker.AddBranch(4, 3);
+            Worker.AddBranch(6, 17);
+            MainPage.Tiles[new Position(12, number).ToString()].BackgroundColor = Colors.IndianRed;
+            Worker.AddBranch(12, 5);
+            string fish1 = Worker.CWord();
+            //Worker.UnSelectBranch();
+            string fish2 = Worker.CWord();
+            int lol1 = 69;
 
 
             number++;
         }
+
         public class SimpleAI {
             public static void Start() {
                 List<string> cwords = Construction.PotentielWords.ToList();
@@ -96,15 +114,96 @@ namespace CrosswordFixer {
             }*/
         }//close the code above this text -----
 
-        public class ZaddAI { // the zaddest ai ever
+        public class ZaddAI : Worker { // the zaddest ai ever
             public static int minWordLength = int.MaxValue; // fuck asbjron
             public static int maxWordLength = 0;
 
             public static void Start() {
                 MinMaxWordLength();
 
+                for (int i = 0; i < Construction.Letters.Length; i++) {
+                    string[] listArray = Construction.Letters[i];
+                    string listSingle = listArray[0];
+                    for (int j = 1; j < listArray.Length; j++) {
+                        listSingle += listArray[j];
+                    }
+
+                    SearchForWords(listSingle);
 
 
+
+                }
+
+            }
+            private static void SearchForWords(string listSingle) {
+
+                for (int i = 0; i < Construction.PotentielWords.Length; i++) {
+                    if (listSingle.Contains(Construction.PotentielWords[i])) {
+                        var (succes, from, to) = FindWord(Construction.PotentielWords[i], listSingle);
+                        if (succes) {
+
+                        }
+                    }
+                }
+
+
+            }
+            private static void MarkFoundWords(int from, int to, int index, OrientationTypes orientation) {
+                switch (orientation) {
+                    case OrientationTypes.East:
+                        for (int i = from; i < to; i++) {
+                            AddBranch(index, i);
+                        }
+                        break;
+                    case OrientationTypes.SouthEast:
+                        break;
+                    case OrientationTypes.South:
+                        break;
+                    case OrientationTypes.SouthWest:
+                        break;
+                    case OrientationTypes.West:
+                        break;
+                    case OrientationTypes.NorthWest:
+                        break;
+                    case OrientationTypes.North:
+                        break;
+                    case OrientationTypes.NorthEast:
+                        break;
+                    default:
+                        break;
+                }
+                MarkAsGreen();
+                UnSelectAll();
+            }
+            private enum OrientationTypes {
+                East,
+                SouthEast,
+                South,
+                SouthWest,
+                West,
+                NorthWest,
+                North,
+                NorthEast,
+            }
+
+            private static (bool succes, int? from, int? to) FindWord(string wordToFind, string fromWhere) {
+                string cutout = fromWhere[0].ToString();
+                for (int i = 1; i < wordToFind.Length; i++) {
+                    cutout += fromWhere[i].ToString();
+                }
+
+
+                for (int i = 0; i < fromWhere.Length; i++) {
+                    if (cutout == wordToFind) {
+                        return (true, i, i + wordToFind.Length);
+                    }
+                    else {
+                        cutout.Remove(0, 1);
+                        cutout += fromWhere[i + wordToFind.Length];
+                    }
+                }
+
+                return (false, null, null);
             }
             private static void MinMaxWordLength() {
                 List<string> list = Construction.PotentielWords.ToList();
@@ -118,16 +217,16 @@ namespace CrosswordFixer {
                 }
             }
             private static bool Compare() {
-                if (Worker.CWord().Length < minWordLength || Worker.CWord().Length > maxWordLength) {
-                    return false;
+                if (CWord().Length < minWordLength || CWord().Length > maxWordLength) {
+                    return false; // it will return 
                 }
 
 
                 for (int i = 0; i < Construction.PotentielWords.Length; i++) {
 
-                    if (Worker.CWord() == Construction.PotentielWords[i]) {
-                        Worker.MarkAsGreen();
-                        return true;
+                    if (CWord() == Construction.PotentielWords[i]) {
+                        MarkAsGreen();
+                        return false;
                     }
                 }
 
