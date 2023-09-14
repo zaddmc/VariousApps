@@ -15,8 +15,9 @@ namespace CrosswordFixer {
             MainPage.StartButtons.Add(button);
         }
         public static void MakeButtons() {
-            DoButton("testing");
-            DoButton("fishing");
+            DoButton("Testing");
+            DoButton("Simple");
+            DoButton("Zadd");
         }
 
 

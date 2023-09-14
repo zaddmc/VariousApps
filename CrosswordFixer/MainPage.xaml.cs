@@ -70,15 +70,18 @@ public partial class MainPage : ContentPage {
         var button = sender as Button;
         string identifier = button.ClassId;
 
-        switch (identifier) {
+        switch (identifier.ToLower()) {
             default:
                 Debug.WriteLine("Missing Identifier in the initialzation of AI buttons");
                 break;
             case "testing":
                 AlgorithmicIndependence.JustForTesting();
                 break;
-            case "fishing":
+            case "simple":
                 AlgorithmicIndependence.SimpleAI();
+                break;
+            case "zadd":
+                AlgorithmicIndependence.ZaddAI.Start();
                 break;
         }
 
