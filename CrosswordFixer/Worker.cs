@@ -6,7 +6,7 @@
             string theWord = selectedTiles[0].Text;
 
             for (int i = 1; i < selectedTiles.Count(); i++) {
-                theWord = theWord + selectedTiles[i].Text;
+                theWord += selectedTiles[i].Text;
             }
 
             return theWord;
