@@ -1,13 +1,12 @@
 ﻿namespace CrosswordFixer {
     public class Worker {
         static private List<Label> selectedTiles = new();
-        static public List<String> selectedString = new();
 
         public static string CWord() {
-            string theWord = selectedString[0];
+            string theWord = selectedTiles[0].Text;
 
-            for (int i = 1; i < selectedString.Count(); i++) {
-                theWord = theWord + selectedString[i];
+            for (int i = 1; i < selectedTiles.Count(); i++) {
+                theWord += selectedTiles[i].Text;
             }
 
             return theWord;
@@ -18,7 +17,6 @@
             chosenTile.BackgroundColor = Colors.IndianRed;
 
             selectedTiles.Add(chosenTile);
-            selectedString.Add(chosenTile.Text);
             return chosenTile.Text;
         }
         public static string AddBranch(int col, int row) {
@@ -27,7 +25,6 @@
             chosenTile.BackgroundColor = Colors.YellowGreen;
 
             selectedTiles.Add(chosenTile);
-            selectedString.Add(chosenTile.Text);
 
             return chosenTile.Text;
         }
@@ -35,7 +32,6 @@
             while (selectedTiles.Count > 0) {
                 selectedTiles.First().BackgroundColor = Color.FromArgb(selectedTiles.First().StyleId);
                 selectedTiles.Remove(selectedTiles.First());
-                selectedString.Remove(selectedString.First());
             }
         }
         public static void UnSelectBranch() {
@@ -43,7 +39,6 @@
             while (selectedTiles.Count > 1) {
                 selectedTiles.Last().BackgroundColor = Color.FromArgb(selectedTiles.Last().StyleId);
                 selectedTiles.Remove(selectedTiles.Last());
-                selectedString.Remove(selectedString.Last());
             }
         }
         public static void MarkAsGreen() {
