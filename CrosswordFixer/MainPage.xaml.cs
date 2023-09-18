@@ -78,7 +78,7 @@ public partial class MainPage : ContentPage {
                 AlgorithmicIndependence.JustForTesting();
                 break;
             case "simple":
-                AlgorithmicIndependence.SimpleAI();
+                AlgorithmicIndependence.SimpleAI.Start();
                 break;
             case "zadd":
                 AlgorithmicIndependence.ZaddAI.Start();
