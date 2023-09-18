@@ -1,5 +1,5 @@
 ﻿namespace CrosswordFixer {
-    public class Worker {
+    public class Worker : Construction {
         static private List<Label> selectedTiles = new(); //List of all the tiles that is green. it is when there is a potentiel word/correct word.
 
         public static string CWord() { //all seleted tiles get set together to a word. Use it to compare words to your string

@@ -154,43 +154,69 @@ namespace CrosswordFixer {
             public static void Start() {
                 MinMaxWordLength();
 
-                for (int i = 0; i < Construction.Letters.Length; i++) {
-                    string[] listArray = Construction.Letters[i];
-                    string listSingle = listArray[0];
-                    for (int j = 1; j < listArray.Length; j++) {
-                        listSingle += listArray[j];
+                // cheks vertical from left to right otherwise known as east
+                for (int i = 0; i < Construction.Letters[0].Length; i++) {
+                    List<string> listList = new();
+                    for (int j = 0; j < Letters[0].Length; j++) {
+                        listList.Add(Letters[0][j]);
                     }
+                    string listSingle = ListToSingle(listList);
 
-                    SearchForWords(listSingle);
-
-
-
+                    SearchForWords(listSingle, i, OrientationTypes.East);
                 }
 
+                // cheks horizontol from top to bottom otherwise known as south
+                for (int i = 0; i < Construction.Letters.Length; i++) {
+                    string listSingle = ArrayToSingle(Construction.Letters[i]);
+
+                    SearchForWords(listSingle, i, OrientationTypes.South);
+                }
+
+
             }
-            private static void SearchForWords(string listSingle) {
+            private static string ArrayToSingle(string[] array) {
+                string single = array[0];
+                for (int i = 1; i < array.Length; i++) {
+                    single += array[i];
+                }
+                return single;
+            }
+            private static string ListToSingle(List<string> list) {
+                string single = list[0];
+                for (int i = 1; i < list.Count; i++) {
+                    single += list[i];
+                }
+                return single;
+            }
+            private static void SearchForWords(string listSingle, int index, OrientationTypes orientation) {
 
                 for (int i = 0; i < Construction.PotentielWords.Length; i++) {
                     if (listSingle.Contains(Construction.PotentielWords[i])) {
                         var (succes, from, to) = FindWord(Construction.PotentielWords[i], listSingle);
                         if (succes) {
-
+                            MarkFoundWord(from, to, index, orientation);
                         }
                     }
                 }
 
 
             }
-            private static void MarkFoundWords(int from, int to, int index, OrientationTypes orientation) {
+            private static void MarkFoundWord(int from, int to, int index, OrientationTypes orientation) {
                 switch (orientation) {
                     case OrientationTypes.East:
                         for (int i = from; i < to; i++) {
-                            AddBranch(index, i);
+                            AddBranch(i, index);
                         }
                         break;
                     case OrientationTypes.SouthEast:
+                        for (int i = from; i < to; i++) {
+                            AddBranch(index + i, i);
+                        }
                         break;
                     case OrientationTypes.South:
+                        for (int i = from; i < to; i++) {
+                            AddBranch(index, i);
+                        }
                         break;
                     case OrientationTypes.SouthWest:
                         break;
@@ -219,7 +245,7 @@ namespace CrosswordFixer {
                 NorthEast,
             }
 
-            private static (bool succes, int? from, int? to) FindWord(string wordToFind, string fromWhere) {
+            private static (bool succes, int from, int to) FindWord(string wordToFind, string fromWhere) {
                 string cutout = fromWhere[0].ToString();
                 for (int i = 1; i < wordToFind.Length; i++) {
                     cutout += fromWhere[i].ToString();
@@ -231,12 +257,12 @@ namespace CrosswordFixer {
                         return (true, i, i + wordToFind.Length);
                     }
                     else {
-                        cutout.Remove(0, 1);
+                        cutout = cutout.Remove(0, 1);
                         cutout += fromWhere[i + wordToFind.Length];
                     }
                 }
 
-                return (false, null, null);
+                return (false, 0, 0);
             }
             private static void MinMaxWordLength() {
                 List<string> list = Construction.PotentielWords.ToList();
