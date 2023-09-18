@@ -153,10 +153,9 @@ namespace CrosswordFixer {
 
             public static void Start() {
                 MinMaxWordLength();
-                bool expanded = true;
 
-                // cheks vertical from left to right otherwise known as east
-                for (int i = 0; i < Construction.Letters[0].Length; i++) {
+                // cheks vertical from left to right otherwise known as east and the reverse
+                for (int i = 0; i < Letters[0].Length; i++) {
                     List<string> listList = new();
                     for (int j = 0; j < Letters[i].Length; j++) {
                         listList.Add(Letters[j][i]);
@@ -164,19 +163,34 @@ namespace CrosswordFixer {
                     string listSingle = ListToSingle(listList);
 
                     SearchForWords(listSingle, i, OrientationTypes.East);
-                    if (expanded)
-                        SearchForWords(Reverse(listSingle), i, OrientationTypes.West);
+                    SearchForWords(Reverse(listSingle), i, OrientationTypes.West);
 
                 }
 
-                // cheks horizontol from top to bottom otherwise known as south
-                for (int i = 0; i < Construction.Letters.Length; i++) {
-                    string listSingle = ArrayToSingle(Construction.Letters[i]);
+                // cheks horizontol from top to bottom otherwise known as south and the reverse
+                for (int i = 0; i < Letters.Length; i++) {
+                    string listSingle = ArrayToSingle(Letters[i]);
 
                     SearchForWords(listSingle, i, OrientationTypes.South);
-                    if (expanded)
-                        SearchForWords(Reverse(listSingle), i, OrientationTypes.North);
+                    SearchForWords(Reverse(listSingle), i, OrientationTypes.North);
                 }
+
+                // cheks horizontol from top to bottom otherwise known as south and the reverse
+                for (int i = 0; i < Letters.Length; i++) {
+                    List<string> listList = new();
+                    for (int j = -Letters.Length; j < Letters[i].Length; j++) {
+                        
+                        listList.Add(Letters[j][j]);
+                    }
+                    if (listList.Count < minWordLength) {
+                        continue;
+                    }
+                    string listSingle = ListToSingle(listList);
+
+                    SearchForWords(listSingle, i, OrientationTypes.SouthEast);
+                    SearchForWords(Reverse(listSingle), i, OrientationTypes.NorthWest);
+                }
+
 
 
             }
@@ -212,8 +226,6 @@ namespace CrosswordFixer {
                         }
                     }
                 }
-
-
             }
             private static void MarkFoundWord(int from, int to, int index, OrientationTypes orientation) {
                 switch (orientation) {
