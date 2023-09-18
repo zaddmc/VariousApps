@@ -1,3 +1,4 @@
+
 namespace CrosswordFixer {
     public class AlgorithmicIndependence {
 
@@ -49,7 +50,7 @@ namespace CrosswordFixer {
             //Worker.UnSelectBranch();
             string fish2 = Worker.CWord();
             int lol1 = 69;
-
+            lol1++;
 
             number++;
         }
@@ -73,21 +74,53 @@ namespace CrosswordFixer {
                     }
                 }
             }
-            public static void CheckAround(int i, int j, int k, string cwords) {
+            public static void CheckAround(int i, int j, int k, string cword) {
                 switch (k) {
                     case 0:
-                        if (Worker.AddBranch(i, j) == null) { //------------------------------------------------
+                        if (Worker.AddBranch(i+1, j) == cword[0].ToString()) { //------------------------------------------------
+                            if (cword==Worker.CWord()) {
+                                Worker.MarkAsGreen();
+                                Worker.UnSelectAll();
+                            }
+                            CheckNext(i+1, j, k,cword);
                         }
                         break;
                     case 1:
-                        break;
+                        if (Worker.AddBranch(i, j+1) == cword[0].ToString()) { //------------------------------------------------
+                            if (cword == Worker.CWord()) {
+                                Worker.MarkAsGreen();
+                                Worker.UnSelectAll();
+                            }
+                            CheckNext(i, j, k, cword);
+                        }
+                            break;
                     case 2:
-                        break;
+                        if (Worker.AddBranch(i+1, j+1) == cword[0].ToString()) { //------------------------------------------------
+                            if (cword == Worker.CWord()) {
+                                Worker.MarkAsGreen();
+                                Worker.UnSelectAll();
+                            }
+                            CheckNext(i, j, k,cword);
+                        }
+                            break;
 
                     default:
                         break;
                 }
 
+            }
+            public static void CheckNext(int i, int j, int k, string cword) {
+                switch (k) {
+                    case 0:
+                        Worker.AddBranch(i + 1, j);
+                        if (cword == Worker.CWord()) {
+                            Worker.MarkAsGreen();
+                            Worker.UnSelectAll();
+                        }
+                        break;
+                    default:
+                        break;
+                }
             }
             /*public static (bool buh, int idkman) SimpleAICheckAround(int i, int j, List<string> cwords, int listnumber, int charnumber) {
                 for (int k = -1; k < 2; k++) {
