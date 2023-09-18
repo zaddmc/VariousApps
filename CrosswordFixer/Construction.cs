@@ -43,13 +43,13 @@ namespace CrosswordFixer {
                 // HeightRequest = 50,
                 // WidthRequest = 50,
                 Margin = 2,
-                Text = Letters[x][y].ToUpper(),
+                Text = Letters[y][x].ToUpper(),
                 TextColor = Colors.Black,
                 HorizontalTextAlignment = TextAlignment.Center,
                 VerticalTextAlignment = TextAlignment.Center
             };
 
-            MainPage.Tiles.Add(new Position(x, y).ToString(), tile);
+            MainPage.Tiles.Add(new Position(y, x).ToString(), tile);
 
             return tile;
         }

@@ -77,32 +77,32 @@ namespace CrosswordFixer {
             public static void CheckAround(int i, int j, int k, string cword) {
                 switch (k) {
                     case 0:
-                        if (Worker.AddBranch(i+1, j) == cword[0].ToString()) { //------------------------------------------------
-                            if (cword==Worker.CWord()) {
+                        if (Worker.AddBranch(i + 1, j) == cword[0].ToString()) { //------------------------------------------------
+                            if (cword == Worker.CWord()) {
                                 Worker.MarkAsGreen();
                                 Worker.UnSelectAll();
                             }
-                            CheckNext(i+1, j, k,cword);
+                            CheckNext(i + 1, j, k, cword);
                         }
                         break;
                     case 1:
-                        if (Worker.AddBranch(i, j+1) == cword[0].ToString()) { //------------------------------------------------
+                        if (Worker.AddBranch(i, j + 1) == cword[0].ToString()) { //------------------------------------------------
                             if (cword == Worker.CWord()) {
                                 Worker.MarkAsGreen();
                                 Worker.UnSelectAll();
                             }
                             CheckNext(i, j, k, cword);
                         }
-                            break;
+                        break;
                     case 2:
-                        if (Worker.AddBranch(i+1, j+1) == cword[0].ToString()) { //------------------------------------------------
+                        if (Worker.AddBranch(i + 1, j + 1) == cword[0].ToString()) { //------------------------------------------------
                             if (cword == Worker.CWord()) {
                                 Worker.MarkAsGreen();
                                 Worker.UnSelectAll();
                             }
-                            CheckNext(i, j, k,cword);
+                            CheckNext(i, j, k, cword);
                         }
-                            break;
+                        break;
 
                     default:
                         break;
@@ -153,16 +153,20 @@ namespace CrosswordFixer {
 
             public static void Start() {
                 MinMaxWordLength();
+                bool expanded = true;
 
                 // cheks vertical from left to right otherwise known as east
                 for (int i = 0; i < Construction.Letters[0].Length; i++) {
                     List<string> listList = new();
-                    for (int j = 0; j < Letters[0].Length; j++) {
-                        listList.Add(Letters[0][j]);
+                    for (int j = 0; j < Letters[i].Length; j++) {
+                        listList.Add(Letters[j][i]);
                     }
                     string listSingle = ListToSingle(listList);
 
                     SearchForWords(listSingle, i, OrientationTypes.East);
+                    if (expanded)
+                        SearchForWords(Reverse(listSingle), i, OrientationTypes.West);
+
                 }
 
                 // cheks horizontol from top to bottom otherwise known as south
@@ -170,9 +174,19 @@ namespace CrosswordFixer {
                     string listSingle = ArrayToSingle(Construction.Letters[i]);
 
                     SearchForWords(listSingle, i, OrientationTypes.South);
+                    if (expanded)
+                        SearchForWords(Reverse(listSingle), i, OrientationTypes.North);
                 }
 
 
+            }
+            private static string Reverse(string strings) {
+                string newString = "";
+                for (int i = strings.Length - 1; i >= 0; i--) {
+                    newString += strings[i];
+                }
+
+                return newString;
             }
             private static string ArrayToSingle(string[] array) {
                 string single = array[0];
@@ -221,10 +235,16 @@ namespace CrosswordFixer {
                     case OrientationTypes.SouthWest:
                         break;
                     case OrientationTypes.West:
+                        for (int i = from; i < to; i++) {
+                            AddBranch(Letters.Length - 1 - i, index);
+                        }
                         break;
                     case OrientationTypes.NorthWest:
                         break;
                     case OrientationTypes.North:
+                        for (int i = from; i < to; i++) {
+                            AddBranch(index, Letters.Length - 1 - i);
+                        }
                         break;
                     case OrientationTypes.NorthEast:
                         break;
