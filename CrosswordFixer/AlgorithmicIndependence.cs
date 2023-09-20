@@ -68,7 +68,7 @@ namespace CrosswordFixer {
                             }
                         }
                         else {
-                            return;
+                            Worker.UnSelectAll();
                         }
 
                     }
@@ -82,7 +82,7 @@ namespace CrosswordFixer {
                                 Worker.MarkAsGreen();
                                 Worker.UnSelectAll();
                             }
-                            CheckNext(i + 1, j, k, cword);
+                            CheckNext(i + 1, j, k, cword,1);
                         }
                         break;
                     case 1:
@@ -91,7 +91,7 @@ namespace CrosswordFixer {
                                 Worker.MarkAsGreen();
                                 Worker.UnSelectAll();
                             }
-                            CheckNext(i, j, k, cword);
+                            CheckNext(i, j + 1, k, cword,1);
                         }
                         break;
                     case 2:
@@ -100,7 +100,7 @@ namespace CrosswordFixer {
                                 Worker.MarkAsGreen();
                                 Worker.UnSelectAll();
                             }
-                            CheckNext(i, j, k, cword);
+                            CheckNext(i + 1, j + 1, k, cword,1);
                         }
                         break;
 
@@ -109,13 +109,16 @@ namespace CrosswordFixer {
                 }
 
             }
-            public static void CheckNext(int i, int j, int k, string cword) {
+            public static void CheckNext(int i, int j, int k, string cword,int charnum) {
                 switch (k) {
                     case 0:
-                        Worker.AddBranch(i + 1, j);
+                        Worker.AddBranch(i + 1, j); //kigger om den næste bogstav giver ordet
                         if (cword == Worker.CWord()) {
                             Worker.MarkAsGreen();
                             Worker.UnSelectAll();
+                        }
+                        else if (Worker.AddBranch(i + 1, j) == cword[charnum].ToString()) {
+                            CheckNext(i + 1, j, k, cword,charnum+1);
                         }
                         break;
                     default:
@@ -179,7 +182,7 @@ namespace CrosswordFixer {
                 for (int i = 0; i < Letters.Length; i++) {
                     List<string> listList = new();
                     for (int j = -Letters.Length; j < Letters[i].Length; j++) {
-                        
+
                         listList.Add(Letters[j][j]);
                     }
                     if (listList.Count < minWordLength) {
