@@ -34,6 +34,11 @@
                 Clicked="EditMode_Clicked"
                 TextColor="Black"
                 />
+            <Button
+                Text="Wipe Board"
+                Clicked="WipeBoard_Clicked"
+                TextColor="Black"
+                />
 
 
         </VerticalStackLayout>
