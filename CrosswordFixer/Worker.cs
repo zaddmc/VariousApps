@@ -43,8 +43,8 @@
         }
         public static void MarkAsGreen() {                              //makes the tiles in the tiles list green permanently
             for (int i = 0; i < selectedTiles.Count; i++) {
-                selectedTiles[i].BackgroundColor = Color.FromArgb("37fd12");
                 selectedTiles[i].StyleId = "37fd12";
+                selectedTiles[i].BackgroundColor = Color.FromArgb(selectedTiles[i].StyleId);
             }
         }
     }

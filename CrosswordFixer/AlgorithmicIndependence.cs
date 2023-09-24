@@ -1,4 +1,4 @@
-
+using System.Diagnostics;
 namespace CrosswordFixer {
     public class AlgorithmicIndependence {
 
@@ -82,7 +82,7 @@ namespace CrosswordFixer {
                                 Worker.MarkAsGreen();
                                 Worker.UnSelectAll();
                             }
-                            CheckNext(i + 1, j, k, cword,1);
+                            CheckNext(i + 1, j, k, cword, 1);
                         }
                         break;
                     case 1:
@@ -91,7 +91,7 @@ namespace CrosswordFixer {
                                 Worker.MarkAsGreen();
                                 Worker.UnSelectAll();
                             }
-                            CheckNext(i, j + 1, k, cword,1);
+                            CheckNext(i, j + 1, k, cword, 1);
                         }
                         break;
                     case 2:
@@ -100,7 +100,7 @@ namespace CrosswordFixer {
                                 Worker.MarkAsGreen();
                                 Worker.UnSelectAll();
                             }
-                            CheckNext(i + 1, j + 1, k, cword,1);
+                            CheckNext(i + 1, j + 1, k, cword, 1);
                         }
                         break;
 
@@ -109,7 +109,7 @@ namespace CrosswordFixer {
                 }
 
             }
-            public static void CheckNext(int i, int j, int k, string cword,int charnum) {
+            public static void CheckNext(int i, int j, int k, string cword, int charnum) {
                 switch (k) {
                     case 0:
                         Worker.AddBranch(i + 1, j); //kigger om den næste bogstav giver ordet
@@ -118,7 +118,7 @@ namespace CrosswordFixer {
                             Worker.UnSelectAll();
                         }
                         else if (Worker.AddBranch(i + 1, j) == cword[charnum].ToString()) {
-                            CheckNext(i + 1, j, k, cword,charnum+1);
+                            CheckNext(i + 1, j, k, cword, charnum + 1);
                         }
                         break;
                     default:
@@ -158,32 +158,39 @@ namespace CrosswordFixer {
                 MinMaxWordLength();
 
                 // cheks vertical from left to right otherwise known as east and the reverse
-                for (int i = 0; i < Letters[0].Length; i++) {
-                    List<string> listList = new();
-                    for (int j = 0; j < Letters[i].Length; j++) {
-                        listList.Add(Letters[j][i]);
+                if (false)
+                    for (int i = 0; i < Letters[0].Length; i++) {
+                        List<string> listList = new();
+                        for (int j = 0; j < Letters[i].Length; j++) {
+                            listList.Add(Letters[j][i]);
+                        }
+                        string listSingle = ListToSingle(listList);
+
+                        SearchForWords(listSingle, i, OrientationTypes.East);
+                        SearchForWords(Reverse(listSingle), i, OrientationTypes.West);
+
                     }
-                    string listSingle = ListToSingle(listList);
-
-                    SearchForWords(listSingle, i, OrientationTypes.East);
-                    SearchForWords(Reverse(listSingle), i, OrientationTypes.West);
-
-                }
 
                 // cheks horizontol from top to bottom otherwise known as south and the reverse
-                for (int i = 0; i < Letters.Length; i++) {
-                    string listSingle = ArrayToSingle(Letters[i]);
+                if (false)
+                    for (int i = 0; i < Letters.Length; i++) {
+                        string listSingle = ArrayToSingle(Letters[i]);
 
-                    SearchForWords(listSingle, i, OrientationTypes.South);
-                    SearchForWords(Reverse(listSingle), i, OrientationTypes.North);
-                }
+                        SearchForWords(listSingle, i, OrientationTypes.South);
+                        SearchForWords(Reverse(listSingle), i, OrientationTypes.North);
+                    }
 
-                // cheks horizontol from top to bottom otherwise known as south and the reverse
-                for (int i = 0; i < Letters.Length; i++) {
+                // cheks diagonal from bottom right to top left otherwise known as southeast and the reverse
+                for (int i = -Letters.Length; i < Letters.Length; i++) {
                     List<string> listList = new();
-                    for (int j = -Letters.Length; j < Letters[i].Length; j++) {
+                    for (int j = 0; j < Letters.Length; j++) {
 
-                        listList.Add(Letters[j][j]);
+                        if (i + j < 0 || j + i > Letters.Length - 1) {
+                            continue;
+                        }
+
+                        listList.Add(Letters[j][j + i]);
+
                     }
                     if (listList.Count < minWordLength) {
                         continue;
@@ -191,7 +198,7 @@ namespace CrosswordFixer {
                     string listSingle = ListToSingle(listList);
 
                     SearchForWords(listSingle, i, OrientationTypes.SouthEast);
-                    SearchForWords(Reverse(listSingle), i, OrientationTypes.NorthWest);
+                   // SearchForWords(Reverse(listSingle), i, OrientationTypes.NorthWest);
                 }
 
 
@@ -225,6 +232,7 @@ namespace CrosswordFixer {
                     if (listSingle.Contains(Construction.PotentielWords[i])) {
                         var (succes, from, to) = FindWord(Construction.PotentielWords[i], listSingle);
                         if (succes) {
+                            Debug.WriteLine("Current word: " + PotentielWords[i]);
                             MarkFoundWord(from, to, index, orientation);
                         }
                     }
@@ -237,9 +245,19 @@ namespace CrosswordFixer {
                             AddBranch(i, index);
                         }
                         break;
-                    case OrientationTypes.SouthEast:
-                        for (int i = from; i < to; i++) {
-                            AddBranch(index + i, i);
+                    case OrientationTypes.SouthEast: {
+                            int wordLentgh = to - from, j = 0, save = from;
+                            from = 20 - to - wordLentgh + 1;
+                            to = 20 - save - wordLentgh + 1;
+                            for (int i = from; i < to; i++) {
+                                if (index < 0)
+                                    AddBranch(i , j + index + from);
+                                else
+                                    save++;
+                                    //AddBranch(j + from, i - index);
+
+                                j++;
+                            }
                         }
                         break;
                     case OrientationTypes.South:
@@ -254,7 +272,19 @@ namespace CrosswordFixer {
                             AddBranch(Letters.Length - 1 - i, index);
                         }
                         break;
-                    case OrientationTypes.NorthWest:
+                    case OrientationTypes.NorthWest: {
+                            int save = from, j = 0;
+                            from = Letters.Length - to;
+                            to = Letters.Length - save;
+                            for (int i = from; i < to; i++) {
+                                if (index < 0)
+                                    AddBranch(i, j + index + from);
+                                else
+                                    AddBranch(i - index, j + from);
+
+                                j++;
+                            }
+                        }
                         break;
                     case OrientationTypes.North:
                         for (int i = from; i < to; i++) {

@@ -36,8 +36,8 @@ public partial class MainPage : ContentPage {
         while (StartButtons.Count > 0) {
             Button button = StartButtons.First();
             StartButtons.Remove(button);
-            
-            
+
+
             button.Clicked += InitiazeButtons_Clicked;
 
 
@@ -85,6 +85,18 @@ public partial class MainPage : ContentPage {
                 break;
         }
 
+    }
+
+    private void WipeBoard_Clicked(object sender, EventArgs e) {
+        for (int i = 0; i < Construction.Letters.Length; i++) {
+            for (int j = 0; j < Construction.Letters[i].Length; j++) {
+                Label chosenTile = Tiles[new Position(i, j).ToString()];
+
+                chosenTile.StyleId = "ffffff";
+                chosenTile.BackgroundColor = Color.FromArgb(chosenTile.StyleId);
+
+            }
+        }
     }
 }
 
