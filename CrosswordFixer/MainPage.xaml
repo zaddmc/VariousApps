@@ -39,6 +39,16 @@
                 Clicked="WipeBoard_Clicked"
                 TextColor="Black"
                 />
+            <Button
+                Text="Highligt Next Word"
+                Clicked="HighlightNext_Clicked"
+                TextColor="Black"
+                />
+            <Button
+                Text="Highligt Previous Word"
+                Clicked="HighlightPrevios_Clicked"
+                TextColor="Black"
+                />
 
 
         </VerticalStackLayout>
