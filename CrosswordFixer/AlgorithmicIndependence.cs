@@ -156,9 +156,9 @@ namespace CrosswordFixer {
 
             public static void Start() {
                 MinMaxWordLength();
-
+                bool stopthis = false;
                 // cheks vertical from left to right otherwise known as east and the reverse
-                if (false)
+                if (stopthis)
                     for (int i = 0; i < Letters[0].Length; i++) {
                         List<string> listList = new();
                         for (int j = 0; j < Letters[i].Length; j++) {
@@ -172,7 +172,7 @@ namespace CrosswordFixer {
                     }
 
                 // cheks horizontol from top to bottom otherwise known as south and the reverse
-                if (false)
+                if (stopthis)
                     for (int i = 0; i < Letters.Length; i++) {
                         string listSingle = ArrayToSingle(Letters[i]);
 
@@ -180,39 +180,64 @@ namespace CrosswordFixer {
                         SearchForWords(Reverse(listSingle), i, OrientationTypes.North);
                     }
 
-                // cheks diagonal from bottom right to top left otherwise known as southeast 
-                for (int i = 0; i < Letters.Length; i++) {
-                    List<string> listList = new();
-                    for (int j = -Letters.Length; j < Letters[i].Length; j++) {
-                        if (j < 0 || i + j > Letters.Length - 1)
-                            continue;
-                        listList.Add(Letters[i + j][j]);
-                    }
-                    if (listList.Count < minWordLength) {
-                        continue;
-                    }
-                    string listSingle = ListToSingle(listList);
-
-                    SearchForWords(listSingle, i, OrientationTypes.SouthEast);
-                }
-                for (int i = -Letters.Length; i < Letters.Length; i++) {
-                    List<string> listList = new();
-                    for (int j = 0; j < Letters.Length; j++) {
-
-                        if (i + j < 0 || j + i > Letters.Length - 1) {
+                // cheks diagonal from top right to bottom left otherwise known as southeast 
+                if (stopthis)
+                    for (int i = 0; i < Letters.Length; i++) {
+                        List<string> listList = new();
+                        for (int j = -Letters.Length; j < Letters[i].Length; j++) {
+                            if (j < 0 || i + j > Letters.Length - 1)
+                                continue;
+                            listList.Add(Letters[i + j][j]);
+                        }
+                        if (listList.Count < minWordLength) {
                             continue;
                         }
+                        string listSingle = ListToSingle(listList);
 
-                        listList.Add(Letters[j][j + i]);
+                        SearchForWords(listSingle, i, OrientationTypes.SouthEast);
+                    }
+                // cheks diagonal from bottom right to top left otherwise known as worthwest
+                if (stopthis)
+                    for (int i = -Letters.Length; i < Letters.Length; i++) {
+                        List<string> listList = new();
+                        for (int j = 0; j < Letters.Length; j++) {
+
+                            if (i + j < 0 || j + i > Letters.Length - 1) {
+                                continue;
+                            }
+
+                            listList.Add(Letters[j][j + i]);
+
+                        }
+                        if (listList.Count < minWordLength) {
+                            continue;
+                        }
+                        string listSingle = ListToSingle(listList);
+
+                        SearchForWords(Reverse(listSingle), i, OrientationTypes.NorthWest);
+                    }
+                // cheks diagonal from top left to bottom right otherwise known as southwest
+                for (int i = 0; i < Letters.Length * 2; i++) {
+                    List<string> listList = new();
+                    for (int j = i; j >= 0; j--) {
+                        if (j < 0)
+                            break;
+                        if (i - j >= Letters[0].Length || j >= Letters[0].Length)
+                            continue;
+
+                        listList.Add(Letters[i - j][j]);
 
                     }
+
                     if (listList.Count < minWordLength) {
                         continue;
                     }
                     string listSingle = ListToSingle(listList);
 
-                    //SearchForWords(listSingle, i, OrientationTypes.SouthEast);
-                    SearchForWords(Reverse(listSingle), i, OrientationTypes.NorthWest);
+                    int index = 0;
+                    if (i > Letters.Length)
+                        index = Letters.Length - i;
+                    SearchForWords(listSingle, i, OrientationTypes.SouthWest);
                 }
 
 
@@ -259,10 +284,9 @@ namespace CrosswordFixer {
                             AddBranch(i, index);
                         }
                         break;
-                    case OrientationTypes.SouthEast: {
-                            for (int i = from; i < to; i++) {
-                                AddBranch(index + i, i);
-                            }
+                    case OrientationTypes.SouthEast:
+                        for (int i = from; i < to; i++) {
+                            AddBranch(index + i, i);
                         }
                         break;
                     case OrientationTypes.South:
@@ -271,6 +295,13 @@ namespace CrosswordFixer {
                         }
                         break;
                     case OrientationTypes.SouthWest:
+                        if (index > Letters.Length) {
+                            from += index - Letters.Length + 1;
+                            to += index - Letters.Length + 1;
+                        }
+                        for (int i = from; i < to; i++) {
+                            AddBranch(i, index - i);
+                        }
                         break;
                     case OrientationTypes.West:
                         for (int i = from; i < to; i++) {
