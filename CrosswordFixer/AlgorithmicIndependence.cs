@@ -180,7 +180,21 @@ namespace CrosswordFixer {
                         SearchForWords(Reverse(listSingle), i, OrientationTypes.North);
                     }
 
-                // cheks diagonal from bottom right to top left otherwise known as southeast and the reverse
+                // cheks diagonal from bottom right to top left otherwise known as southeast 
+                for (int i = 0; i < Letters.Length; i++) {
+                    List<string> listList = new();
+                    for (int j = -Letters.Length; j < Letters[i].Length; j++) {
+                        if (j < 0 || i + j > Letters.Length - 1)
+                            continue;
+                        listList.Add(Letters[i + j][j]);
+                    }
+                    if (listList.Count < minWordLength) {
+                        continue;
+                    }
+                    string listSingle = ListToSingle(listList);
+
+                    SearchForWords(listSingle, i, OrientationTypes.SouthEast);
+                }
                 for (int i = -Letters.Length; i < Letters.Length; i++) {
                     List<string> listList = new();
                     for (int j = 0; j < Letters.Length; j++) {
@@ -197,8 +211,8 @@ namespace CrosswordFixer {
                     }
                     string listSingle = ListToSingle(listList);
 
-                    SearchForWords(listSingle, i, OrientationTypes.SouthEast);
-                   // SearchForWords(Reverse(listSingle), i, OrientationTypes.NorthWest);
+                    //SearchForWords(listSingle, i, OrientationTypes.SouthEast);
+                    SearchForWords(Reverse(listSingle), i, OrientationTypes.NorthWest);
                 }
 
 
@@ -246,17 +260,8 @@ namespace CrosswordFixer {
                         }
                         break;
                     case OrientationTypes.SouthEast: {
-                            int wordLentgh = to - from, j = 0, save = from;
-                            from = 20 - to - wordLentgh + 1;
-                            to = 20 - save - wordLentgh + 1;
                             for (int i = from; i < to; i++) {
-                                if (index < 0)
-                                    AddBranch(i , j + index + from);
-                                else
-                                    save++;
-                                    //AddBranch(j + from, i - index);
-
-                                j++;
+                                AddBranch(index + i, i);
                             }
                         }
                         break;
