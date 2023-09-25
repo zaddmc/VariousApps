@@ -196,7 +196,7 @@ namespace CrosswordFixer {
 
                         SearchForWords(listSingle, i, OrientationTypes.SouthEast);
                     }
-                // cheks diagonal from bottom right to top left otherwise known as worthwest
+                // cheks diagonal from bottom right to top left otherwise known as northwest
                 if (stopthis)
                     for (int i = -Letters.Length; i < Letters.Length; i++) {
                         List<string> listList = new();
@@ -234,10 +234,8 @@ namespace CrosswordFixer {
                     }
                     string listSingle = ListToSingle(listList);
 
-                    int index = 0;
-                    if (i > Letters.Length)
-                        index = Letters.Length - i;
                     SearchForWords(listSingle, i, OrientationTypes.SouthWest);
+                    SearchForWords(Reverse(listSingle), i, OrientationTypes.NorthEast);
                 }
 
 
@@ -328,6 +326,13 @@ namespace CrosswordFixer {
                         }
                         break;
                     case OrientationTypes.NorthEast:
+                        if (index > Letters.Length) {
+                            from += index - Letters.Length + 1;
+                            to += index - Letters.Length + 1;
+                        }
+                        for (int i = from; i < to; i++) {
+                            AddBranch(index - i, i);
+                        }
                         break;
                     default:
                         break;
@@ -375,22 +380,6 @@ namespace CrosswordFixer {
                         maxWordLength = list[i].Length;
                     }
                 }
-            }
-            private static bool Compare() {
-                if (CWord().Length < minWordLength || CWord().Length > maxWordLength) {
-                    return false; // it will return 
-                }
-
-
-                for (int i = 0; i < Construction.PotentielWords.Length; i++) {
-
-                    if (CWord() == Construction.PotentielWords[i]) {
-                        MarkAsGreen();
-                        return false;
-                    }
-                }
-
-                return false;
             }
         }
     }
