@@ -98,5 +98,13 @@ public partial class MainPage : ContentPage {
             }
         }
     }
+    private void HighlightNext_Clicked(object sender, EventArgs e) {
+        Worker.HighlightWord("next");
+    }
+
+    private void HighlightPrevios_Clicked(object sender, EventArgs e) {
+        Worker.HighlightWord("previous");
+
+    }
 }
 
