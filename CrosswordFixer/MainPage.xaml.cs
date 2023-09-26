@@ -97,6 +97,7 @@ public partial class MainPage : ContentPage {
 
             }
         }
+        Worker.WipeSelections();
     }
     private void HighlightNext_Clicked(object sender, EventArgs e) {
         Worker.HighlightWord("next");

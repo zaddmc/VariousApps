@@ -72,8 +72,13 @@
             }
             previousHighligtedWord = highlightedWord;
             for (int i = 0; i < markedWords[highlightedWord].Length; i++) {
-                markedWords[highlightedWord][i].BackgroundColor = Colors.LightSteelBlue;
+                markedWords[highlightedWord][i].BackgroundColor = Colors.CornflowerBlue;
             }
+        }
+        public static void WipeSelections() {
+            highlightedWord= 0;
+            previousHighligtedWord= 0;
+            markedWords.Clear();
         }
     }
 }
