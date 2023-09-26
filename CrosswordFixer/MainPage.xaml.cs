@@ -70,6 +70,8 @@ public partial class MainPage : ContentPage {
         var button = sender as Button;
         string identifier = button.ClassId;
 
+        DateTime dateTime = DateTime.Now;
+
         switch (identifier.ToLower()) {
             default:
                 Debug.WriteLine("Missing Identifier in the initialzation of AI buttons");
@@ -84,7 +86,7 @@ public partial class MainPage : ContentPage {
                 AlgorithmicIndependence.ZaddAI.Start();
                 break;
         }
-
+        Debug.WriteLine("Time elapsed: " + (DateTime.Now - dateTime).Milliseconds + "ms");
     }
 
     private void WipeBoard_Clicked(object sender, EventArgs e) {
