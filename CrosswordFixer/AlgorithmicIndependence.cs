@@ -154,64 +154,88 @@ namespace CrosswordFixer {
             public static int minWordLength = int.MaxValue; // fuck asbjron
             public static int maxWordLength = 0;
 
-            public static void Start() {
+            public static async void Start() {
                 MinMaxWordLength();
 
+
+                Task work1 = new Task(Work1);
+                Task work2 = new Task(Work2);
+                Task work3 = new Task(Work3);
+                Task work4 = new Task(Work4);
+                Task work5 = new Task(Work5);
+
+                work1.Start();
+                work2.Start();
+                work3.Start();
+                work4.Start();
+                work5.Start();
+
+                //await Task.WhenAll(work1, work2, work3, work4, work5);
+                Task.WaitAll(work1, work2, work3, work4, work5);
+            }
+            private static void Work1() {
                 // cheks vertical from left to right otherwise known as east and the reverse
-                    for (int i = 0; i < Letters[0].Length; i++) {
-                        List<string> listList = new();
-                        for (int j = 0; j < Letters[i].Length; j++) {
-                            listList.Add(Letters[j][i]);
-                        }
-                        string listSingle = ListToSingle(listList);
-
-                        SearchForWords(listSingle, i, OrientationTypes.East);
-                        SearchForWords(Reverse(listSingle), i, OrientationTypes.West);
-
+                for (int i = 0; i < Letters[0].Length; i++) {
+                    List<string> listList = new();
+                    for (int j = 0; j < Letters[i].Length; j++) {
+                        listList.Add(Letters[j][i]);
                     }
+                    string listSingle = ListToSingle(listList);
 
+                    SearchForWords(listSingle, i, OrientationTypes.East, new WorkerThreading());
+                    SearchForWords(Reverse(listSingle), i, OrientationTypes.West, new WorkerThreading());
+
+                }
+            }
+            private static void Work2() {
                 // cheks horizontol from top to bottom otherwise known as south and the reverse
-                    for (int i = 0; i < Letters.Length; i++) {
-                        string listSingle = ArrayToSingle(Letters[i]);
+                for (int i = 0; i < Letters.Length; i++) {
+                    string listSingle = ArrayToSingle(Letters[i]);
 
-                        SearchForWords(listSingle, i, OrientationTypes.South);
-                        SearchForWords(Reverse(listSingle), i, OrientationTypes.North);
-                    }
-
+                    SearchForWords(listSingle, i, OrientationTypes.South, new WorkerThreading());
+                    SearchForWords(Reverse(listSingle), i, OrientationTypes.North, new WorkerThreading());
+                }
+            }
+            private static void Work3() {
                 // cheks diagonal from top right to bottom left otherwise known as southeast 
-                    for (int i = 0; i < Letters.Length; i++) {
-                        List<string> listList = new();
-                        for (int j = -Letters.Length; j < Letters[i].Length; j++) {
-                            if (j < 0 || i + j > Letters.Length - 1)
-                                continue;
-                            listList.Add(Letters[i + j][j]);
-                        }
-                        if (listList.Count < minWordLength) {
+                for (int i = 0; i < Letters.Length; i++) {
+                    List<string> listList = new();
+                    for (int j = -Letters.Length; j < Letters[i].Length; j++) {
+                        if (j < 0 || i + j > Letters.Length - 1)
                             continue;
-                        }
-                        string listSingle = ListToSingle(listList);
-
-                        SearchForWords(listSingle, i, OrientationTypes.SouthEast);
+                        listList.Add(Letters[i + j][j]);
                     }
+                    if (listList.Count < minWordLength) {
+                        continue;
+                    }
+                    string listSingle = ListToSingle(listList);
+
+                    SearchForWords(listSingle, i, OrientationTypes.SouthEast, new WorkerThreading());
+                }
+            }
+            private static void Work4() {
                 // cheks diagonal from bottom right to top left otherwise known as northwest
-                    for (int i = -Letters.Length; i < Letters.Length; i++) {
-                        List<string> listList = new();
-                        for (int j = 0; j < Letters.Length; j++) {
+                for (int i = -Letters.Length; i < Letters.Length; i++) {
+                    List<string> listList = new();
+                    for (int j = 0; j < Letters.Length; j++) {
 
-                            if (i + j < 0 || j + i > Letters.Length - 1) {
-                                continue;
-                            }
-
-                            listList.Add(Letters[j][j + i]);
-
-                        }
-                        if (listList.Count < minWordLength) {
+                        if (i + j < 0 || j + i > Letters.Length - 1) {
                             continue;
                         }
-                        string listSingle = ListToSingle(listList);
 
-                        SearchForWords(Reverse(listSingle), i, OrientationTypes.NorthWest);
+                        listList.Add(Letters[j][j + i]);
+
                     }
+                    if (listList.Count < minWordLength) {
+                        continue;
+                    }
+                    string listSingle = ListToSingle(listList);
+
+                    SearchForWords(Reverse(listSingle), i, OrientationTypes.NorthWest, new WorkerThreading());
+                }
+            }
+            private static void Work5() {
+                WorkerThreading worker = new WorkerThreading();
                 // cheks diagonal from top left to bottom right otherwise known as southwest
                 for (int i = 0; i < Letters.Length * 2; i++) {
                     List<string> listList = new();
@@ -230,12 +254,10 @@ namespace CrosswordFixer {
                     }
                     string listSingle = ListToSingle(listList);
 
-                    SearchForWords(listSingle, i, OrientationTypes.SouthWest);
-                    SearchForWords(Reverse(listSingle), i, OrientationTypes.NorthEast);
+                    SearchForWords(listSingle, i, OrientationTypes.SouthWest, worker);
+                    SearchForWords(Reverse(listSingle), i, OrientationTypes.NorthEast, worker);
                 }
-
-
-
+                worker.MarkAsGreen();
             }
             private static string Reverse(string strings) {
                 string newString = "";
@@ -259,33 +281,33 @@ namespace CrosswordFixer {
                 }
                 return single;
             }
-            private static void SearchForWords(string listSingle, int index, OrientationTypes orientation) {
+            private static void SearchForWords(string listSingle, int index, OrientationTypes orientation, WorkerThreading workerThreading) {
 
                 for (int i = 0; i < Construction.PotentielWords.Length; i++) {
                     if (listSingle.Contains(Construction.PotentielWords[i])) {
                         var (succes, from, to) = FindWord(Construction.PotentielWords[i], listSingle);
                         if (succes) {
                             Debug.WriteLine("Current word: " + PotentielWords[i]);
-                            MarkFoundWord(from, to, index, orientation);
+                            MarkFoundWord(from, to, index, orientation, workerThreading);
                         }
                     }
                 }
             }
-            private static void MarkFoundWord(int from, int to, int index, OrientationTypes orientation) {
+            private static void MarkFoundWord(int from, int to, int index, OrientationTypes orientation, WorkerThreading workThread) {
                 switch (orientation) {
                     case OrientationTypes.East:
                         for (int i = from; i < to; i++) {
-                            AddBranch(i, index);
+                            workThread.AddBranch(i, index);
                         }
                         break;
                     case OrientationTypes.SouthEast:
                         for (int i = from; i < to; i++) {
-                            AddBranch(index + i, i);
+                            workThread.AddBranch(index + i, i);
                         }
                         break;
                     case OrientationTypes.South:
                         for (int i = from; i < to; i++) {
-                            AddBranch(index, i);
+                            workThread.AddBranch(index, i);
                         }
                         break;
                     case OrientationTypes.SouthWest:
@@ -294,12 +316,12 @@ namespace CrosswordFixer {
                             to += index - Letters.Length + 1;
                         }
                         for (int i = from; i < to; i++) {
-                            AddBranch(i, index - i);
+                            workThread.AddBranch(i, index - i);
                         }
                         break;
                     case OrientationTypes.West:
                         for (int i = from; i < to; i++) {
-                            AddBranch(Letters.Length - 1 - i, index);
+                            workThread.AddBranch(Letters.Length - 1 - i, index);
                         }
                         break;
                     case OrientationTypes.NorthWest: {
@@ -308,9 +330,9 @@ namespace CrosswordFixer {
                             to = Letters.Length - save;
                             for (int i = from; i < to; i++) {
                                 if (index < 0)
-                                    AddBranch(i, j + index + from);
+                                    workThread.AddBranch(i, j + index + from);
                                 else
-                                    AddBranch(i - index, j + from);
+                                    workThread.AddBranch(i - index, j + from);
 
                                 j++;
                             }
@@ -318,7 +340,7 @@ namespace CrosswordFixer {
                         break;
                     case OrientationTypes.North:
                         for (int i = from; i < to; i++) {
-                            AddBranch(index, Letters.Length - 1 - i);
+                            workThread.AddBranch(index, Letters.Length - 1 - i);
                         }
                         break;
                     case OrientationTypes.NorthEast:
@@ -327,7 +349,7 @@ namespace CrosswordFixer {
                             to += index - Letters.Length + 1;
                         }
                         for (int i = from; i < to; i++) {
-                            AddBranch(index - i, i);
+                            workThread.AddBranch(index - i, i);
                         }
                         break;
                     default:
