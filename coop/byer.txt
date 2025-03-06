@@ -1,0 +1,2902 @@
+1 abild tønder 5 dliba
+2 adsbøl sønderborg 6 løbsda
+3 agerbæk varde 7 kæbrega
+4 agerskov tønder 8 voksrega
+5 agersted brønderslev 8 detsrega
+6 agger thisted 5 regga
+7 aggersund vesthimmerlands 9 dnusregga
+8 aidt favrskov 4 tdia
+9 albertslund 11 dnulstrebla
+10 albæk randers 5 kæbla
+11 algestrup køge 9 purtsegla
+12 alken skanderborg 5 nekla
+13 allerslev vordingborg 9 velsrella
+14 allerød 7 dørella
+15 allese odense 6 esella
+16 allinge-sandvig bornholm 15 givdnas-egnilla
+17 allingåbro norddjurs 10 orbågnilla
+18 almind kolding 6 dnimla
+19 als mariagerfjord 3 sla
+20 alslev varde 6 velsla
+21 alsønderup hillerød 10 purednøsla
+22 andkær vejle 6 rækdna
+23 andrup esbjerg 6 purdna
+24 annisse gribskov 7 essinna
+25 annisse nord gribskov 12 dron essinna
+26 ans silkeborg 3 sna
+27 ansager varde 7 regasna
+28 arden mariagerfjord 5 nedra
+29 arentsminde jammerbugt 11 ednimstnera
+30 arnakke holbæk 7 ekkanra
+31 arnborg herning 7 grobnra
+32 arnum haderslev 5 munra
+33 arrild tønder 6 dlirra
+34 asferg randers 6 grefsa
+35 askov vejen 5 voksa
+36 asnæs odsherred 5 sænsa
+37 asp struer 3 psa
+38 assens mariagerfjord 6 snessa
+39 assens 6 snessa
+40 assens assens 6 snessa
+41 assentoft randers 9 tfotnessa
+42 asserballe sønderborg 10 ellabressa
+43 astrup ringkøbing-skjern 6 purtsa
+44 astrup hjørring 6 purtsa
+45 astrup mariagerfjord 6 purtsa
+46 asaa brønderslev 4 aasa
+47 augustenborg sønderborg 12 grobnetsugua
+48 aulum herning 5 mulua
+49 auning norddjurs 6 gninua
+50 aunslev nyborg 7 velsnua
+51 avnbøl sønderborg 6 løbnva
+52 bagenkop langeland 8 poknegab
+53 balka bornholm 5 aklab
+54 balle syddjurs / norddjurs 5 ellab
+55 ballerup 8 purellab
+56 balling skive 7 gnillab
+57 bandholm lolland 8 mlohdnab
+58 barrit hedensted 6 tirrab
+59 beder-malling aarhus 13 gnillam-redeb
+60 bedsted thisted 7 detsdeb
+61 bedsted tønder 7 detsdeb
+62 bellinge odense 8 egnilleb
+63 bevtoft haderslev 7 tfotveb
+64 biersted jammerbugt 8 detsreib
+65 billum varde 6 mullib
+66 billund 7 dnullib
+67 billund billund 7 dnullib
+68 bindslev hjørring 8 velsdnib
+69 birgittelyst viborg 12 tsylettigrib
+70 birkelse jammerbugt 8 eslekrib
+71 birkende kerteminde 8 ednekrib
+72 birkerød rudersdal / allerød / furesø 8 dørekrib
+73 birkum odense 6 mukrib
+74 bislev aalborg 6 velsib
+75 bisserup slagelse 8 puressib
+76 bjergby hjørring 7 ybgrejb
+77 bjerge kalundborg 6 egrejb
+78 bjerre hedensted 6 errejb
+79 bjerreby svendborg 8 yberrejb
+80 bjerregrav viborg 10 vargerrejb
+81 bjerringbro viborg 11 orbgnirrejb
+82 bjæverskov køge 10 voksrevæjb
+83 blans sønderborg 5 snalb
+84 blegind skanderborg 7 dnigelb
+85 blenstrup rebild 9 purtsnelb
+86 blistrup gribskov 8 purtsilb
+87 blokhus jammerbugt 7 suhkolb
+88 blommenslyst odense 12 tsylsnemmolb
+89 blovstrød allerød 9 dørtsvolb
+90 blåhøj ikast-brande 6 jøhålb
+91 boeslunde slagelse 9 ednulseob
+92 boestofte stevns 9 etfotseob
+93 bogense nordfyns 7 esnegob
+94 bogø vordingborg 4 øgob
+95 bolderslev aabenraa 10 velsredlob
+96 bonderup jammerbugt 8 purednob
+97 borbjerg holstebro 8 grejbrob
+98 bording ikast-brande 7 gnidrob
+99 bornholm 8 mlohnrob
+100 borre vordingborg 5 errob
+101 borris ringkøbing-skjern 6 sirrob
+102 borum aarhus 5 murob
+103 borup køge 5 purob
+104 bovlstrup odder 9 purtslvob
+105 bovrup aabenraa 6 purvob
+106 bramming esbjerg 8 gnimmarb
+107 brande ikast-brande 6 ednarb
+108 branderslev lolland 11 velsrednarb
+109 branderup tønder 9 purednarb
+110 bredal vejle 6 laderb
+111 bredbjerg nordfyns / odense 9 grejbderb
+112 bredebro tønder 8 orbederb
+113 bredsten vejle 8 netsderb
+114 bredstrup fredericia 9 purtsderb
+115 brejning vejle 8 gninjerb
+116 bremdal struer 7 ladmerb
+117 brenderup middelfart 9 purednerb
+118 breum skive 5 muerb
+119 broager sønderborg 7 regaorb
+120 broby overdrev sorø 14 verdrevo yborb
+121 brobyværk faaborg-midtfyn 9 krævyborb
+122 brovst jammerbugt 6 tsvorb
+123 bruunshåb viborg 9 båhsnuurb
+124 brylle assens 6 ellyrb
+125 bryndum esbjerg 7 mudnyrb
+126 bryrup silkeborg 6 puryrb
+127 brædstrup horsens 9 purtsdærb
+128 brændekilde odense 11 edlikednærb
+129 brødeskov hillerød 9 voksedørb
+130 brøndby 7 ybdnørb
+131 brønderslev 11 velsrednørb
+132 brønderslev brønderslev 11 velsrednørb
+133 brøns tønder 5 snørb
+134 brørup vejen 6 purørb
+135 bur holstebro 3 rub
+136 buresø egedal 6 øserub
+137 bybjerg holbæk 7 grejbyb
+138 bylderup-bov aabenraa 12 vob-puredlyb
+139 byrum læsø 5 muryb
+140 bække vejen 5 ekkæb
+141 bækkekrog gribskov 9 gorkekkæb
+142 bækmarksbro lemvig 11 orbskramkæb
+143 bælum rebild 5 mulæb
+144 bøgeskov fredericia 8 voksegøb
+145 bøjden faaborg-midtfyn 6 nedjøb
+146 bønnerup strand norddjurs 15 dnarts purennøb
+147 børkop vejle 6 pokrøb
+148 bøvlingbjerg lemvig 12 grejbgnilvøb
+149 båring middelfart 6 gniråb
+150 bårse vordingborg 5 esråb
+151 christiansfeld kolding 14 dlefsnaitsirhc
+152 christiansø christiansø 11 øsnaitsirhc
+153 christiansø (ertholmene) 24 )enemlohtre( øsnaitsirhc
+154 dalby frederikssund 5 yblad
+155 dalby faxe 5 yblad
+156 dalby kerteminde 5 yblad
+157 dalby huse frederikssund 10 esuh yblad
+158 dalbyover randers 9 revoyblad
+159 dall villaby aalborg 12 yballiv llad
+160 dalmose slagelse 7 esomlad
+161 dannemare lolland 9 eramennad
+162 daugård hedensted 7 dråguad
+163 davinde odense 7 ednivad
+164 demstrup silkeborg 8 purtsmed
+165 dianalund sorø 9 dnulanaid
+166 diernæs faaborg-midtfyn 7 sænreid
+167 dragør 6 røgard
+168 dragør dragør 6 røgard
+169 dronninglund brønderslev 12 dnulgninnord
+170 durup skive 5 purud
+171 dybbøl sønderborg 6 løbbyd
+172 dybvad frederikshavn 6 davbyd
+173 døstrup mariagerfjord 7 purtsød
+174 døstrup tønder 7 purtsød
+175 ebberup assens 7 purebbe
+176 ebeltoft syddjurs 8 tfotlebe
+177 egebjerg horsens 8 grejbege
+178 egebjerg odsherred 8 grejbege
+179 egebæk esbjerg 6 kæbege
+180 egedal 6 ladege
+181 egernsund sønderborg 9 dnusnrege
+182 egeskov fredericia 7 voksege
+183 eggeslevmagle slagelse 13 elgamvelsegge
+184 egtved vejle 6 devtge
+185 ejby køge 4 ybje
+186 ejby lejre 4 ybje
+187 ejby middelfart 4 ybje
+188 ejlstrup odense 8 purtslje
+189 ejsing holstebro 6 gnisje
+190 ejstrupholm ikast-brande 11 mlohpurtsje
+191 elev aarhus 4 vele
+192 ellidshøj aalborg 9 jøhsdille
+193 elling frederikshavn 6 gnille
+194 ellinge nyborg 7 egnille
+195 ellinge lyng odsherred 12 gnyl egnille
+196 engesvang ikast-brande 9 gnavsegne
+197 englerup lejre 8 purelgne
+198 enø næstved 3 øne
+199 errindlev lolland 9 veldnirre
+200 erslev morsø 6 velsre
+201 esbjerg 7 grejbse
+202 esbjerg esbjerg 7 grejbse
+203 esbønderup gribskov 10 purednøbse
+204 eskebjerg kalundborg 9 grejbekse
+205 eskilstrup guldborgsund 10 purtslikse
+206 espe faaborg-midtfyn 4 epse
+207 esrum gribskov 5 murse
+208 everdrup næstved 8 purdreve
+209 evetofte halsnæs 8 etfoteve
+210 faldsled faaborg-midtfyn 8 delsdlaf
+211 fandrup vesthimmerlands 7 purdnaf
+212 fangel odense 6 legnaf
+213 fanø 4 ønaf
+214 farendløse ringsted 10 esøldneraf
+215 farre favrskov 5 erraf
+216 farre vejle 5 erraf
+217 farstrup aalborg 8 purtsraf
+218 farsø vesthimmerlands 5 øsraf
+219 farum furesø 5 muraf
+220 fasterholt herning 10 tlohretsaf
+221 favrskov 8 voksrvaf
+222 faxe 4 exaf
+223 faxe faxe 4 exaf
+224 faxe ladeplads faxe 14 sdalpedal exaf
+225 feldballe syddjurs 9 ellabdlef
+226 feldborg herning 8 grobdlef
+227 felsted aabenraa 7 detslef
+228 fensmark næstved 8 kramsnef
+229 ferritslev faaborg-midtfyn 10 velstirref
+230 ferslev frederikssund 7 velsref
+231 ferslev aalborg 7 velsref
+232 filskov billund 7 vokslif
+233 fjellerad aalborg 9 darellejf
+234 fjellerup norddjurs 9 purellejf
+235 fjellerup faaborg-midtfyn 9 purellejf
+236 fjelsted middelfart 8 detslejf
+237 fjelstervang ringkøbing-skjern 12 gnavretslejf
+238 fjelstrup haderslev 9 purtslejf
+239 fjenneslev sorø 10 velsennejf
+240 fjerritslev jammerbugt 11 velstirrejf
+241 fjællebro ringsted 9 orbellæjf
+242 flakkebjerg slagelse 11 grejbekkalf
+243 flauenskjold brønderslev 12 dlojksneualf
+244 flemløse assens 8 esølmelf
+245 fly viborg 3 ylf
+246 folby favrskov 5 yblof
+247 fole haderslev 4 elof
+248 forlev slagelse 6 velrof
+249 fraugde odense 7 edguarf
+250 fredensborg 11 grobsnederf
+251 fredensborg st.by fredensborg 17 yb.ts grobsnederf
+252 fredericia 10 aicirederf
+253 fredericia fredericia 10 aicirederf
+254 frederiks viborg 9 skirederf
+255 frederiksberg 13 grebskirederf
+256 frederiksberg sorø 13 grebskirederf
+257 frederikshavn 13 nvahskirederf
+258 frederikshavn frederikshavn 13 nvahskirederf
+259 frederikssund 13 dnusskirederf
+260 frederikssund frederikssund 13 dnusskirederf
+261 frederiksværk halsnæs 13 krævskirederf
+262 frejlev aalborg 7 veljerf
+263 frifelt tønder 7 tlefirf
+264 fruering skanderborg 8 gnireurf
+265 frølunde fed slagelse 12 def ednulørf
+266 frørup nyborg 6 purørf
+267 frøslev morsø 7 velsørf
+268 frøstrup thisted 8 purtsørf
+269 fuglebjerg næstved 10 grejbelguf
+270 funder kirkeby silkeborg 14 ybekrik rednuf
+271 furesø 6 øseruf
+272 fynshav sønderborg 7 vahsnyf
+273 føllenslev kalundborg 10 velsnelløf
+274 førslev faxe 7 velsrøf
+275 fåborg varde 6 grobåf
+276 faaborg faaborg-midtfyn 7 grobaaf
+277 faaborg-midtfyn 15 nyftdim-grobaaf
+278 fårevejle kirkeby odsherred 17 ybekrik eljeveråf
+279 fårevejle stationsby odsherred 20 ybsnoitats eljeveråf
+280 fårhus aabenraa 6 suhråf
+281 fårup randers 5 puråf
+282 fårvang silkeborg 7 gnavråf
+283 gadbjerg vejle 8 grejbdag
+284 gadevang hillerød 8 gnavedag
+285 gadstrup roskilde 8 purtsdag
+286 galten skanderborg 6 netlag
+287 gammel kalvehave vordingborg 16 evahevlak lemmag
+288 gammel rye skanderborg 10 eyr lemmag
+289 gammel tølløse holbæk 14 esølløt lemmag
+290 gandrup aalborg 7 purdnag
+291 ganløse egedal 7 esølnag
+292 gassum randers 6 mussag
+293 gedser guldborgsund 6 resdeg
+294 gedsted vesthimmerlands 7 detsdeg
+295 gedved horsens 6 devdeg
+296 gelsted næstved 7 detsleg
+297 gelsted middelfart / assens 7 detsleg
+298 genner aabenraa 6 renneg
+299 gentofte 8 etfotneg
+300 gerlev frederikssund 6 velreg
+301 gershøj lejre 7 jøhsreg
+302 gesten vejen 6 netseg
+303 gevninge lejre 8 egninveg
+304 gilleleje gribskov 9 ejelellig
+305 gimming randers 7 gnimmig
+306 gislev faaborg-midtfyn 6 velsig
+307 gislinge holbæk 8 egnilsig
+308 gistrup aalborg 7 purtsig
+309 give vejle 4 evig
+310 givskud vejle 7 duksvig
+311 gjerlev randers 7 velrejg
+312 gjern silkeborg 5 nrejg
+313 gjerrild norddjurs 8 dlirrejg
+314 gjesing norddjurs 7 gnisejg
+315 gjessø silkeborg 6 øssejg
+316 gjøl jammerbugt 4 løjg
+317 gladsaxe 8 exasdalg
+318 glamsbjerg assens 10 grejbsmalg
+319 glejbjerg vejen 9 grejbjelg
+320 glesborg norddjurs 8 grobselg
+321 glostrup 8 purtsolg
+322 glud hedensted 4 dulg
+323 gludsted ikast-brande 8 detsdulg
+324 glumsø næstved 6 øsmulg
+325 glyngøre skive 8 erøgnylg
+326 gram haderslev 4 marg
+327 grauballe silkeborg 9 ellabuarg
+328 gredstedbro esbjerg 11 orbdetsderg
+329 grejs vejle 5 sjerg
+330 grenaa norddjurs 6 aanerg
+331 greve 5 everg
+332 greve landsby greve 13 ybsdnal everg
+333 grevinge odsherred 8 egniverg
+334 grevinge lammefjord odsherred 19 drojfemmal egniverg
+335 gribskov 8 voksbirg
+336 grimstrup esbjerg 9 purtsmirg
+337 grindsted aalborg 9 detsdnirg
+338 grindsted billund 9 detsdnirg
+339 grumstrup horsens 9 purtsmurg
+340 grundfør favrskov 8 røfdnurg
+341 grædstrup horsens 9 purtsdærg
+342 grænge guldborgsund 6 egnærg
+343 græse frederikssund 5 esærg
+344 græse bakkeby frederikssund 13 ybekkab esærg
+345 græsted gribskov 7 detsærg
+346 grønbjerg ringkøbing-skjern 9 grejbnørg
+347 grønfeld syddjurs 8 dlefnørg
+348 grønnemose assens 10 esomennørg
+349 gråsten sønderborg 7 netsårg
+350 gudbjerg svendborg 8 grejbdug
+351 guderup sønderborg 7 puredug
+352 gudhjem bornholm 7 mejhdug
+353 gudme svendborg 5 emdug
+354 gudum lemvig 5 mudug
+355 gudumholm aalborg 9 mlohmudug
+356 guldager esbjerg 8 regadlug
+357 guldborg guldborgsund 8 grobdlug
+358 guldborgsund 12 dnusgrobdlug
+359 guldbæk syd rebild 11 dys kæbdlug
+360 gullestrup herning 10 purtsellug
+361 gundsølille roskilde 11 elliløsdnug
+362 gundsømagle roskilde 11 elgamøsdnug
+363 gurre helsingør 5 errug
+364 gylling odder 7 gnillyg
+365 gyrstinge ringsted 9 egnitsryg
+366 gærum frederikshavn 5 muræg
+367 gørding esbjerg 7 gnidrøg
+368 gørlev kalundborg 6 velrøg
+369 gørløse hillerød 7 esølrøg
+370 gøttrup jammerbugt 7 purttøg
+371 gårslev vejle 7 velsråg
+372 hadbjerg favrskov 8 grejbdah
+373 haderslev 9 velsredah
+374 haderslev haderslev 9 velsredah
+375 haderup herning 7 puredah
+376 hadsten favrskov 7 netsdah
+377 hadsund mariagerfjord 7 dnusdah
+378 hadsund syd mariagerfjord 11 dys dnusdah
+379 hagested holbæk 8 detsegah
+380 halbjerg frederikshavn 8 grejblah
+381 hald randers 4 dlah
+382 hald skive 4 dlah
+383 haldrup horsens 7 purdlah
+384 hallund brønderslev 7 dnullah
+385 hals aalborg 4 slah
+386 halsnæs 7 sænslah
+387 halvrimmen jammerbugt 10 nemmirvlah
+388 hammel favrskov 6 lemmah
+389 hammelev haderslev 8 velemmah
+390 hammershøj viborg 10 jøhsremmah
+391 hampen ikast-brande 6 nepmah
+392 handbjerg holstebro 9 grejbdnah
+393 handest mariagerfjord 7 tsednah
+394 hanstholm thisted 9 mlohtsnah
+395 harboøre lemvig 8 erøobrah
+396 harken hjørring 6 nekrah
+397 harlev aarhus 6 velrah
+398 harndrup middelfart 8 purdnrah
+399 harridslev randers 10 velsdirrah
+400 hasle bornholm 5 elsah
+401 haslev faxe 6 velsah
+402 haslund randers 7 dnulsah
+403 hasselø plantage guldborgsund 16 egatnalp ølessah
+404 hatting horsens 7 gnittah
+405 havbro vesthimmerlands 6 orbvah
+406 havdrup solrød / roskilde 7 purdvah
+407 haverslev rebild 9 velsrevah
+408 havndal randers 7 ladnvah
+409 havneby tønder 7 ybenvah
+410 havnebyen odsherred 9 neybenvah
+411 havnsø kalundborg 6 øsnvah
+412 havrebjerg slagelse 10 grejbervah
+413 hedehusene høje-taastrup 10 enesuhedeh
+414 heden faaborg-midtfyn 5 nedeh
+415 hedensted 9 detsnedeh
+416 hedensted hedensted 9 detsnedeh
+417 hee ringkøbing-skjern 3 eeh
+418 hejls kolding 5 sljeh
+419 hejnsvig billund 8 givsnjeh
+420 hejsager haderslev 8 regasjeh
+421 hellebæk helsingør 8 kæbelleh
+422 hellested stevns 9 detselleh
+423 hellevad aabenraa 8 davelleh
+424 helsinge gribskov 8 egnisleh
+425 helsingør 9 røgnisleh
+426 helsingør helsingør / fredensborg 9 røgnisleh
+427 helstrup randers 8 purtsleh
+428 hem skive 3 meh
+429 hemmet ringkøbing-skjern 6 temmeh
+430 henne st.by varde 11 yb.ts enneh
+431 herborg ringkøbing-skjern 7 grobreh
+432 herlev 6 velreh
+433 herlufmagle næstved 11 elgamfulreh
+434 herning 7 gninreh
+435 herning herning 7 gninreh
+436 herrestrup odsherred 10 purtserreh
+437 herringe faaborg-midtfyn 8 egnirreh
+438 herringløse roskilde 11 esølgnirreh
+439 herrup holstebro 6 purreh
+440 herskind skanderborg 8 dniksreh
+441 herslev lejre 7 velsreh
+442 herslev fredericia 7 velsreh
+443 hesselager svendborg 10 regalesseh
+444 hillerslev thisted 10 velsrellih
+445 hillerød 8 dørellih
+446 hillerød hillerød / fredensborg 8 dørellih
+447 hillested lolland 9 detsellih
+448 hinnerup favrskov 8 purennih
+449 hirtshals hjørring 9 slahstrih
+450 hjallerup brønderslev 9 purellajh
+451 hjarbæk viborg 7 kæbrajh
+452 hjarup kolding 6 purajh
+453 hjerm struer 5 mrejh
+454 hjordkær aabenraa 8 rækdrojh
+455 hjortshøj aarhus 9 jøhstrojh
+456 hjulby nyborg 6 yblujh
+457 hjørring 8 gnirrøjh
+458 hjørring hjørring 8 gnirrøjh
+459 hobro mariagerfjord 5 orboh
+460 hodsager herning 8 regasdoh
+461 holbæk norddjurs 6 kæbloh
+462 holbæk 6 kæbloh
+463 holbæk holbæk 6 kæbloh
+464 holbøl aabenraa 6 løbloh
+465 holeby lolland 6 ybeloh
+466 holløse gribskov 7 esølloh
+467 holløselund gribskov 11 dnulesølloh
+468 holm sønderborg 4 mloh
+469 holme olstrup næstved 13 purtslo emloh
+470 holmstrup odense 9 purtsmloh
+471 holstebro 9 orbetsloh
+472 holstebro holstebro 9 orbetsloh
+473 holsted vejen 7 detsloh
+474 holtug stevns 6 gutloh
+475 hoptrup haderslev 7 purtpoh
+476 horbelev guldborgsund 8 velebroh
+477 hornborg hedensted 8 grobnroh
+478 hornbæk-dronningmølle helsingør / gribskov 21 ellømgninnord-kæbnroh
+479 horne hjørring 5 enroh
+480 horne faaborg-midtfyn 5 enroh
+481 horne varde 5 enroh
+482 hornslet syddjurs 8 telsnroh
+483 hornsyld hedensted 8 dlysnroh
+484 hornum vesthimmerlands 6 munroh
+485 horreby guldborgsund 7 yberroh
+486 horsens 7 snesroh
+487 horsens horsens 7 snesroh
+488 horslunde lolland 9 ednulsroh
+489 hosby hedensted 5 ybsoh
+490 hostrupskov aabenraa 11 vokspurtsoh
+491 hou aalborg 3 uoh
+492 houlbjerg favrskov 9 grejbluoh
+493 hov odder 3 voh
+494 hovborg vejen 7 grobvoh
+495 hovedgård horsens 9 drågdevoh
+496 hoven ringkøbing-skjern 5 nevoh
+497 hovslund st.by aabenraa 14 yb.ts dnulsvoh
+498 humble langeland 6 elbmuh
+499 humlebæk fredensborg 8 kæbelmuh
+500 humlum struer 6 mulmuh
+501 hundborg thisted 8 grobdnuh
+502 hundelev hjørring 8 velednuh
+503 hunderup esbjerg 8 purednuh
+504 hundested halsnæs 9 detsednuh
+505 hundslev sønderborg 8 velsdnuh
+506 hundslund odder 9 dnulsdnuh
+507 hundstrup svendborg 9 purtsdnuh
+508 hune jammerbugt 4 enuh
+509 hunseby lolland 7 ybesnuh
+510 hurup thisted 5 puruh
+511 husum-ballum tønder 12 mullab-musuh
+512 hvalpsund vesthimmerlands 9 dnusplavh
+513 hvam mejeriby holstebro 13 ybirejem mavh
+514 hvam stationsby viborg 15 ybsnoitats mavh
+515 hvidbjerg struer 9 grejbdivh
+516 hvidbjerg skive 9 grejbdivh
+517 hvide sande ringkøbing-skjern 11 ednas edivh
+518 hvidovre 8 ervodivh
+519 hvilsom mariagerfjord 7 moslivh
+520 hvornum mariagerfjord 7 munrovh
+521 hvorslev favrskov 8 velsrovh
+522 hylke skanderborg 5 eklyh
+523 hyllinge næstved 8 egnillyh
+524 høgild herning 6 dligøh
+525 højby odsherred 5 ybjøh
+526 højer tønder 5 rejøh
+527 høje-taastrup 13 purtsaat-ejøh
+528 højmark ringkøbing-skjern 7 kramjøh
+529 højslev skive 7 velsjøh
+530 højslev st.by skive 13 yb.ts velsjøh
+531 høl vejle 3 løh
+532 høm ringsted 3 møh
+533 høng kalundborg 4 gnøh
+534 hønsinge lyng odsherred 13 gnyl egnisnøh
+535 hørby mariagerfjord 5 ybrøh
+536 hørby frederikshavn 5 ybrøh
+537 hørdum thisted 6 mudrøh
+538 hørning skanderborg 7 gninrøh
+539 hørning randers 7 gninrøh
+540 hørsholm 8 mlohsrøh
+541 hørsholm hørsholm / rudersdal / fredensborg 8 mlohsrøh
+542 høruphav sønderborg 8 vahpurøh
+543 hørve odsherred 5 evrøh
+544 høsterkøb rudersdal 9 bøkretsøh
+545 hårby skanderborg 5 ybråh
+546 haarby assens 6 ybraah
+547 hårlev stevns 6 velråh
+548 hårslev nordfyns 7 velsråh
+549 hårup aarhus 5 puråh
+550 håstrup faaborg-midtfyn 7 purtsåh
+551 idestrup guldborgsund 8 purtsedi
+552 idom holstebro 4 modi
+553 ikast ikast-brande 5 tsaki
+554 ikast-brande 12 ednarb-tsaki
+555 ilskov herning 6 voksli
+556 ingstrup jammerbugt 8 purtsgni
+557 isenvad ikast-brande 7 davnesi
+558 ishøj 5 jøhsi
+559 ishøj landsby ishøj 13 ybsdnal jøhsi
+560 jammerbugt 10 tgubremmaj
+561 janderup varde 8 purednaj
+562 javngyde skanderborg 8 edygnvaj
+563 jebjerg skive 7 grejbej
+564 jegerup haderslev 7 puregej
+565 jejsing tønder 7 gnisjej
+566 jelling vejle 7 gnillej
+567 jels vejen 4 slej
+568 jerlev vejle 6 velrej
+569 jernved esbjerg 7 devnrej
+570 jersie solrød 6 eisrej
+571 jerslev brønderslev 7 velsrej
+572 jerup frederikshavn 5 purej
+573 jordløse assens 8 esøldroj
+574 jordrup kolding 7 purdroj
+575 juelsminde hedensted 10 ednimsleuj
+576 jyderup holbæk 7 puredyj
+577 jyllinge roskilde 8 egnillyj
+578 jystrup ringsted 7 purtsyj
+579 jægerspris frederikssund 10 sirpsregæj
+580 jørlunde frederikssund 8 ednulrøj
+581 kagerup gribskov 7 puregak
+582 kaldred kalundborg 7 derdlak
+583 kalundborg 10 grobdnulak
+584 kalundborg kalundborg 10 grobdnulak
+585 kalvehave vordingborg 9 evahevlak
+586 kappendrup nordfyns 10 purdneppak
+587 karby morsø 5 ybrak
+588 karise faxe 6 esirak
+589 karlebo fredensborg 7 obelrak
+590 karrebæksminde næstved 14 ednimskæberrak
+591 karup viborg 5 purak
+592 kauslunde middelfart 9 ednulsuak
+593 kelstrup odsherred 8 purtslek
+594 kelstrup haderslev 8 purtslek
+595 kerteminde 10 ednimetrek
+596 kerteminde kerteminde 10 ednimetrek
+597 kertinge kerteminde 8 egnitrek
+598 ketting sønderborg 7 gnittek
+599 kettinge guldborgsund 8 egnittek
+600 kibæk herning 5 kæbik
+601 kildebrønde greve 11 ednørbedlik
+602 kilden frederikshavn 6 nedlik
+603 kirke eskilstrup holbæk 16 purtslikse ekrik
+604 kirke helsinge kalundborg 14 egnisleh ekrik
+605 kirke hvalsø lejre 12 øslavh ekrik
+606 kirke hyllinge lejre 14 egnillyh ekrik
+607 kirke hørup sønderborg 11 purøh ekrik
+608 kirke sonnerup lejre 14 purennos ekrik
+609 kirke stillinge slagelse 15 egnillits ekrik
+610 kirke såby lejre 10 ybås ekrik
+611 kirke værløse furesø 13 esølræv ekrik
+612 kirkeby svendborg 7 ybekrik
+613 kjeldbjerg viborg 10 grejbdlejk
+614 kjellerup silkeborg 9 purellejk
+615 klarskov vordingborg 8 voksralk
+616 klarup aalborg 6 puralk
+617 klejtrup viborg 8 purtjelk
+618 klemensker bornholm 10 reksnemelk
+619 klim jammerbugt 4 milk
+620 klinkby lemvig 7 ybknilk
+621 klint odsherred 5 tnilk
+622 kliplev aabenraa 7 velpilk
+623 klippinge stevns 9 egnippilk
+624 klitmøller thisted 10 rellømtilk
+625 klokkerholm brønderslev 11 mlohrekkolk
+626 kloster ringkøbing-skjern 7 retsolk
+627 klovborg ikast-brande 8 grobvolk
+628 knabstrup holbæk 9 purtsbank
+629 knebel syddjurs 6 lebenk
+630 knudby viborg 6 ybdunk
+631 koldby thisted 6 ybdlok
+632 kolding 7 gnidlok
+633 kolding kolding 7 gnidlok
+634 kolind syddjurs 6 dnilok
+635 kollemorten vejle 11 netromellok
+636 kollund aabenraa 7 dnullok
+637 kollund østerskov aabenraa 17 voksretsø dnullok
+638 kongerslev aalborg 10 velsregnok
+639 kongsmark strand slagelse 16 dnarts kramsgnok
+640 korinth faaborg-midtfyn 7 htnirok
+641 korning hedensted 7 gninrok
+642 korsør slagelse 6 røsrok
+643 kragelund silkeborg 9 dnulegark
+644 krarup faaborg-midtfyn 6 purark
+645 krunderup holstebro 9 purednurk
+646 kruså aabenraa 5 åsurk
+647 kulhuse frederikssund 7 esuhluk
+648 kundby holbæk 6 ybdnuk
+649 kvanløse holbæk 8 esølnavk
+650 kvissel frederikshavn 7 lessivk
+651 kvistgård helsingør 9 drågtsivk
+652 kvong varde 5 gnovk
+653 kvorning viborg 8 gninrovk
+654 kværkeby ringsted 8 ybekrævk
+655 kværndrup faaborg-midtfyn 9 purdnrævk
+656 kværs sønderborg 5 srævk
+657 kyndby frederikssund 6 ybdnyk
+658 kyndby huse frederikssund 11 esuh ybdnyk
+659 kyndeløse sydmark lejre 17 kramdys esølednyk
+660 kær sønderborg 3 ræk
+661 kærbøl esbjerg 6 løbræk
+662 københavn (hovedstadsområdet) [copenhagen] københavn / albertslund / ballerup / brøndby / frederiksberg / furesø / gentofte / gladsaxe / glostrup / greve strand / herlev / hvidovre / ishøj / lyngby-taarbæk / rødovre / rudersdal / tårnby / vallensbæk 42 ]negahnepoc[ )tedårmosdatsdevoh( nvahnebøk
+663 københavn [copenhagen] 22 ]negahnepoc[ nvahnebøk
+664 køge 4 egøk
+665 køge køge 4 egøk
+666 kølkær herning 6 rækløk
+667 kølvrå viborg 6 årvløk
+668 køng vordingborg 4 gnøk
+669 kås jammerbugt 3 såk
+670 lading favrskov 6 gnidal
+671 landerslev frederikssund 10 velsrednal
+672 landet svendborg 6 tednal
+673 langebæk vordingborg 8 kæbegnal
+674 langeland 9 dnalegnal
+675 langeskov kerteminde 9 voksegnal
+676 langesø helsingør 7 øsegnal
+677 langholt aalborg 8 tlohgnal
+678 langø lolland 5 øgnal
+679 langå randers 5 ågnal
+680 laurbjerg favrskov 9 grejbrual
+681 laven silkeborg / skanderborg 5 neval
+682 ledøje egedal 6 ejødel
+683 lejre 5 erjel
+684 lejre lejre 5 erjel
+685 lellinge køge 8 egnillel
+686 lem ringkøbing-skjern 3 mel
+687 lem skive 3 mel
+688 lem randers 3 mel
+689 lemming silkeborg 7 gnimmel
+690 lemvig 6 givmel
+691 lemvig lemvig 6 givmel
+692 lendum hjørring 6 mudnel
+693 lihme skive 5 emhil
+694 lille skensved køge / solrød 14 devsneks ellil
+695 lillerød allerød 8 dørellil
+696 lime syddjurs 4 emil
+697 linde struer 5 ednil
+698 lindelse langeland 8 eslednil
+699 lindenborg lejre 10 grobnednil
+700 lindknud vejen 8 dunkdnil
+701 lindved hedensted 7 devdnil
+702 lintrup vejen 7 purtnil
+703 linå silkeborg 4 ånil
+704 lisbjerg aarhus 8 grejbsil
+705 liseleje halsnæs 8 ejelesil
+706 listed bornholm 6 detsil
+707 lobbæk bornholm 6 kæbbol
+708 lohals langeland 6 slahol
+709 lolland 7 dnallol
+710 lomborg lemvig 7 grobmol
+711 lov næstved 3 vol
+712 lumby odense 5 ybmul
+713 lund horsens 4 dnul
+714 lundby vordingborg 6 ybdnul
+715 lundby svendborg 6 ybdnul
+716 lunde nordfyns 5 ednul
+717 lunde varde 5 ednul
+718 lundeborg svendborg 9 grobednul
+719 lunderskov kolding 10 voksrednul
+720 lustrup esbjerg 7 purtsul
+721 lyderslev stevns 9 velsredyl
+722 lyndby lejre 6 ybdnyl
+723 lyne ringkøbing-skjern 4 enyl
+724 lyngby norddjurs 6 ybgnyl
+725 lyngby-taarbæk 14 kæbraat-ybgnyl
+726 lynge allerød 5 egnyl
+727 lyngerup frederikssund 8 puregnyl
+728 lyngså frederikshavn 6 åsgnyl
+729 lyngå favrskov 5 ågnyl
+730 lysabild sønderborg 8 dlibasyl
+731 lystrup aarhus 7 purtsyl
+732 læsø 4 øsæl
+733 lødderup morsø 8 pureddøl
+734 løgstrup viborg 8 purtsgøl
+735 løgstør vesthimmerlands 7 røtsgøl
+736 løgten aarhus 6 netgøl
+737 løgumkloster tønder 12 retsolkmugøl
+738 løjt kirkeby aabenraa 12 ybekrik tjøl
+739 løkken hjørring 6 nekkøl
+740 lønborg ringkøbing-skjern 7 grobnøl
+741 lønstrup hjørring 8 purtsnøl
+742 lørslev hjørring 7 velsrøl
+743 løve kalundborg 4 evøl
+744 løvel viborg 5 levøl
+745 laanshøj furesø 8 jøhsnaal
+746 låsby skanderborg 5 ybsål
+747 magleby stevns 7 ybelgam
+748 mammen viborg 6 nemmam
+749 mariager mariagerfjord 8 regairam
+750 mariagerfjord 13 drojfregairam
+751 maribo lolland 6 obiram
+752 marielyst guldborgsund 9 tsyleiram
+753 markeslev (hørby) holbæk 17 )ybrøh( velsekram
+754 marslev kerteminde 7 velsram
+755 marstal ærø 7 latsram
+756 marstrup haderslev 8 purtsram
+757 mejlby randers 6 ybljem
+758 mejlby aarhus 6 ybljem
+759 melby halsnæs 5 yblem
+760 mellerup randers 8 purellem
+761 meløse hillerød 6 esølem
+762 menstrup næstved 8 purtsnem
+763 mern vordingborg 4 nrem
+764 mesinge kerteminde 7 egnisem
+765 middelfart 10 trafleddim
+766 middelfart middelfart 10 trafleddim
+767 millinge faaborg-midtfyn 8 egnillim
+768 mogenstrup holstebro 10 purtsnegom
+769 mogenstrup næstved 10 purtsnegom
+770 morsø 5 øsrom
+771 morud nordfyns 5 durom
+772 mosbjerg hjørring 8 grejbsom
+773 moseby odsherred 6 ybesom
+774 mou aalborg 3 uom
+775 muleby bornholm 6 ybelum
+776 mundelstrup aarhus 11 purtslednum
+777 munke bjergby sorø 13 ybgrejb eknum
+778 munkebo kerteminde 7 obeknum
+779 møgeltønder tønder 11 rednøtlegøm
+780 mølby haderslev 5 ybløm
+781 møldrup viborg 7 purdløm
+782 mønsted viborg 7 detsnøm
+783 mørke syddjurs 5 ekrøm
+784 mørkøv holbæk 6 vøkrøm
+785 måre nyborg 4 eråm
+786 mårslet aarhus 7 telsråm
+787 mårsø holbæk 5 øsråm
+788 mårum gribskov 5 muråm
+789 nagelsti guldborgsund 8 itslegan
+790 nakskov lolland 7 vokskan
+791 neder hvam silkeborg 10 mavh reden
+792 neder randlev odder 13 veldnar reden
+793 nederby skive 7 ybreden
+794 nexø bornholm 4 øxen
+795 nibe aalborg 4 ebin
+796 niløse sorø 6 esølin
+797 nim horsens 3 min
+798 nimtofte syddjurs 8 etfotmin
+799 nivå fredensborg 4 åvin
+800 no ringkøbing-skjern 2 on
+801 nordborg sønderborg 8 grobdron
+802 nordby samsø 6 ybdron
+803 nordby fanø 6 ybdron
+804 nordbyen guldborgsund 8 neybdron
+805 norddjurs 9 srujddron
+806 nordenskov varde 10 voksnedron
+807 nordfyn 7 nyfdron
+808 nordrup ringsted 7 purdron
+809 norring favrskov 7 gnirron
+810 nors thisted 4 sron
+811 norup mariagerfjord 5 puron
+812 nustrup haderslev 7 purtsun
+813 ny hagested holbæk 11 detsegah yn
+814 ny hammersholt hillerød 14 tlohsremmah yn
+815 ny harløse hillerød 10 esølrah yn
+816 ny højen vejle 8 nejøh yn
+817 ny nørup vejle 8 purøn yn
+818 ny skovsgård jammerbugt 12 drågsvoks yn
+819 nyborg 6 grobyn
+820 nyborg nyborg 6 grobyn
+821 nybøl sønderborg 5 løbyn
+822 nyker bornholm 5 rekyn
+823 nykøbing f guldborgsund 10 f gnibøkyn
+824 nykøbing m morsø 10 m gnibøkyn
+825 nykøbing s odsherred 10 s gnibøkyn
+826 nykøbing strandhuse guldborgsund 19 esuhdnarts gnibøkyn
+827 nylars bornholm 6 sralyn
+828 nymindegab varde 10 bagednimyn
+829 nymølle allerød 7 ellømyn
+830 nyrup sorø 5 puryn
+831 nyrup odsherred 5 puryn
+832 nyråd vordingborg 5 dåryn
+833 nysted guldborgsund 6 detsyn
+834 næsbjerg varde 8 grejbsæn
+835 næsbyhoved broby odense 16 yborb devohybsæn
+836 næstved 7 devtsæn
+837 næstved næstved 7 devtsæn
+838 nødebo hillerød 6 obedøn
+839 nørager norddjurs 7 regarøn
+840 nørager rebild 7 regarøn
+841 nørhalne jammerbugt 8 enlahrøn
+842 nørholm aalborg 7 mlohrøn
+843 nørre alslev guldborgsund 12 velsla errøn
+844 nørre asmindrup (svinninge) odsherred 27 )egninnivs( purdnimsa errøn
+845 nørre broby faaborg-midtfyn 11 yborb errøn
+846 nørre dalby køge 11 yblad errøn
+847 nørre felding holstebro 13 gnidlef errøn
+848 nørre galten favrskov 12 netlag errøn
+849 nørre herlev hillerød 12 velreh errøn
+850 nørre knudstrup silkeborg 15 purtsdunk errøn
+851 nørre kollund herning 13 dnullok errøn
+852 nørre kongerslev aalborg 16 velsregnok errøn
+853 nørre lyndelse faaborg-midtfyn 14 eslednyl errøn
+854 nørre nebel varde 11 leben errøn
+855 nørre nissum lemvig 12 mussin errøn
+856 nørre snede ikast-brande 11 edens errøn
+857 nørre søby faaborg-midtfyn 10 ybøs errøn
+858 nørre vejrup esbjerg 12 purjev errøn
+859 nørre vilstrup vejle 14 purtsliv errøn
+860 nørre vissing skanderborg 13 gnissiv errøn
+861 nørre vorupør thisted 13 røpurov errøn
+862 nørre aaby middelfart 10 ybaa errøn
+863 nørreballe lolland 10 ellaberrøn
+864 nørresundby aalborg 11 ybdnuserrøn
+865 nørup vejle 5 purøn
+866 nøvling aalborg 7 gnilvøn
+867 nårup assens 5 purån
+868 oddense skive 7 esneddo
+869 odder 5 reddo
+870 odder odder 5 reddo
+871 odense 6 esnedo
+872 odense odense 6 esnedo
+873 odsherred 9 derrehsdo
+874 oksby varde 5 ybsko
+875 oksbøl sønderborg 6 løbsko
+876 oksbøl varde 6 løbsko
+877 ollerup svendborg 7 purello
+878 ommel ærø 5 lemmo
+879 onsbjerg samsø 8 grejbsno
+880 ordrup strand odsherred 13 dnarts purdro
+881 orehoved guldborgsund 8 devohero
+882 ormslev aarhus 7 velsmro
+883 ortved ringsted 6 devtro
+884 osted lejre 5 detso
+885 otterup nordfyns 7 puretto
+886 oue mariagerfjord 3 euo
+887 oure svendborg 4 eruo
+888 outrup varde 6 purtuo
+889 over dråby strand frederikssund 17 dnarts ybård revo
+890 over holluf odense 11 fulloh revo
+891 over jerstal haderslev 12 latsrej revo
+892 overlade vesthimmerlands 8 edalrevo
+893 padborg aabenraa 7 grobdap
+894 pandrup jammerbugt 7 purdnap
+895 pedersker bornholm 9 reksredep
+896 pindstrup syddjurs 9 purtsdnip
+897 pjedsted fredericia 8 detsdejp
+898 poulstrup hjørring 9 purtsluop
+899 præstbro frederikshavn 8 orbtsærp
+900 præstø vordingborg 6 øtsærp
+901 pårup ikast-brande 5 puråp
+902 rakkeby hjørring 7 ybekkar
+903 ramløse gribskov 7 esølmar
+904 ramme lemvig 5 emmar
+905 ramsing skive 7 gnismar
+906 ramten norddjurs 6 netmar
+907 randbøldal vejle 10 ladløbdnar
+908 randers 7 srednar
+909 randers randers 7 srednar
+910 rantzausminde svendborg 13 ednimsuaztnar
+911 ranum vesthimmerlands 5 munar
+912 rask mølle hedensted 10 elløm ksar
+913 ravnkilde rebild 9 edliknvar
+914 ravnsbjerg esbjerg 10 grejbsnvar
+915 ravnshøj frederikshavn 8 jøhsnvar
+916 ravnsnæs rudersdal 8 sænsnvar
+917 ravnstrup viborg 9 purtsnvar
+918 ravsted aabenraa 7 detsvar
+919 rebild 6 dliber
+920 rebild rebild 6 dliber
+921 redsted morsø 7 detsder
+922 reerslev høje-taastrup 8 velsreer
+923 reersø kalundborg 6 øsreer
+924 refsvindinge nyborg 12 egnidnivsfer
+925 regstrup holbæk 8 purtsger
+926 rejsby tønder 6 ybsjer
+927 rens aabenraa 4 sner
+928 resenstad struer 9 datsneser
+929 revninge kerteminde 8 egninver
+930 ribe esbjerg 4 ebir
+931 rindsholm viborg 9 mlohsdnir
+932 ringe faaborg-midtfyn 5 egnir
+933 ringkøbing ringkøbing-skjern 10 gnibøkgnir
+934 ringkøbing-skjern 17 nrejks-gnibøkgnir
+935 ringsted 8 detsgnir
+936 ringsted ringsted 8 detsgnir
+937 rinkenæs sønderborg 8 sæneknir
+938 roager esbjerg 6 regaor
+939 rodskov syddjurs 7 voksdor
+940 rold mariagerfjord 4 dlor
+941 rolsted faaborg-midtfyn 7 detslor
+942 roskilde 8 edliksor
+943 roskilde roskilde 8 edliksor
+944 roslev skive 6 velsor
+945 rostrup mariagerfjord 7 purtsor
+946 rude slagelse 4 edur
+947 rudersdal 9 ladsredur
+948 rudkøbing langeland 9 gnibøkdur
+949 ruds vedby sorø 10 ybdev sdur
+950 ry skanderborg 2 yr
+951 ryde holstebro 4 edyr
+952 rynkeby kerteminde 7 ybeknyr
+953 ryomgård syddjurs 8 drågmoyr
+954 ryslinge faaborg-midtfyn 8 egnilsyr
+955 ræhr thisted 4 rhær
+956 rækker mølle ringkøbing-skjern 12 elløm rekkær
+957 rødby lolland 5 ybdør
+958 rødbyhavn lolland 9 nvahybdør
+959 rødding viborg 7 gniddør
+960 rødding skive 7 gniddør
+961 rødding vejen 7 gniddør
+962 rødekro aabenraa 7 orkedør
+963 rødkærsbro viborg 10 orbsrækdør
+964 rødovre 7 ervodør
+965 rødvig stevns 6 givdør
+966 røjle middelfart 5 eljør
+967 rønbjerg skive 8 grejbnør
+968 rønde syddjurs 5 ednør
+969 rønne bornholm 5 ennør
+970 rønnebæk næstved 8 kæbennør
+971 rønnede faxe 7 edennør
+972 rønninge kerteminde 8 egninnør
+973 rørby kalundborg 5 ybrør
+974 rørbæk rebild 6 kæbrør
+975 rørvig odsherred 6 givrør
+976 rågeleje gribskov 8 ejelegår
+977 rårup hedensted 5 purår
+978 råsted randers 6 detsår
+979 sabro aarhus 5 orbas
+980 sahl viborg 4 lhas
+981 saksild odder 7 dliskas
+982 sakskøbing guldborgsund 10 gnibøkskas
+983 sall favrskov 4 llas
+984 salten silkeborg 6 netlas
+985 saltum jammerbugt 6 mutlas
+986 samsø 5 øsmas
+987 sandby lolland 6 ybdnas
+988 sandved næstved 7 devdnas
+989 sankt klemens odense 13 snemelk tknas
+990 saunte (stenstrup) helsingør 18 )purtsnets( etnuas
+991 sebbersund aalborg 10 dnusrebbes
+992 seden strand odense 12 dnarts nedes
+993 sejerslev morsø 9 velsrejes
+994 sejet horsens 5 tejes
+995 sejling silkeborg 7 gniljes
+996 sejs-svejbæk (svejbæk) silkeborg 22 )kæbjevs( kæbjevs-sjes
+997 selde skive 5 edles
+998 selling favrskov 7 gnilles
+999 sengeløse høje-taastrup 9 esølegnes
+1000 sennels thisted 7 slennes
+1001 serritslev brønderslev 10 velstirres
+1002 serup silkeborg 5 pures
+1003 sevel holstebro 5 leves
+1004 sig varde 3 gis
+1005 sigerslev stevns 9 velsregis
+1006 silkeborg 9 grobeklis
+1007 silkeborg silkeborg 9 grobeklis
+1008 simested vesthimmerlands 8 detsemis
+1009 simmelkær herning 9 ræklemmis
+1010 sindal hjørring 6 ladnis
+1011 sinding silkeborg 7 gnidnis
+1012 sinding herning 7 gnidnis
+1013 sjelle skanderborg 6 ellejs
+1014 sjølund kolding 7 dnuløjs
+1015 sjørring thisted 8 gnirrøjs
+1016 sjørslev silkeborg 8 velsrøjs
+1017 sjørup viborg 6 purøjs
+1018 skads esbjerg 5 sdaks
+1019 skagen frederikshavn 6 negaks
+1020 skalbjerg assens 9 grejblaks
+1021 skallebølle assens / odense 11 elløbellaks
+1022 skals viborg 5 slaks
+1023 skamby nordfyns 6 ybmaks
+1024 skanderborg 11 grobrednaks
+1025 skanderborg skanderborg 11 grobrednaks
+1026 skanderup kolding 9 purednaks
+1027 skarrild herning 8 dlirraks
+1028 skave holstebro 5 evaks
+1029 skelby næstved 6 ybleks
+1030 skelde sønderborg 6 edleks
+1031 skelhøje viborg 8 ejøhleks
+1032 skellerup nyborg 9 purelleks
+1033 skelund mariagerfjord 7 dnuleks
+1034 skibbild herning 8 dlibbiks
+1035 skibby frederikssund 6 ybbiks
+1036 skibet vejle 6 tebiks
+1037 skibinge vordingborg 8 egnibiks
+1038 skive 5 eviks
+1039 skive skive 5 eviks
+1040 skjern ringkøbing-skjern 6 nrejks
+1041 skjød favrskov 5 døjks
+1042 skjørring skanderborg 9 gnirrøjks
+1043 skodborg vejen 8 grobdoks
+1044 skodsborg rudersdal 9 grobsdoks
+1045 skovby sønderborg 6 ybvoks
+1046 skovlund varde 8 dnulvoks
+1047 skovsgård jammerbugt 9 drågsvoks
+1048 skraverup næstved 9 purevarks
+1049 skrækkenborg kerteminde 12 grobnekkærks
+1050 skuldelev frederikssund 9 veledluks
+1051 skægkær silkeborg 7 rækgæks
+1052 skælskør slagelse 8 røkslæks
+1053 skærbæk fredericia 7 kæbræks
+1054 skærbæk tønder 7 kæbræks
+1055 skærup vejle 6 puræks
+1056 skævinge hillerød 8 egnivæks
+1057 skørping rebild 8 gniprøks
+1058 skårup svendborg 6 puråks
+1059 slagelse 8 eslegals
+1060 slagelse slagelse 8 eslegals
+1061 slagslunde egedal 10 ednulsgals
+1062 slangerup frederikssund 9 puregnals
+1063 slimminge køge 9 egnimmils
+1064 slots bjergby slagelse 13 ybgrejb stols
+1065 smidstrup gribskov 9 purtsdims
+1066 smidstrup vejle 9 purtsdims
+1067 smørumnedre egedal / ballerup / furesø 11 erdenmurøms
+1068 snaptun hedensted 7 nutpans
+1069 snave assens 5 evans
+1070 snedsted thisted 8 detsdens
+1071 snertinge kalundborg 9 egnitrens
+1072 sneslev ringsted 7 velsens
+1073 snogebæk bornholm 8 kæbegons
+1074 snoldelev roskilde 9 veledlons
+1075 snøde langeland 5 edøns
+1076 solbjerg aarhus 8 grejblos
+1077 solrød 6 dørlos
+1078 solrød solrød 6 dørlos
+1079 solrød strand solrød 13 dnarts dørlos
+1080 sommersted haderslev 10 detsremmos
+1081 sorring silkeborg 7 gnirros
+1082 sorø 4 øros
+1083 sorø sorø 4 øros
+1084 spangsbro kalundborg 9 orbsgnaps
+1085 sparkær viborg 7 rækraps
+1086 spentrup randers 8 purtneps
+1087 spjald ringkøbing-skjern 6 dlajps
+1088 spodsbjerg langeland 10 grejbsdops
+1089 spørring aarhus 8 gnirrøps
+1090 staby holstebro 5 ybats
+1091 stae aalborg 4 eats
+1092 stakroge herning 8 egorkats
+1093 starup haderslev 6 purats
+1094 stauning ringkøbing-skjern 8 gninuats
+1095 stege vordingborg 5 egets
+1096 stenderup hedensted 9 purednets
+1097 stenderup billund 9 purednets
+1098 stenlille sorø 9 ellilnets
+1099 stenstrup svendborg 9 purtsnets
+1100 stensved vordingborg 8 devsnets
+1101 stenum brønderslev 6 munets
+1102 stenvad norddjurs 7 davnets
+1103 stepping kolding 8 gnippets
+1104 stevning sønderborg 8 gninvets
+1105 stevns 6 snvets
+1106 stevnstrup randers 10 purtsnvets
+1107 stigs bjergby holbæk 13 ybgrejb sgits
+1108 stillinge strand slagelse 16 dnarts egnillits
+1109 stjær skanderborg 5 ræjts
+1110 stoholm viborg 7 mlohots
+1111 stokkemarke lolland 11 ekramekkots
+1112 store andst vejen 11 tsdna erots
+1113 store damme vordingborg 11 emmad erots
+1114 store darum esbjerg 11 murad erots
+1115 store fuglede stationsby kalundborg 24 ybsnoitats edelguf erots
+1116 store heddinge stevns 14 egniddeh erots
+1117 store lyngby hillerød 12 ybgnyl erots
+1118 store merløse holbæk 13 esølrem erots
+1119 store rørbæk frederikssund 12 kæbrør erots
+1120 store spjellerup faxe 16 purellejps erots
+1121 store valby roskilde 11 yblav erots
+1122 storring skanderborg 8 gnirrots
+1123 storvorde aalborg 9 edrovrots
+1124 stouby hedensted 6 ybuots
+1125 strand esbønderup gribskov 17 purednøbse dnarts
+1126 strandby vesthimmerlands 8 ybdnarts
+1127 strandby frederikshavn 8 ybdnarts
+1128 strandhuse odsherred 10 esuhdnarts
+1129 strib middelfart 5 birts
+1130 struer 6 reurts
+1131 struer struer 6 reurts
+1132 strøby stevns 6 ybørts
+1133 strøby egede stevns 12 edege ybørts
+1134 stubbekøbing guldborgsund 12 gnibøkebbuts
+1135 stubbæk aabenraa 7 kæbbuts
+1136 studsgård herning 9 drågsduts
+1137 studstrup aarhus 9 purtsduts
+1138 styding haderslev 7 gnidyts
+1139 støvring rebild 8 gnirvøts
+1140 suldrup rebild 7 purdlus
+1141 sulsted aalborg 7 detslus
+1142 sundby thisted 6 ybdnus
+1143 sundby morsø 6 ybdnus
+1144 sundby guldborgsund 6 ybdnus
+1145 sunds herning 5 sdnus
+1146 svallerup kalundborg 9 purellavs
+1147 svaneke bornholm 7 ekenavs
+1148 svanninge faaborg-midtfyn 9 egninnavs
+1149 svebølle kalundborg 8 elløbevs
+1150 svendborg 9 grobdnevs
+1151 svendborg svendborg 9 grobdnevs
+1152 svenstrup favrskov 9 purtsnevs
+1153 svenstrup aalborg 9 purtsnevs
+1154 svenstrup slagelse 9 purtsnevs
+1155 svenstrup sønderborg 9 purtsnevs
+1156 svindinge nyborg 9 egnidnivs
+1157 svinninge holbæk 9 egninnivs
+1158 svogerslev roskilde 10 velsregovs
+1159 syddjurs 8 srujddys
+1160 systofte skovby guldborgsund 15 ybvoks etfotsys
+1161 syvsten frederikshavn 7 netsvys
+1162 sæby frederikshavn 4 ybæs
+1163 sæby lejre 4 ybæs
+1164 sæby kalundborg 4 ybæs
+1165 særslev nordfyns 7 velsræs
+1166 søborg gribskov 6 grobøs
+1167 søby syddjurs 4 ybøs
+1168 søby ærø 4 ybøs
+1169 søften favrskov 6 netføs
+1170 søgård aabenraa 6 drågøs
+1171 søllested lolland 9 detselløs
+1172 søllinge faaborg-midtfyn 8 egnilløs
+1173 sønder bjert kolding 12 trejb rednøs
+1174 sønder felding herning 14 gnidlef rednøs
+1175 sønder hygum vejen 12 mugyh rednøs
+1176 sønder jernløse holbæk 15 esølnrej rednøs
+1177 sønder nissum holstebro 13 mussin rednøs
+1178 sønder omme billund 11 emmo rednøs
+1179 sønder onsild mariagerfjord 13 dlisno rednøs
+1180 sønder onsild st.by mariagerfjord 19 yb.ts dlisno rednøs
+1181 sønder rind viborg 11 dnir rednøs
+1182 sønder rubjerg hjørring 14 grejbur rednøs
+1183 sønder stenderup kolding 16 purednets rednøs
+1184 sønder vedby skovhuse guldborgsund 21 esuhvoks ybdev rednøs
+1185 sønder vilstrup haderslev 15 purtsliv rednøs
+1186 sønder vissing horsens 14 gnissiv rednøs
+1187 sønderborg 10 grobrednøs
+1188 sønderborg sønderborg 10 grobrednøs
+1189 sønderby frederikssund 8 ybrednøs
+1190 sønderbæk randers 9 kæbrednøs
+1191 sønderho fanø 8 ohrednøs
+1192 sønderholm aalborg 10 mlohrednøs
+1193 søndersø nordfyns 8 øsrednøs
+1194 sønderup rebild 8 purednøs
+1195 sønderup slagelse 8 purednøs
+1196 sørbymagle slagelse 10 elgamybrøs
+1197 sørup fredensborg 5 purøs
+1198 sørup rebild 5 purøs
+1199 sørvad herning 6 davrøs
+1200 søstrup holbæk 7 purtsøs
+1201 søsum egedal 5 musøs
+1202 søvang dragør 6 gnavøs
+1203 søvind horsens 6 dnivøs
+1204 tandslet sønderborg 8 telsdnat
+1205 tangbjerg egedal 9 grejbgnat
+1206 tange viborg 5 egnat
+1207 tapdrup viborg 7 purdpat
+1208 tappernøje næstved 10 ejønreppat
+1209 taps kolding 4 spat
+1210 tarm ringkøbing-skjern 4 mrat
+1211 tarp esbjerg 4 prat
+1212 tarup faaborg-midtfyn 5 purat
+1213 taulov fredericia 6 voluat
+1214 tebstrup skanderborg 8 purtsbet
+1215 teestrup faxe 8 purtseet
+1216 tejn bornholm 4 njet
+1217 terndrup rebild 8 purdnret
+1218 terslev faxe 7 velsret
+1219 tersløse sorø 8 esølsret
+1220 them silkeborg 4 meht
+1221 thisted 7 detsiht
+1222 thisted thisted 7 detsiht
+1223 thorning silkeborg 8 gninroht
+1224 thorsager syddjurs 9 regasroht
+1225 thorshøj frederikshavn 8 jøhsroht
+1226 thorsminde holstebro 10 ednimsroht
+1227 thorsø favrskov 6 øsroht
+1228 thurø svendborg 5 øruht
+1229 thyborøn lemvig 8 nørobyht
+1230 thyregod vejle 8 dogeryht
+1231 tikøb helsingør 5 bøkit
+1232 tim ringkøbing-skjern 3 mit
+1233 timring herning 7 gnirmit
+1234 tinghøj varde 7 jøhgnit
+1235 tinglev aabenraa 7 velgnit
+1236 tingsted guldborgsund 8 detsgnit
+1237 tirstrup syddjurs 8 purtsrit
+1238 tise brønderslev 4 esit
+1239 tistrup varde 7 purtsit
+1240 tisvilde gribskov 8 edlivsit
+1241 tjæreborg esbjerg 9 groberæjt
+1242 todbjerg aarhus 8 grejbdot
+1243 tofterup varde 8 puretfot
+1244 toftlund tønder 8 dnultfot
+1245 toksværd næstved 8 drævskot
+1246 tolne hjørring 5 enlot
+1247 tommerup assens 8 puremmot
+1248 tommerup st.by assens 14 yb.ts puremmot
+1249 toreby guldborgsund 6 yberot
+1250 torkilstrup lejre 11 purtslikrot
+1251 tornby hjørring 6 ybnrot
+1252 tornemark næstved 9 kramenrot
+1253 torrild odder 7 dlirrot
+1254 torslunde ishøj 9 ednulsrot
+1255 torup halsnæs 5 purot
+1256 tranebjerg samsø 10 grejbenart
+1257 tranum jammerbugt 6 munart
+1258 trelde-østerby fredericia 14 ybretsø-edlert
+1259 trige aarhus 5 egirt
+1260 troense svendborg 7 esneort
+1261 troldhede ringkøbing-skjern 9 edehdlort
+1262 trustrup norddjurs 8 purtsurt
+1263 træden horsens 6 nedært
+1264 tullebølle langeland 10 elløbellut
+1265 tulstrup hillerød 8 purtslut
+1266 tulstrup ikast-brande 8 purtslut
+1267 tune greve 4 enut
+1268 turup assens 5 purut
+1269 tuse holbæk 4 esut
+1270 tved syddjurs 4 devt
+1271 tvede randers 5 edevt
+1272 tversted hjørring 8 detsrevt
+1273 tvingstrup horsens 10 purtsgnivt
+1274 tvis holstebro 4 sivt
+1275 tybjerglille bakker næstved 19 rekkab ellilgrejbyt
+1276 tylstrup aalborg 8 purtslyt
+1277 tødsø morsø 5 øsdøt
+1278 tølløse holbæk 7 esølløt
+1279 tønder 6 rednøt
+1280 tønder tønder 6 rednøt
+1281 tørring hedensted 7 gnirrøt
+1282 tørsbøl sønderborg 7 løbsrøt
+1283 tånum randers 5 munåt
+1284 tårnby 6 ybnråt
+1285 tårs hjørring 4 sråt
+1286 tårup nyborg 5 puråt
+1287 taastrup høje-taastrup 8 purtsaat
+1288 ubby kalundborg 4 ybbu
+1289 udby holbæk 4 ybdu
+1290 udbyhøj vasehuse randers 16 esuhesav jøhybdu
+1291 udsholt strand gribskov 14 dnarts tlohsdu
+1292 uge aabenraa 3 egu
+1293 ugelbølle syddjurs 9 elløblegu
+1294 ugerløse holbæk 8 esølregu
+1295 ugerløse kalundborg 8 esølregu
+1296 uggelhuse randers 9 esuhleggu
+1297 uggerby hjørring 7 ybreggu
+1298 uggerhalne aalborg 10 enlahreggu
+1299 uggerslev nordfyns 9 velsreggu
+1300 uglev struer 5 velgu
+1301 uhre ikast-brande 4 erhu
+1302 ulbjerg viborg 7 grejblu
+1303 ulbølle svendborg 7 elløblu
+1304 uldum hedensted 5 mudlu
+1305 ulfborg holstebro 7 grobflu
+1306 ullerslev nyborg 9 velsrellu
+1307 ullerup sønderborg 7 purellu
+1308 ullits vesthimmerlands 6 stillu
+1309 ulsted aalborg 6 detslu
+1310 ulstrup favrskov 7 purtslu
+1311 ulstrup kalundborg 7 purtslu
+1312 undløse holbæk 7 esøldnu
+1313 utterslev lolland 9 velsrettu
+1314 uvelse hillerød 6 eslevu
+1315 vadum aalborg 5 mudav
+1316 vallensbæk 10 kæbsnellav
+1317 vallensbæk landsby vallensbæk 18 ybsdnal kæbsnellav
+1318 vallensved næstved 10 devsnellav
+1319 valløby stevns 7 ybøllav
+1320 valsgård mariagerfjord 8 drågslav
+1321 valsted aalborg 7 detslav
+1322 vamdrup kolding 7 purdmav
+1323 vammen viborg 6 nemmav
+1324 vandel vejle 6 lednav
+1325 vantinge faaborg-midtfyn 8 egnitnav
+1326 varde 5 edrav
+1327 varde varde 5 edrav
+1328 varnæs aabenraa 6 sænrav
+1329 vebbestrup mariagerfjord 10 purtsebbev
+1330 vedde sorø 5 eddev
+1331 veddelev roskilde 8 veleddev
+1332 veddum mariagerfjord 6 muddev
+1333 vedskølle køge / stevns 9 elløksdev
+1334 vedsted haderslev 7 detsdev
+1335 veflinge nordfyns 8 egnilfev
+1336 vegger vesthimmerlands 6 reggev
+1337 vejby gribskov 5 ybjev
+1338 vejby strand gribskov 12 dnarts ybjev
+1339 vejen 5 nejev
+1340 vejen vejen 5 nejev
+1341 vejlby middelfart 6 ybljev
+1342 vejle 5 eljev
+1343 vejle vejle 5 eljev
+1344 vejle faaborg-midtfyn 5 eljev
+1345 vejrumbro viborg 9 orbmurjev
+1346 vejstrup svendborg 8 purtsjev
+1347 veksø egedal 5 øskev
+1348 vellerup frederikssund 8 purellev
+1349 vellev favrskov 6 vellev
+1350 velling ringkøbing-skjern 7 gnillev
+1351 vemb holstebro 4 bmev
+1352 vemmedrup køge 9 purdemmev
+1353 venslev frederikssund 7 velsnev
+1354 verninge assens 8 egninrev
+1355 vesløs thisted 6 sølsev
+1356 vestbjerg aalborg 9 grejbtsev
+1357 vester hassing aalborg 14 gnissah retsev
+1358 vester hjermitslev jammerbugt 18 velstimrejh retsev
+1359 vester hornum vesthimmerlands 13 munroh retsev
+1360 vester hæsinge faaborg-midtfyn 14 egnisæh retsev
+1361 vester nebel kolding 12 leben retsev
+1362 vester nebel esbjerg 12 leben retsev
+1363 vester skerninge svendborg 16 egninreks retsev
+1364 vester sottrup sønderborg 14 purttos retsev
+1365 vester såby lejre 11 ybås retsev
+1366 vester torup jammerbugt 12 purot retsev
+1367 vester vedsted esbjerg 14 detsdev retsev
+1368 vester åby faaborg-midtfyn 10 ybå retsev
+1369 vestermarie bornholm 11 eiramretsev
+1370 vestervig thisted 9 givretsev
+1371 vesterø havn læsø 12 nvah øretsev
+1372 vesthimmerland 14 dnalremmihtsev
+1373 vetterslev ringsted 10 velsrettev
+1374 viborg 6 grobiv
+1375 viborg viborg 6 grobiv
+1376 viby roskilde 4 ybiv
+1377 videbæk ringkøbing-skjern 7 kæbediv
+1378 vidstrup hjørring 8 purtsdiv
+1379 vig odsherred 3 giv
+1380 vigersted ringsted 9 detsregiv
+1381 vildbjerg herning 9 grejbdliv
+1382 vils morsø 4 sliv
+1383 vilslev esbjerg 7 velsliv
+1384 vilsted vesthimmerlands 7 detsliv
+1385 vilsund vest thisted 12 tsev dnusliv
+1386 vind herning 4 dniv
+1387 vindblæs vesthimmerlands 8 sælbdniv
+1388 vindeby svendborg 7 ybedniv
+1389 vinderslev silkeborg 10 velsredniv
+1390 vinderup holstebro 8 puredniv
+1391 vinderød halsnæs 8 døredniv
+1392 vindinge roskilde 8 egnidniv
+1393 vindinge nyborg 8 egnidniv
+1394 vinkel viborg 6 lekniv
+1395 vipperød holbæk 8 døreppiv
+1396 virklund silkeborg 8 dnulkriv
+1397 virring skanderborg 7 gnirriv
+1398 visborg mariagerfjord 7 grobsiv
+1399 visby tønder 5 ybsiv
+1400 vissenbjerg assens 11 grejbnessiv
+1401 vissing favrskov 7 gnissiv
+1402 vitten favrskov 6 nettiv
+1403 viuf kolding 4 fuiv
+1404 vivild norddjurs 6 dliviv
+1405 vodskov aalborg 7 voksdov
+1406 vodstrup morsø 8 purtsdov
+1407 voel silkeborg 4 leov
+1408 voerladegård skanderborg 12 drågedalreov
+1409 voerså frederikshavn 6 åsreov
+1410 voervadsbro horsens 11 orbsdavreov
+1411 vognsild vesthimmerlands 8 dlisngov
+1412 vojens haderslev 6 snejov
+1413 voldby norddjurs 6 ybdlov
+1414 voldby favrskov 6 ybdlov
+1415 voldum favrskov 6 mudlov
+1416 vonge vejle 5 egnov
+1417 vor frue roskilde 8 eurf rov
+1418 vorbasse billund 8 essabrov
+1419 vordingborg 11 grobgnidrov
+1420 vordingborg vordingborg 11 grobgnidrov
+1421 vorgod-barde ringkøbing-skjern 12 edrab-dogrov
+1422 vrensted hjørring 8 detsnerv
+1423 vridsløsemagle høje-taastrup 14 elgamesølsdirv
+1424 vridsted viborg 8 detsdirv
+1425 vrinners syddjurs 8 srennirv
+1426 vrå hjørring 3 årv
+1427 væggerløse guldborgsund 10 esølreggæv
+1428 værløse furesø 7 esølræv
+1429 værum randers 5 muræv
+1430 vålse guldborgsund 5 eslåv
+1431 vårst aalborg 5 tsråv
+1432 ydby thisted 4 ybdy
+1433 yderby lyng odsherred 11 gnyl ybredy
+1434 yding horsens 5 gnidy
+1435 ærø 3 øræ
+1436 ærøskøbing ærø 10 gnibøksøræ
+1437 ødis kolding 4 sidø
+1438 ødis-bramdrup kolding 13 purdmarb-sidø
+1439 ødsted vejle 6 detsdø
+1440 ødum favrskov 4 mudø
+1441 ølgod varde 5 doglø
+1442 ølholm hedensted 6 mlohlø
+1443 ølsted halsnæs 6 detslø
+1444 ølsted hedensted 6 detslø
+1445 ølsted strandhuse halsnæs 17 esuhdnarts detslø
+1446 ølsted sydstrand halsnæs 16 dnartsdys detslø
+1447 ølstrup ringkøbing-skjern 7 purtslø
+1448 ølstykke-stenløse egedal 17 esølnets-ekkytslø
+1449 øm lejre 2 mø
+1450 ønslev guldborgsund 6 velsnø
+1451 ørby gribskov 4 ybrø
+1452 ørbæk nyborg 5 kæbrø
+1453 ørnhøj herning 6 jøhnrø
+1454 ørslev ringsted 6 velsrø
+1455 ørslev vordingborg 6 velsrø
+1456 ørsted norddjurs 6 detsrø
+1457 ørsted assens 6 detsrø
+1458 ørting odder 6 gnitrø
+1459 ørum viborg 4 murø
+1460 ørum norddjurs 4 murø
+1461 øsby haderslev 4 ybsø
+1462 øsløs thisted 5 sølsø
+1463 østbirk horsens 7 kribtsø
+1464 øster alling norddjurs 12 gnilla retsø
+1465 øster bjerregrav randers 16 vargerrejb retsø
+1466 øster brønderslev brønderslev 17 velsrednørb retsø
+1467 øster doense mariagerfjord 12 esneod retsø
+1468 øster hornum rebild 12 munroh retsø
+1469 øster hurup mariagerfjord 11 puruh retsø
+1470 øster højst tønder 11 tsjøh retsø
+1471 øster jølby morsø 11 ybløj retsø
+1472 øster kippinge guldborgsund 14 egnippik retsø
+1473 øster lindet vejen 12 tednil retsø
+1474 øster lyng odsherred 10 gnyl retsø
+1475 øster snede hedensted 11 edens retsø
+1476 øster tørslev randers 13 velsrøt retsø
+1477 øster ulslev guldborgsund 12 velslu retsø
+1478 øster vedsted esbjerg 13 detsdev retsø
+1479 øster vrøgum varde 12 mugørv retsø
+1480 øster vraa frederikshavn 9 aarv retsø
+1481 østerby jammerbugt 7 ybretsø
+1482 østerby havn læsø 12 nvah ybretsø
+1483 østerild thisted 8 dliretsø
+1484 østerlars bornholm 9 sralretsø
+1485 østermarie bornholm 10 eiramretsø
+1486 østrup vesthimmerlands 6 purtsø
+1487 østrup nordfyns 6 purtsø
+1488 aabenraa 8 aarnebaa
+1489 aabenraa aabenraa 8 aarnebaa
+1490 aabybro jammerbugt 7 orbybaa
+1491 åbyen hjørring 5 neybå
+1492 åbyskov svendborg 7 voksybå
+1493 ådum ringkøbing-skjern 4 mudå
+1494 ågerup roskilde 6 puregå
+1495 ågård vejle 5 drågå
+1496 aakirkeby bornholm 9 ybekrikaa
+1497 aalborg 7 groblaa
+1498 aalborg aalborg 7 groblaa
+1499 ålbæk frederikshavn 5 kæblå
+1500 åle hedensted 3 elå
+1501 aalestrup vesthimmerlands 9 purtselaa
+1502 ålum randers 4 mulå
+1503 årby kalundborg 4 ybrå
+1504 aarestrup rebild 9 purtseraa
+1505 aarhus 6 suhraa
+1506 aarhus aarhus 6 suhraa
+1507 årre varde 4 errå
+1508 aars vesthimmerlands 4 sraa
+1509 årsdale bornholm 7 eladsrå
+1510 årslev faaborg-midtfyn 6 velsrå
+1511 aarup assens 5 puraa
+1512 årøsund haderslev 7 dnusørå
+1513 åstrup faaborg-midtfyn 6 purtså
+1514 åsum odense 4 muså
+1515 aa mølle 8 elløm aa
+1516 aaby 4 ybaa
+1517 aabyhøj 7 jøhybaa
+1518 aalborg jpx mm 14 mm xpj groblaa
+1519 aalsgaarde 10 edraagslaa
+1520 aalsø 5 øslaa
+1521 aaløse 6 esølaa
+1522 aarhus jpx mm 13 mm xpj suhraa
+1523 aarsballe 9 ellabsraa
+1524 aarslev (randers) 7 )srednar( velsraa
+1525 aastedbro kro 13 ork orbdetsaa
+1526 aastrup (tøm) 13 )møt( purtsaa
+1527 abildkær 8 rækdliba
+1528 addit 5 tidda
+1529 agedrup 7 purdega
+1530 agersø 6 øsrega
+1531 ahrensburg 10 grubsnerha
+1532 ahrensbøck 10 kcøbsnerha
+1533 alderslyst 10 tsylsredla
+1534 aller 5 rella
+1535 alleshave 9 evahsella
+1536 allested 8 detsella
+1537 allindemagle 12 elgamednilla
+1538 alling 6 gnilla
+1539 allingdam 9 madgnilla
+1540 allinge 7 egnilla
+1541 almegaards kaserne 18 enresak sdraagemla
+1542 almindingen 11 negnidnimla
+1543 alrø 4 ørla
+1544 als østj 8 jtsø sla
+1545 alslev kro 10 ork velsla
+1546 alsted 6 detsla
+1547 altona 6 anotla
+1548 anbæk 5 kæbna
+1549 andefjord 9 drojfedna
+1550 andst 5 tsdna
+1551 anholt 6 tlohna
+1552 anholt havn 11 nvah tlohna
+1553 ans by 6 yb sna
+1554 arnis 5 sinra
+1555 aschauer barriere 17 ereirrab reuahcsa
+1556 ascheberg 9 grebehcsa
+1557 askeby 6 ybeksa
+1558 askhøj 6 jøhksa
+1559 askø 4 øksa
+1560 asminderup st 13 ts purednimsa
+1561 asperup 7 purepsa
+1562 assedrup 8 purdessa
+1563 assens (mariager) 6 )regairam( snessa
+1564 astrup (arden) 6 )nedra( purtsa
+1565 astrup (hjørring) 6 )gnirrøjh( purtsa
+1566 astrup (skjern) 6 )nrejks( purtsa
+1567 attrup 6 purtta
+1568 avedøre holme 13 emloh erødeva
+1569 avernakø 8 økanreva
+1570 avlum 5 mulva
+1571 avnede 6 edenva
+1572 avnslev 7 velsnva
+1573 baagø 5 øgaab
+1574 baardesø 8 øsedraab
+1575 bagsværd 8 drævsgab
+1576 bajlum 6 muljab
+1577 bajstrup 8 purtsjab
+1578 bakkebølle 10 elløbekkab
+1579 ballen samsø 12 øsmas nellab
+1580 ballum 6 mullab
+1581 bangsbo læsø 12 øsæl obsgnab
+1582 bangsbostrand 13 dnartsobsgnab
+1583 barde 5 edrab
+1584 bargteheide 11 ediehetgrab
+1585 barmstedt 9 tdetsmrab
+1586 beder 5 redeb
+1587 bedsted thy 11 yht detsdeb
+1588 beks kro 8 ork skeb
+1589 beldringe 9 egnirdleb
+1590 bella center 12 retnec alleb
+1591 benløse runding 15 gnidnur esølneb
+1592 berufjord 9 drojfureb
+1593 beschendorf 11 frodnehcseb
+1594 besser 6 resseb
+1595 bindeballe 10 ellabednib
+1596 birket 6 tekrib
+1597 bistrup 7 purtsib
+1598 bjerge j 8 j egrejb
+1599 bjerget 7 tegrejb
+1600 bjerndrup 9 purdnrejb
+1601 bjert 5 trejb
+1602 bjødstrup 9 purtsdøjb
+1603 bjørnholm 9 mlohnrøjb
+1604 blaavand 8 dnavaalb
+1605 blanke 6 eknalb
+1606 blankenese 10 eseneknalb
+1607 blumenthal 10 lahtnemulb
+1608 blære 5 erælb
+1609 boberg 6 grebob
+1610 bockelholm 10 mlohlekcob
+1611 bodilsker 9 rekslidob
+1612 bogø by 7 yb øgob
+1613 bohren 6 nerhob
+1614 bolbro 6 orblob
+1615 bolle 5 ellob
+1616 boller 6 rellob
+1617 boltinggaard 12 draaggnitlob
+1618 bomhuset ved emdrupsveien 25 neievspurdme dev tesuhmob
+1619 bonnet 6 tennob
+1620 borbjerg hvam 13 mavh grejbrob
+1621 bordesholm 10 mlohsedrob
+1622 bornhøved 9 devøhnrob
+1623 borup (nibe) 5 )ebin( purob
+1624 bostrup 7 purtsob
+1625 bov 3 vob
+1626 braaby 6 ybaarb
+1627 braade 6 edaarb
+1628 braaskov 8 voksaarb
+1629 brabrand 8 dnarbarb
+1630 bramdrupdam 11 madpurdmarb
+1631 bramstedt 9 tdetsmarb
+1632 brandelev 9 velednarb
+1633 branderup j 11 j purednarb
+1634 bratskov møllegaard 19 draagelløm vokstarb
+1635 bred 4 derb
+1636 bredballe 9 ellabderb
+1637 bredstedt 9 tdetsderb
+1638 bregninge 9 egningerb
+1639 brejning (ringkøbing) 8 )gnibøkgnir( gninjerb
+1640 brenderup fyn 13 nyf purednerb
+1641 broballe 8 ellaborb
+1642 broby 5 yborb
+1643 brodal 6 ladorb
+1644 brolykke 8 ekkylorb
+1645 bromølle 8 ellømorb
+1646 brund 5 dnurb
+1647 brundby 7 ybdnurb
+1648 brunsbuettel 12 letteubsnurb
+1649 brændstrup 10 purtsdnærb
+1650 brøndby strand 14 dnarts ybdnørb
+1651 brøndby syd 11 dys ybdnørb
+1652 brøndbyvester 13 retsevybdnørb
+1653 brøndbyøster 12 retsøybdnørb
+1654 brønden 7 nednørb
+1655 brøndum 7 mudnørb
+1656 brøndum (løgstør) 7 )røtsgøl( mudnørb
+1657 brønshøj 8 jøhsnørb
+1658 brønsodde 9 eddosnørb
+1659 buddinge 8 egniddub
+1660 buechen 7 nehceub
+1661 buettel 7 letteub
+1662 bullerup 8 purellub
+1663 burg 4 grub
+1664 bursø 5 øsrub
+1665 buttelhoch 10 hcohlettub
+1666 byen 4 neyb
+1667 bylderup bov 12 vob puredlyb
+1668 bynkel 6 leknyb
+1669 bækkelund 9 dnulekkæb
+1670 bøgelunde 9 ednulegøb
+1671 bøgesø 6 øsegøb
+1672 bøklund 7 dnulkøb
+1673 bølling 7 gnilløb
+1674 børglum 7 mulgrøb
+1675 bøslunde 8 ednulsøb
+1676 bøstrup 7 purtsøb
+1677 bøstrup (tranekær) 7 )rækenart( purtsøb
+1678 cappeln 7 nleppac
+1679 charlottenlund 14 dnulnettolrahc
+1680 christianshede 14 edehsnaitsirhc
+1681 christiansholm 14 mlohsnaitsirhc
+1682 christineberg mølle 19 elløm grebenitsirhc
+1683 cismar 6 ramsic
+1684 collmar 7 ramlloc
+1685 constantia 10 aitnatsnoc
+1686 crempe 6 epmerc
+1687 cremperheide 12 ediehrepmerc
+1688 dagebuell 9 lleubegad
+1689 dagnæs 6 sængad
+1690 dahme 5 emhad
+1691 dalager 7 regalad
+1692 dalby (haslev) 5 )velsah( yblad
+1693 dalbyneder 10 redenyblad
+1694 daler østerby 13 ybretsø relad
+1695 dalldorf 8 frodllad
+1696 dame 4 emad
+1697 damgaard kro 12 ork draagmad
+1698 damhuset 8 tesuhmad
+1699 damsholte 9 etlohsmad
+1700 daugbjerg 9 grejbguad
+1701 deetzbuell 10 lleubzteed
+1702 dejbjerg 8 grejbjed
+1703 dokkedal 8 ladekkod
+1704 dollerup 8 purellod
+1705 dortheasminde 13 ednimsaehtrod
+1706 drantum 7 mutnard
+1707 drejø 5 øjerd
+1708 dronningmølle 13 ellømgninnord
+1709 dræby 5 ybærd
+1710 dunkær 6 ræknud
+1711 duwenstedt 10 tdetsnewud
+1712 dybvadbro 9 orbdavbyd
+1713 dynt 4 tnyd
+1714 dyssegaard 10 draagessyd
+1715 dyssekilde 10 edlikessyd
+1716 døhnsdorf 9 frodsnhød
+1717 døjringe 8 egnirjød
+1718 dønse 5 esnød
+1719 døstrup himmerland 18 dnalremmih purtsød
+1720 eckernførde 11 edrøfnrekce
+1721 eg 2 ge
+1722 egaa 4 aage
+1723 egebjerg (ballerup) 8 )purellab( grejbege
+1724 egebjerg (horsens) 8 )snesroh( grejbege
+1725 egeby 5 ybege
+1726 egenmølle 9 ellømnege
+1727 egense 6 esnege
+1728 eggebeck 8 kcebegge
+1729 eichede 7 edehcie
+1730 eidi 4 idie
+1731 eier 4 reie
+1732 ejby (glostrup) 4 )purtsolg( ybje
+1733 ejby (kirke hyllinge) 4 )egnillyh ekrik( ybje
+1734 ejby (køge) 4 )egøk( ybje
+1735 ejstrup 7 purtsje
+1736 ellerup 7 purelle
+1737 ellested 8 detselle
+1738 elmshorn 8 nrohsmle
+1739 elstrup 7 purtsle
+1740 eltang 6 gnatle
+1741 emdrup 6 purdme
+1742 endelave 8 evaledne
+1743 endrup mølle 12 elløm purdne
+1744 endrup posthuuskro 18 orksuuhtsop purdne
+1745 enslev 6 velsne
+1746 erritsø 7 østirre
+1747 erslev by 9 yb velsre
+1748 esbjerg jpx mm 14 mm xpj grejbse
+1749 esbøl 5 løbse
+1750 escheburg 9 grubehcse
+1751 eskelund 8 dnulekse
+1752 espergærde 10 edrægrepse
+1753 estrup 6 purtse
+1754 eutin 5 nitue
+1755 faaborg j 9 j grobaaf
+1756 faare 5 eraaf
+1757 faarevejle 10 eljeveraaf
+1758 fabjerg 7 grejbaf
+1759 fakse 5 eskaf
+1760 fakse ladeplads 15 sdalpedal eskaf
+1761 falling 7 gnillaf
+1762 famjin 6 nijmaf
+1763 fanøvesterhavsbad 17 dabsvahretsevønaf
+1764 farris 6 sirraf
+1765 farstrup (nibe) 15 )ebin( purtsraf
+1766 farum kaserne 13 enresak muraf
+1767 farup 5 puraf
+1768 faurbo 6 obruaf
+1769 favstrup 8 purtsvaf
+1770 fejø 4 øjef
+1771 femhøj 6 jøhmef
+1772 femmøller 9 rellømmef
+1773 femø 4 ømef
+1774 ferring 7 gnirref
+1775 ferritslev fyn 14 nyf velstirref
+1776 ferup 5 puref
+1777 firhøj 6 jøhrif
+1778 fiskbæk 7 kæbksif
+1779 fiskebæk 8 kæbeksif
+1780 fitting 7 gnittif
+1781 fjallerslev 11 velsrellajf
+1782 fjaltring 9 gnirtlajf
+1783 fjellerup (grenaa) 18 )aanerg( purellejf
+1784 fjællebrøn 10 nørbellæjf
+1785 fleckeby 8 ybekcelf
+1786 flejsborg 9 grobsjelf
+1787 flemming 8 gnimmelf
+1788 flensburg 9 grubsnelf
+1789 flensted 8 detsnelf
+1790 flintinge 9 egnitnilf
+1791 flovlev 7 velvolf
+1792 flyvestation værløse 20 esølræv noitatsevylf
+1793 fløng 5 gnølf
+1794 fodby 5 ybdof
+1795 fogstrup 8 purtsgof
+1796 foldager 8 regadlof
+1797 foldingbro 10 orbgnidlof
+1798 forsinge 8 egnisrof
+1799 foulum 6 muluof
+1800 fousingø 8 øgnisuof
+1801 fovslet 7 telsvof
+1802 framlev 7 velmarf
+1803 fredericia jpx mm 17 mm xpj aicirederf
+1804 frederiksborg 13 grobskirederf
+1805 frederikshavn jpx mm 20 mm xpj nvahskirederf
+1806 frederikshvile 14 elivhskirederf
+1807 frederikslund 13 dnulskirederf
+1808 frejlev (aalborg) 17 )groblaa( veljerf
+1809 frejlev (nysted) 16 )detsyn( veljerf
+1810 frerslev 8 velsrerf
+1811 friedrichsruhe 14 ehurshcirdeirf
+1812 friedrichstadt 14 tdatshcirdeirf
+1813 fruens bøge 11 egøb sneurf
+1814 frydendal 9 ladnedyrf
+1815 fuglafjørdur 12 rudrøjfalguf
+1816 fuglede 7 edelguf
+1817 fuglsø 6 øslguf
+1818 funder 6 rednuf
+1819 funningur 9 rugninnuf
+1820 fur 3 ruf
+1821 fæggesund n s 13 s n dnuseggæf
+1822 førby 5 ybrøf
+1823 føvling 7 gnilvøf
+1824 gaabense 8 esnebaag
+1825 gaarde 6 edraag
+1826 gabøl 5 løbag
+1827 gamby 5 ybmag
+1828 gammel estrup 13 purtse lemmag
+1829 gammel holte 12 etloh lemmag
+1830 gammel mølle 12 elløm lemmag
+1831 gammel ry 9 yr lemmag
+1832 gammel skagen 13 negaks lemmag
+1833 gammel ølstykke 15 ekkytslø lemmag
+1834 gammelby 8 yblemmag
+1835 gammeldams mølle 16 elløm smadlemmag
+1836 gammelstrup 11 purtslemmag
+1837 gamst 5 tsmag
+1838 garding 7 gnidrag
+1839 garkau 6 uakrag
+1840 gatten 6 nettag
+1841 geels kro 9 ork sleeg
+1842 gesing 6 gniseg
+1843 gettorf 7 frotteg
+1844 gettrup 7 purtteg
+1845 gjeldsbro 9 orbsdlejg
+1846 gjelting 8 gnitlejg
+1847 gjerlev j 9 j velrejg
+1848 gjogv 5 vgojg
+1849 gjødding kro 12 ork gniddøjg
+1850 gjørslev 8 velsrøjg
+1851 gloslunde 9 ednulsolg
+1852 glueckstadt 11 tdatskceulg
+1853 godthaab 8 baahtdog
+1854 godthaab jyll 13 llyj baahtdog
+1855 gramrode 8 edormarg
+1856 grande 6 ednarg
+1857 grantoften 10 netfotnarg
+1858 graulunde 9 ednuluarg
+1859 gravens 7 snevarg
+1860 gravlev 7 velvarg
+1861 grejsdal 8 ladsjerg
+1862 greve by 8 yb everg
+1863 gribsvad 8 davsbirg
+1864 grinderslev 11 velsrednirg
+1865 grindløse 9 esøldnirg
+1866 grindsted (nørresundby) 23 )ybdnuserrøn( detsdnirg
+1867 gross brebel 12 leberb ssorg
+1868 gross grønau 12 uanørg ssorg
+1869 grossenbrode 12 edorbnessorg
+1870 grube 5 eburg
+1871 gruenholz 9 zlohneurg
+1872 grumby 6 ybmurg
+1873 grømitz 7 ztimørg
+1874 grønbæk 7 kæbnørg
+1875 grønsund p m 12 m p dnusnørg
+1876 gudbjerg sydfyn 15 nyfdys grejbdug
+1877 gudum vestj 11 jtsev mudug
+1878 gudumlunds fabrikker 20 rekkirbaf sdnulmudug
+1879 gug 3 gug
+1880 guldbjerg 9 grejbdlug
+1881 guldborg falster 16 retslaf grobdlug
+1882 gunderup 8 purednug
+1883 gundestrup 10 purtsednug
+1884 gyldenholm 10 mlohnedlyg
+1885 gødstrup 8 purtsdøg
+1886 gølstrup 8 purtsløg
+1887 gøta 4 atøg
+1888 haagerup 8 puregaah
+1889 haarby (skanderborg) 20 )grobrednaks( ybraah
+1890 haasum 6 musaah
+1891 hagebro 7 orbegah
+1892 hajstrup 8 purtsjah
+1893 hald ege 8 ege dlah
+1894 hald station 12 noitats dlah
+1895 haldager 8 regadlah
+1896 haldarsvik 10 kivsradlah
+1897 halk 4 klah
+1898 halkær 6 ræklah
+1899 hallendrup 10 purdnellah
+1900 hamburg 7 grubmah
+1901 hamfelde 8 edlefmah
+1902 hammershus 10 suhsremmah
+1903 hammerum 8 muremmah
+1904 hanerau 7 uarenah
+1905 hannerup 8 purennah
+1906 hansted 7 detsnah
+1907 haraldskær fabrik 17 kirbaf ræksdlarah
+1908 harbleck 8 kcelbrah
+1909 hareskov 8 vokserah
+1910 harlev j 8 j velrah
+1911 harløse 7 esølrah
+1912 harpelunde 10 ednuleprah
+1913 harresø 7 øserrah
+1914 harridslev (hjørring) 21 )gnirrøjh( velsdirrah
+1915 harridslev (randers) 20 )srednar( velsdirrah
+1916 hasmark strand 14 dnarts kramsah
+1917 hasselager 10 regalessah
+1918 hassing thy 11 yht gnissah
+1919 hastrup 7 purtsah
+1920 hattstedt 9 tdetsttah
+1921 havnbjerg 9 grejbnvah
+1922 havredal 8 ladervah
+1923 hedeparken 10 nekrapedeh
+1924 heide 5 edieh
+1925 heidkrug (schleswig) 20 )giwselhcs( gurkdieh
+1926 heidkrug (segeberg) 19 )grebeges( gurkdieh
+1927 heiligenhafen 13 nefahnegilieh
+1928 heiligenstedten 15 netdetsnegilieh
+1929 hejlsminde 10 ednimsljeh
+1930 hellerup 8 purelleh
+1931 helligbeck 10 kcebgilleh
+1932 helligdommen 12 nemmodgilleh
+1933 helligkorskilde 15 edliksrokgilleh
+1934 hellum 6 mulleh
+1935 helnæs 6 sænleh
+1936 helsingør jpx mm 16 mm xpj røgnisleh
+1937 heltborg 8 grobtleh
+1938 hemdrup 7 purdmeh
+1939 hemme 5 emmeh
+1940 henne 5 enneh
+1941 henne strand 12 dnarts enneh
+1942 herfølge 8 egløfreh
+1943 herning 1 mm 12 mm 1 gninreh
+1944 herrested 9 detserreh
+1945 herritslev 10 velstirreh
+1946 herzhorn 8 nrohzreh
+1947 hesselø 7 ølesseh
+1948 hindbjerg 9 grejbdnih
+1949 hindborg 8 grobdnih
+1950 hindevad 8 davednih
+1951 hinge 5 egnih
+1952 hjallese 8 esellajh
+1953 hjermitslev 11 velstimrejh
+1954 hjerndrup 9 purdnrejh
+1955 hjertebjerg 11 grejbetrejh
+1956 hjerting 8 gnitrejh
+1957 hjortdal 8 ladtrojh
+1958 hjortekær 9 ræketrojh
+1959 hjortespring 12 gnirpsetrojh
+1960 hjortsballe kro 15 ork ellabstrojh
+1961 hjortsvang 10 gnavstrojh
+1962 hjøllund 8 dnulløjh
+1963 hochdonn 8 nnodhcoh
+1964 hodde 5 eddoh
+1965 hohenwestedt 12 tdetsewnehoh
+1966 hokkerup 8 purekkoh
+1967 holbæk (ørsted) 15 )detsrø( kæbloh
+1968 hole 4 eloh
+1969 holmdrup 8 purdmloh
+1970 holme 5 emloh
+1971 holse 5 esloh
+1972 holstebro jpx mm 16 mm xpj orbetsloh
+1973 holsted station 15 noitats detsloh
+1974 holte 5 etloh
+1975 holzkrug 8 gurkzloh
+1976 hoppeshuse 10 esuhseppoh
+1977 horn 4 nroh
+1978 hornbæk 7 kæbnroh
+1979 horne (faaborg) 15 )grobaaf( enroh
+1980 horne (hjørring) 16 )gnirrøjh( enroh
+1981 horne (varde) 13 )edrav( enroh
+1982 horsens (hjallerup) 19 )purellajh( snesroh
+1983 horsens jpx mm 14 mm xpj snesroh
+1984 horst 5 tsroh
+1985 hosvik 6 kivsoh
+1986 hov (færøerne) 14 )enreøræf( voh
+1987 hovedgaden 10 nedagdevoh
+1988 hovslund 8 dnulsvoh
+1989 hulsig 6 gisluh
+1990 humledal 8 ladelmuh
+1991 hundige 7 egidnuh
+1992 hurup thy 9 yht puruh
+1993 hurup østjyll 13 llyjtsø puruh
+1994 husavik 7 kivasuh
+1995 husby 5 ybsuh
+1996 husum 5 musuh
+1997 husum (københavn) 17 )nvahnebøk( musuh
+1998 hvalba 6 ablavh
+1999 hvalsø 6 øslavh
+2000 hvalvik 7 kivlavh
+2001 hvam 4 mavh
+2002 hvedsteen 9 neetsdevh
+2003 hvidbjerg (skive) 17 )eviks( grejbdivh
+2004 hvidbjerg vesten aa 19 aa netsev grejbdivh
+2005 hviding 7 gnidivh
+2006 hvilested kro 13 ork detselivh
+2007 hvilsted 8 detslivh
+2008 hvirring 8 gnirrivh
+2009 hvorupgaard 11 draagpurovh
+2010 hygum 5 mugyh
+2011 hyllebjerg 10 grejbellyh
+2012 hyllerslev 10 velsrellyh
+2013 hyllested 9 detsellyh
+2014 hyrup 5 puryh
+2015 hæstrup 7 purtsæh
+2016 høi mølle 9 elløm iøh
+2017 højbjerg 8 grejbjøh
+2018 højby f 7 f ybjøh
+2019 højby s 7 s ybjøh
+2020 højen 5 nejøh
+2021 højgaard 8 draagjøh
+2022 højrup 6 purjøh
+2023 højslev kirkeby 15 ybekrik velsjøh
+2024 hørmested 9 detsemrøh
+2025 hørup 5 purøh
+2026 hørup (tøm) 11 )møt( purøh
+2027 høvelte 7 etlevøh
+2028 høver 5 revøh
+2029 ilbro 5 orbli
+2030 illebølle 9 elløbelli
+2031 iller 5 relli
+2032 indslev 7 velsdni
+2033 islev 5 velsi
+2034 itzehø 6 øhezti
+2035 janderup vestj 14 jtsev purednaj
+2036 jegindø 7 ødnigej
+2037 jerne 5 enrej
+2038 jersie strand 13 dnarts eisrej
+2039 jerslev j 9 j velsrej
+2040 jerslev sjælland 16 dnallæjs velsrej
+2041 jetsmark 8 kramstej
+2042 jonstrup 8 purtsnoj
+2043 jordbro mølle 13 elløm orbdroj
+2044 jullerup 8 purelluj
+2045 junget 6 tegnuj
+2046 jystrup midtsj 14 jstdim purtsyj
+2047 jægersborg 10 grobsregæj
+2048 kaltenkirchen 13 nehcriknetlak
+2049 kalvslund 9 dnulsvlak
+2050 kannikegaard 12 draagekinnak
+2051 kappel 6 leppak
+2052 karleby 7 ybelrak
+2053 karlslunde 10 ednulslrak
+2054 karlslunde strand 17 dnarts ednulslrak
+2055 karstoft 8 tfotsrak
+2056 karup j 7 j purak
+2057 kassemose 9 esomessak
+2058 kastager 8 regatsak
+2059 kastberg 8 grebtsak
+2060 kastbjerg 9 grejbtsak
+2061 kastrup 7 purtsak
+2062 kastrup (haderslev) 19 )velsredah( purtsak
+2063 kastvraa 8 aarvtsak
+2064 katbjerg 8 grejbtak
+2065 katrinenheerde 14 edreehnenirtak
+2066 katterød 8 dørettak
+2067 kavslunde 9 ednulsvak
+2068 kegnæs 6 sængek
+2069 keitum 6 mutiek
+2070 keldby 6 ybdlek
+2071 keldernæs 9 sænredlek
+2072 keldstrup 9 purtsdlek
+2073 kellinghusen 12 nesuhgnillek
+2074 ketting als 11 sla gnittek
+2075 kiel 4 leik
+2076 kikkenborg kro 14 ork grobnekkik
+2077 kildedal 8 ladedlik
+2078 kildekrog 9 gorkedlik
+2079 kirkja 6 ajkrik
+2080 kjærgaardsholm 14 mlohsdraagræjk
+2081 kjøng 5 gnøjk
+2082 klakring 8 gnirkalk
+2083 klaksvik 8 kivskalk
+2084 klampenborg 11 grobnepmalk
+2085 klank 5 knalk
+2086 klein sarau 11 uaras nielk
+2087 klein tonde 11 ednot nielk
+2088 klintholm havn 14 nvah mlohtnilk
+2089 klixbuell 9 lleubxilk
+2090 klosterkrug 11 gurkretsolk
+2091 klovtoft 8 tfotvolk
+2092 kløveres 8 serevølk
+2093 knarreborg 10 groberrank
+2094 kokkedal 8 ladekkok
+2095 kolby kaas 10 saak yblok
+2096 koldby thy 10 yht ybdlok
+2097 kolding jpx mm 14 mm xpj gnidlok
+2098 kollafjørdur 12 rudrøjfallok
+2099 kollund (herning) 17 )gninreh( dnullok
+2100 kollund (padborg) 17 )grobdap( dnullok
+2101 komdrup 7 purdmok
+2102 kongsbjerggaard 15 draaggrejbsgnok
+2103 kongsholm 9 mlohsgnok
+2104 kongsmark 9 kramsgnok
+2105 koppes mølle 12 elløm seppok
+2106 kornerup 8 purenrok
+2107 korskro 7 orksrok
+2108 korsvang 8 gnavsrok
+2109 korup 5 purok
+2110 koster 6 retsok
+2111 kragenæs 8 sænegark
+2112 kraghave 8 evahgark
+2113 kraneled 8 delenark
+2114 kravlund 8 dnulvark
+2115 kregme 6 emgerk
+2116 krejbjerg 9 grejbjerk
+2117 kreuz 5 zuerk
+2118 krik 4 kirk
+2119 krogager 8 regagork
+2120 krogsbølle 10 elløbsgork
+2121 krogstrup 9 purtsgork
+2122 krondal 7 ladnork
+2123 kropperbusch 12 hcsubreppork
+2124 krybily 7 ylibyrk
+2125 kulby 5 ybluk
+2126 kustrup 7 purtsuk
+2127 kvalbø 6 øblavk
+2128 kvalvig 7 givlavk
+2129 kvartborg kro 13 ork grobtravk
+2130 kvivik 6 kivivk
+2131 kædeby 6 ybedæk
+2132 kærum 5 muræk
+2133 købelev 7 velebøk
+2134 københavn b 11 b nvahnebøk
+2135 københavn c 11 c nvahnebøk
+2136 københavn f 11 f nvahnebøk
+2137 københavn k 11 k nvahnebøk
+2138 københavn k 1 13 1 k nvahnebøk
+2139 københavn k 10 14 01 k nvahnebøk
+2140 københavn k 11 14 11 k nvahnebøk
+2141 københavn k 12 14 21 k nvahnebøk
+2142 københavn k 13 14 31 k nvahnebøk
+2143 københavn k 14 14 41 k nvahnebøk
+2144 københavn k 15 14 51 k nvahnebøk
+2145 københavn k 16 14 61 k nvahnebøk
+2146 københavn k 17 14 71 k nvahnebøk
+2147 københavn k 18 14 81 k nvahnebøk
+2148 københavn k 19 14 91 k nvahnebøk
+2149 københavn k 2 13 2 k nvahnebøk
+2150 københavn k 20 14 02 k nvahnebøk
+2151 københavn k 21 14 12 k nvahnebøk
+2152 københavn k 22 14 22 k nvahnebøk
+2153 københavn k 23 14 32 k nvahnebøk
+2154 københavn k 24 14 42 k nvahnebøk
+2155 københavn k 25 14 52 k nvahnebøk
+2156 københavn k 26 14 62 k nvahnebøk
+2157 københavn k 27 14 72 k nvahnebøk
+2158 københavn k 28 14 82 k nvahnebøk
+2159 københavn k 29 14 92 k nvahnebøk
+2160 københavn k 3 13 3 k nvahnebøk
+2161 københavn k 30 14 03 k nvahnebøk
+2162 københavn k 31 14 13 k nvahnebøk
+2163 københavn k 32 14 23 k nvahnebøk
+2164 københavn k 33 14 33 k nvahnebøk
+2165 københavn k 34 14 43 k nvahnebøk
+2166 københavn k 35 14 53 k nvahnebøk
+2167 københavn k 36 14 63 k nvahnebøk
+2168 københavn k 37 14 73 k nvahnebøk
+2169 københavn k 38 14 83 k nvahnebøk
+2170 københavn k 39 14 93 k nvahnebøk
+2171 københavn k 4 13 4 k nvahnebøk
+2172 københavn k 40 14 04 k nvahnebøk
+2173 københavn k 41 14 14 k nvahnebøk
+2174 københavn k 42 14 24 k nvahnebøk
+2175 københavn k 43 14 34 k nvahnebøk
+2176 københavn k 44 14 44 k nvahnebøk
+2177 københavn k 45 14 54 k nvahnebøk
+2178 københavn k 46 14 64 k nvahnebøk
+2179 københavn k 47 14 74 k nvahnebøk
+2180 københavn k 48 14 84 k nvahnebøk
+2181 københavn k 49 14 94 k nvahnebøk
+2182 københavn k 5 13 5 k nvahnebøk
+2183 københavn k 50 14 05 k nvahnebøk
+2184 københavn k 51 14 15 k nvahnebøk
+2185 københavn k 52 14 25 k nvahnebøk
+2186 københavn k 6 13 6 k nvahnebøk
+2187 københavn k 7 13 7 k nvahnebøk
+2188 københavn k 8 13 8 k nvahnebøk
+2189 københavn k 9 13 9 k nvahnebøk
+2190 københavn l 11 l nvahnebøk
+2191 københavn lufthavn 18 nvahtful nvahnebøk
+2192 københavn n 11 n nvahnebøk
+2193 københavn nv 12 vn nvahnebøk
+2194 københavn s 11 s nvahnebøk
+2195 københavn sv 12 vs nvahnebøk
+2196 københavn v 11 v nvahnebøk
+2197 københavn valby 15 yblav nvahnebøk
+2198 københavn vesterport 20 tropretsev nvahnebøk
+2199 københavn ø 11 ø nvahnebøk
+2200 kølby 5 ybløk
+2201 kølleregaard 12 draagerelløk
+2202 kølsen 6 nesløk
+2203 kølstrup 8 purtsløk
+2204 kørup 5 purøk
+2205 laastrup 8 purtsaal
+2206 ladby 5 ybdal
+2207 lamdrup 7 purdmal
+2208 landet lolland 14 dnallol tednal
+2209 langaa (nyborg) 15 )grobyn( aagnal
+2210 langesø (nordborg) 18 )grobdron( øsegnal
+2211 lauenburg 9 grubneual
+2212 lautrup 7 purtual
+2213 leby 4 ybel
+2214 leck 4 kcel
+2215 legoland 8 dnalogel
+2216 leirvik 7 kivriel
+2217 lejbølle 8 elløbjel
+2218 lem (randers) 13 )srednar( mel
+2219 lem (skive) 11 )eviks( mel
+2220 lem st 6 ts mel
+2221 lensahn 7 nhasnel
+2222 lerbjerg 8 grejbrel
+2223 lerte 5 etrel
+2224 lervang 7 gnavrel
+2225 lihmskov 8 voksmhil
+2226 lille anslet 12 telsna ellil
+2227 lillering 9 gnirellil
+2228 lillerøj 8 jørellil
+2229 lind 4 dnil
+2230 lindenborg (aalborg) 20 )groblaa( grobnednil
+2231 lindenborg (roskilde) 21 )edliksor( grobnednil
+2232 lindet 6 tednil
+2233 lindholm 8 mlohdnil
+2234 lindholm (leck) 15 )kcel( mlohdnil
+2235 lindholm ø 10 ø mlohdnil
+2236 loit 4 tiol
+2237 longelse 8 eslegnol
+2238 luebeck 7 kcebeul
+2239 luetjenburg 11 grubnejteul
+2240 lumsaas 7 saasmul
+2241 lundby (aalborg) 16 )groblaa( ybdnul
+2242 lundby (løgstør) 16 )røtsgøl( ybdnul
+2243 lunde fyn 9 nyf ednul
+2244 lunde j 7 j ednul
+2245 lunden 6 nednul
+2246 lundfod 7 dofdnul
+2247 lundforlund 11 dnulrofdnul
+2248 lundtoft 8 tfotdnul
+2249 lundum 6 mudnul
+2250 lyby 4 ybyl
+2251 lydum 5 mudyl
+2252 lyksborg 8 grobskyl
+2253 lyngby (grenaa) 15 )aanerg( ybgnyl
+2254 lyngby østjylland 17 dnallyjtsø ybgnyl
+2255 lyngs 5 sgnyl
+2256 lyngtofte kro 13 ork etfotgnyl
+2257 lyngvig 7 givgnyl
+2258 lynæs 5 sænyl
+2259 lysbro 6 orbsyl
+2260 lystrup (randers) 17 )srednar( purtsyl
+2261 lyø 3 øyl
+2262 løkken vejkro 13 orkjev nekkøl
+2263 løsning 7 gninsøl
+2264 løvlund 7 dnulvøl
+2265 maaløv 6 vølaam
+2266 maarbæk 7 kæbraam
+2267 magstrup 8 purtsgam
+2268 majbøl 6 løbjam
+2269 malling 7 gnillam
+2270 mandemarke 10 ekramednam
+2271 manna 5 annam
+2272 mariehøj 8 jøheiram
+2273 marne 5 enram
+2274 marrebæk 8 kæberram
+2275 martofte 8 etfotram
+2276 masnedsund 10 dnusdensam
+2277 masnedø 7 ødensam
+2278 mathiasgade 11 edagsaihtam
+2279 mejlby (aarhus) 15 )suhraa( ybljem
+2280 mejlby (skørping) 17 )gniprøks( ybljem
+2281 mejlskov 8 voksljem
+2282 mejrup kirkeby 14 ybekrik purjem
+2283 meldorf 7 frodlem
+2284 merløse 7 esølrem
+2285 midvagur 8 rugavdim
+2286 mikkelborg kro 14 ork groblekkim
+2287 missunde 8 ednussim
+2288 missunder fæhrhaus 18 suahrhæf rednussim
+2289 mollerup 8 purellom
+2290 moltrup 7 purtlom
+2291 mommark 7 krammom
+2292 morup mølle 11 elløm purom
+2293 moselund 8 dnulesom
+2294 muldbjerg 9 grejbdlum
+2295 mullerup 8 purellum
+2296 munkebjerg 10 grejbeknum
+2297 munkeby 7 ybeknum
+2298 musse 5 essum
+2299 mykines 7 senikym
+2300 mylund 6 dnulym
+2301 mølby midtjylland 17 dnallyjtdim ybløm
+2302 møldrup (horsens) 17 )snesroh( purdløm
+2303 mølholm 7 mlohløm
+2304 mølln 5 nlløm
+2305 mølvang 7 gnavløm
+2306 mørkhøj 7 jøhkrøm
+2307 navr 4 rvan
+2308 nebs mølle 10 elløm sben
+2309 neder aastrup 13 purtsaa reden
+2310 nees 4 seen
+2311 neksø 5 øsken
+2312 neu techau 10 uahcet uen
+2313 neudorf 7 froduen
+2314 neuenbrock 10 kcorbneuen
+2315 neukrug 7 gurkuen
+2316 neumuenster 11 retsneumuen
+2317 neustadt 8 tdatsuen
+2318 nissum seminarieby 18 ybeiranimes mussin
+2319 nolsoy 6 yoslon
+2320 non ege 7 ege non
+2321 nordby fanø 11 ønaf ybdron
+2322 nordby samsø 12 øsmas ybdron
+2323 norddepil 9 lipeddron
+2324 norddorf 8 froddron
+2325 nordenbro 9 orbnedron
+2326 nordskali 9 ilaksdron
+2327 nordstrand 10 dnartsdron
+2328 nortorf 7 frotron
+2329 notmark 7 kramton
+2330 ny holte 8 etloh yn
+2331 ny solbjerg 11 grejblos yn
+2332 ny tappernøje 13 ejønreppat yn
+2333 nybo 4 obyn
+2334 nybro 5 orbyn
+2335 nygaard 7 draagyn
+2336 nygaard kro 11 ork draagyn
+2337 nykro 5 orkyn
+2338 nykøbing sj 11 js gnibøkyn
+2339 nylarsker 9 reksralyn
+2340 nymark 6 kramyn
+2341 nærum 5 muræn
+2342 næsby 5 ybsæn
+2343 næsby (nakskov) 15 )vokskan( ybsæn
+2344 næssund v s 11 s v dnussæn
+2345 næssund ø s 11 s ø dnussæn
+2346 næstved jpx mm 14 mm xpj devtsæn
+2347 nørager (randers) 17 )srednar( regarøn
+2348 nørhaa 6 aahrøn
+2349 nørre asmindrup 15 purdnimsa errøn
+2350 nørre bjert 11 trejb errøn
+2351 nørre bork 10 krob errøn
+2352 nørre bratbjerg 15 grejbtarb errøn
+2353 nørre halne 11 enlah errøn
+2354 nørre hostrup 13 purtsoh errøn
+2355 nørre nissum seminarium 23 muiranimes mussin errøn
+2356 nørre saltum 12 mutlas errøn
+2357 nørre smedeby 13 ybedems errøn
+2358 nørre svenstrup 15 purtsnevs errøn
+2359 nørre tornby 12 ybnrot errøn
+2360 nørre tranders 14 srednart errøn
+2361 nørre uttrup 12 purttu errøn
+2362 ockholm 7 mlohkco
+2363 odby 4 ybdo
+2364 oddesund 8 dnuseddo
+2365 oddesund syd 12 dys dnuseddo
+2366 oddum 5 muddo
+2367 odense jpx mm 13 mm xpj esnedo
+2368 oksbøl (tøm) 12 )møt( løbsko
+2369 olde 4 edlo
+2370 oldenburg 9 grubnedlo
+2371 oldenswort 10 trowsnedlo
+2372 oldeslø 7 ølsedlo
+2373 oldrup 6 purdlo
+2374 olstrup 7 purtslo
+2375 omø 3 ømo
+2376 ondløse 7 esøldno
+2377 onsevig 7 givesno
+2378 onsild 6 dlisno
+2379 oppe sundby 11 ybdnus eppo
+2380 ordrup 6 purdro
+2381 orup 4 puro
+2382 orø 3 øro
+2383 oster ohrstedt 14 tdetsrho retso
+2384 ottersbøl 9 løbsretto
+2385 ove 3 evo
+2386 over aastrup 12 purtsaa revo
+2387 over feldborg 13 grobdlef revo
+2388 over fussing 12 gnissuf revo
+2389 over simmelkær 14 ræklemmis revo
+2390 over tandslet 13 telsdnat revo
+2391 overby 6 ybrevo
+2392 ovtrup 6 purtvo
+2393 owschlag 8 galhcswo
+2394 oyndarfjørdur 13 rudrøjfradnyo
+2395 oyrareingir 11 rignieraryo
+2396 oyri 4 iryo
+2397 paarup (tøm) 12 )møt( puraap
+2398 padborglejren 13 nerjelgrobdap
+2399 pansdorf 8 frodsnap
+2400 pedersborg 10 grobsredep
+2401 pederstrup 10 purtsredep
+2402 pejrup 6 purjep
+2403 pelworm 7 mrowlep
+2404 petersdorf 10 frodsretep
+2405 philipsdal 10 ladspilihp
+2406 pilemølle 9 ellømelip
+2407 pillemark 9 kramellip
+2408 pinen kro 9 ork nenip
+2409 pinneberg 9 grebennip
+2410 pløn 4 nølp
+2411 porkeri 7 irekrop
+2412 preetz 6 zteerp
+2413 præstbro (tarm) 15 )mrat( orbtsærp
+2414 prøvestenen 11 nenetsevørp
+2415 purhuset 8 tesuhrup
+2416 quickborn 9 nrobkciuq
+2417 raaby 5 ybaar
+2418 raade 5 edaar
+2419 raadvad 7 davdaar
+2420 raberg 6 grebar
+2421 ragebøl 7 løbegar
+2422 raklev 6 velkar
+2423 randbøl 7 løbdnar
+2424 randers jpx mm 14 mm xpj srednar
+2425 randrup 7 purdnar
+2426 rangle mølle 12 elløm elgnar
+2427 ratzeburg 9 grubeztar
+2428 ravnholt 8 tlohnvar
+2429 ravning 7 gninvar
+2430 redsted m 9 m detsder
+2431 refs vindinge 13 egnidniv sfer
+2432 reinbeck 8 kcebnier
+2433 reinfeld 8 dlefnier
+2434 remmels 7 slemmer
+2435 remmer 6 remmer
+2436 rendsburg 9 grubsdner
+2437 resenbro 8 orbneser
+2438 restrup kro 11 ork purtser
+2439 retholt 7 tlohter
+2440 rettrup 7 purtter
+2441 reykjavik 9 kivajkyer
+2442 ringeby 7 ybegnir
+2443 ris 3 sir
+2444 rislev 6 velsir
+2445 risskov 7 vokssir
+2446 rituvik 7 kivutir
+2447 rohden 6 nedhor
+2448 roskilde jpx mm 15 mm xpj edliksor
+2449 rosmus 6 sumsor
+2450 roust 5 tsuor
+2451 rousthøje 9 ejøhtsuor
+2452 rudme 5 emdur
+2453 rugsted 7 detsgur
+2454 rungsted kyst 13 tsyk detsgnur
+2455 rye (philipsdal) 16 )ladspilihp( eyr
+2456 rye (ry) 8 )yr( eyr
+2457 rygaard 7 draagyr
+2458 rø 2 ør
+2459 rødding (skive) 15 )eviks( gniddør
+2460 rødding (viborg) 16 )grobiv( gniddør
+2461 rødslet 7 telsdør
+2462 rødvig stevns 13 snvets givdør
+2463 røgelhede 9 edehlegør
+2464 røjskovhus 10 suhvoksjør
+2465 rømø 4 ømør
+2466 rørholt 7 tlohrør
+2467 rørkær 6 rækrør
+2468 rørmosehus 10 suhesomrør
+2469 sallingsund 11 dnusgnillas
+2470 saltangara 10 aragnatlas
+2471 saltbæk 7 kæbtlas
+2472 saltrup 7 purtlas
+2473 sandager 8 regadnas
+2474 sandavagur 10 rugavadnas
+2475 sandby (nakskov) 16 )vokskan( ybdnas
+2476 sandet 6 tednas
+2477 sandholmlejren 14 nerjelmlohdnas
+2478 sandur 6 rudnas
+2479 sandvig 7 givdnas
+2480 sandvik 7 kivdnas
+2481 sankt jørgensbjerg 18 grejbsnegrøj tknas
+2482 satrup 6 purtas
+2483 saunte 6 etnuas
+2484 savsborg 8 grobsvas
+2485 schafflund 10 dnulffahcs
+2486 schenefeld 10 dlefenehcs
+2487 schleswig 9 giwselhcs
+2488 schwabstedt 11 tdetsbawhcs
+2489 schwartau 9 uatrawhcs
+2490 schwarzenbeck 13 kcebnezrawhcs
+2491 schwensby 9 ybsnewhcs
+2492 schønberg 9 grebnøhcs
+2493 schønwalde 10 edlawnøhcs
+2494 seden 5 nedes
+2495 segeberg 8 grebeges
+2496 sejerø 6 ørejes
+2497 sejlflod 8 dolfljes
+2498 sejlstrup 9 purtsljes
+2499 sejs 4 sjes
+2500 sejstrup 8 purtsjes
+2501 selatrad 8 dartales
+2502 selent 6 tneles
+2503 selsø mølle 11 elløm øsles
+2504 sensby 6 ybsnes
+2505 seydisfjord 11 drojfsidyes
+2506 siddinge 8 egniddis
+2507 sieseby 7 ybeseis
+2508 sietwende 9 ednewteis
+2509 signesminde 11 ednimsengis
+2510 silkeborg jpx mm 16 mm xpj grobeklis
+2511 sillerup 8 purellis
+2512 simmerbølle 11 elløbremmis
+2513 simmersted 10 detsremmis
+2514 sive kro 8 ork evis
+2515 sjelle kro 10 ork ellejs
+2516 sjællands odde 14 eddo sdnallæjs
+2517 sjælsmark kaserne 17 enresak kramslæjs
+2518 skaade 6 edaaks
+2519 skalavik 8 kivalaks
+2520 skalborg 8 groblaks
+2521 skali 5 ilaks
+2522 skallebæk 9 kæbellaks
+2523 skamstrup 9 purtsmaks
+2524 skanderborg jpx mm 18 mm xpj grobrednaks
+2525 skannerup 9 purennaks
+2526 skast 5 tsaks
+2527 skejby 6 ybjeks
+2528 skellebjerg 11 grejbelleks
+2529 skibstrup 9 purtsbiks
+2530 skive jpx mm 12 mm xpj eviks
+2531 skivum 6 muviks
+2532 skjellerup 10 purellejks
+2533 skjernbro 9 orbnrejks
+2534 skjernbrogaard 14 draagorbnrejks
+2535 skjerrumbro 11 orbmurrejks
+2536 skjoldborg 10 grobdlojks
+2537 skjæring 8 gniræjks
+2538 skjørbæk 8 kæbrøjks
+2539 skodborghuus 12 suuhgrobdoks
+2540 skodsbøl 8 løbsdoks
+2541 skomagerkrøn 12 nørkregamoks
+2542 skopun 6 nupoks
+2543 skovby als 10 sla ybvoks
+2544 skovby østjylland 17 dnallyjtsø ybvoks
+2545 skovbølle 9 elløbvoks
+2546 skovlunde 9 ednulvoks
+2547 skovshoved 10 devohsvoks
+2548 skovshøirup 11 puriøhsvoks
+2549 skovsted 8 detsvoks
+2550 skringstrup 11 purtsgnirks
+2551 skrydstrup 10 purtsdyrks
+2552 skrøbelev 9 velebørks
+2553 skuldeløv 9 vøledluks
+2554 skuvoy 6 yovuks
+2555 skyum 5 muyks
+2556 skærbæk (fredericia) 20 )aicirederf( kæbræks
+2557 skærsø 6 øsræks
+2558 skødstrup 9 purtsdøks
+2559 skørring 8 gnirrøks
+2560 slagballe 9 ellabgals
+2561 slagelse jpx mm 15 mm xpj eslegals
+2562 slude 5 eduls
+2563 sludstrup 9 purtsduls
+2564 slukefter 9 retfekuls
+2565 smedeby 7 ybedems
+2566 smidstrup strand 16 dnarts purtsdims
+2567 sminge 6 egnims
+2568 smørum 6 murøms
+2569 snapind 7 dnipans
+2570 snejbjerg 9 grejbjens
+2571 snekkersten 11 netsrekkens
+2572 snesere 7 eresens
+2573 snoghøj 7 jøhgons
+2574 solbjerg m 10 m grejblos
+2575 solbjerg østjylland 19 dnallyjtsø grejblos
+2576 sollerup 8 purellos
+2577 sonnerup 8 purennos
+2578 sorgenfri 9 irfnegros
+2579 sortebro 8 orbetros
+2580 sottrup 7 purttos
+2581 spandet 7 tednaps
+2582 spang 5 gnaps
+2583 splitsgaard 11 draagstilps
+2584 sporup 6 purops
+2585 springforbi 11 ibrofgnirps
+2586 spøttrup 8 purttøps
+2587 st annen 8 nenna ts
+2588 st margarethen 14 nehteragram ts
+2589 staa 4 aats
+2590 staaby 6 ybaats
+2591 stadil 6 lidats
+2592 stangerum 9 muregnats
+2593 starreklinte 12 etnilkerrats
+2594 starup (varde) 14 )edrav( purats
+2595 stautrup 8 purtuats
+2596 stavning 8 gninvats
+2597 stavnstrup 10 purtsnvats
+2598 stenbjerg station 17 noitats grejbnets
+2599 stenbjerg thy 13 yht grejbnets
+2600 stenderup (tøm) 15 )møt( purednets
+2601 stenderup (varde) 17 )edrav( purednets
+2602 stenhøj 7 jøhnets
+2603 stenløse 8 esølnets
+2604 stensballe 10 ellabsnets
+2605 stensgaard 10 draagsnets
+2606 sterup 6 purets
+2607 stige 5 egits
+2608 stilling 8 gnillits
+2609 stockelsdorf 12 frodslekcots
+2610 stoholm jyll 12 llyj mlohots
+2611 store almegaardslejren 22 nerjelsdraagemla erots
+2612 store brøndum 13 mudnørb erots
+2613 store fuglede 13 edelguf erots
+2614 store jyndevad 14 davednyj erots
+2615 store magleby 13 ybelgam erots
+2616 store nustrup 13 purtsun erots
+2617 store rørbæk (frederikssund) 28 )dnusskirederf( kæbrør erots
+2618 store rørbæk (hobro) 20 )orboh( kæbrør erots
+2619 store snøde 11 edøns erots
+2620 store vibenshuus 16 suuhsnebiv erots
+2621 stourup 7 puruots
+2622 strandby (varde) 16 )edrav( ybdnarts
+2623 strandby (vester hornum) 24 )munroh retsev( ybdnarts
+2624 strande 7 ednarts
+2625 strellev 8 vellerts
+2626 strendur 8 rudnerts
+2627 struer jpx mm 13 mm xpj reurts
+2628 strynø 6 ønyrts
+2629 strømmen 8 nemmørts
+2630 stubberup 9 purebbuts
+2631 stødov 6 vodøts
+2632 sueder lygum 12 mugyl redeus
+2633 suederbrarup 12 purarbredeus
+2634 suederhastedt 13 tdetsahredeus
+2635 suederholz 10 zlohredeus
+2636 suederstapel 12 lepatsredeus
+2637 suesel 6 leseus
+2638 sumba 5 abmus
+2639 sundby m 8 m ybdnus
+2640 sundby thy 10 yht ybdnus
+2641 svejbæk 7 kæbjevs
+2642 svenstrup j 11 j purtsnevs
+2643 svindinge fyn 13 nyf egnidnivs
+2644 svinoy 6 yonivs
+2645 svinsbjerg 10 grejbsnivs
+2646 svorbæk 7 kæbrovs
+2647 sydals 6 sladys
+2648 syrevej 7 jeverys
+2649 sæby (roskilde) 15 )edliksor( ybæs
+2650 sæby (slagelse) 15 )eslegals( ybæs
+2651 sædding 7 gniddæs
+2652 sædding strand 14 dnarts gniddæs
+2653 sækbæk 6 kæbkæs
+2654 sæsing 6 gnisæs
+2655 søborg (tøm) 12 )møt( grobøs
+2656 søby ærø 8 øræ ybøs
+2657 søbyvad 7 davybøs
+2658 søerup 6 pureøs
+2659 søgaards kro 12 ork sdraagøs
+2660 søhus 5 suhøs
+2661 søldarfjørdur 13 rudrøjfradløs
+2662 søllerød 8 dørelløs
+2663 sølyst 6 tsyløs
+2664 søndenbro 9 orbnednøs
+2665 sønder bjerge 13 egrejb rednøs
+2666 sønder bork 11 krob rednøs
+2667 sønder bramdrup 15 purdmarb rednøs
+2668 sønder draaby 13 ybaard rednøs
+2669 sønder kongerslev 17 velsregnok rednøs
+2670 sønder tornby 13 ybnrot rednøs
+2671 sønder tranders 15 srednart rednøs
+2672 sønder vium 11 muiv rednøs
+2673 sønder vorupør 14 røpurov rednøs
+2674 sønder ørslev 13 velsrø rednøs
+2675 sønderhav 9 vahrednøs
+2676 sønderklit 10 tilkrednøs
+2677 sønderlev 9 velrednøs
+2678 sønderport 10 troprednøs
+2679 sønderskov 10 voksrednøs
+2680 søndervig 9 givrednøs
+2681 søndre hadsund 14 dnusdah erdnøs
+2682 sørvagur 8 rugavrøs
+2683 taaning 7 gninaat
+2684 taarbæk 7 kæbraat
+2685 taarnmark 9 kramnraat
+2686 taars (nakskov) 15 )vokskan( sraat
+2687 taarstedt 9 tdetsraat
+2688 taasinge 8 egnisaat
+2689 tambohuset 10 tesuhobmat
+2690 tarp (flensburg) 16 )grubsnelf( prat
+2691 tarp (varde) 12 )edrav( prat
+2692 terkelsbøl 10 løbslekret
+2693 testrup 7 purtset
+2694 thinghøigaard 13 draagiøhgniht
+2695 thise 5 esiht
+2696 thoreby 7 yberoht
+2697 thorlund 8 dnulroht
+2698 thorup 6 puroht
+2699 thorup (rønde) 14 )ednør( puroht
+2700 thorup sj 9 js puroht
+2701 thyborøn havn 13 nvah nørobyht
+2702 thyholm 7 mlohyht
+2703 tillitse 8 estillit
+2704 tindbæk 7 kæbdnit
+2705 tingkro 7 orkgnit
+2706 tirstrup østj 13 jtsø purtsrit
+2707 tiset 5 tesit
+2708 tisvildeleje 12 ejeledlivsit
+2709 tjele 5 elejt
+2710 tjæreby 7 yberæjt
+2711 tjørring 8 gnirrøjt
+2712 todbøl 6 løbdot
+2713 toftir 6 ritfot
+2714 tokkerup 8 purekkot
+2715 tommerup st 11 ts puremmot
+2716 toreby l 8 l yberot
+2717 tornled 7 delnrot
+2718 torrig lolland 14 dnallol girrot
+2719 torshavn 8 nvahsrot
+2720 torsminde 9 ednimsrot
+2721 torum 5 murot
+2722 torupvolde 10 edlovpurot
+2723 toustrup 8 purtsuot
+2724 tranbjerg 9 grejbnart
+2725 tranderup 9 purednart
+2726 tranebjerg samsø 16 øsmas grejbenart
+2727 tranehuse 9 esuhenart
+2728 tranekær 8 rækenart
+2729 tranget 7 tegnart
+2730 treia 5 aiert
+2731 trittau 7 uattirt
+2732 true 4 eurt
+2733 trunderup 9 purednurt
+2734 tryggelev 9 veleggyrt
+2735 trønse 6 esnørt
+2736 trørød 6 dørørt
+2737 tuen 4 neut
+2738 tunø kattegat 13 tagettak ønut
+2739 tureby 6 yberut
+2740 tved (rønde) 12 )ednør( devt
+2741 tved (thisted) 14 )detsiht( devt
+2742 tvøroyri 8 iryorøvt
+2743 tæbring 7 gnirbæt
+2744 tøenning 8 gninneøt
+2745 tømmerup 8 puremmøt
+2746 tønning 7 gninnøt
+2747 tøstrup 7 purtsøt
+2748 udby (holbæk) 13 )kæbloh( ybdu
+2749 udby (middelfart) 17 )trafleddim( ybdu
+2750 udby (vordingborg) 18 )grobgnidrov( ybdu
+2751 udbyhøj 7 jøhybdu
+2752 udbyneder 9 redenybdu
+2753 udbyover 8 revoybdu
+2754 uelsby 6 ybsleu
+2755 uetersen 8 nesreteu
+2756 uggeløse 8 esøleggu
+2757 ugleenge 8 egneelgu
+2758 uhe 3 ehu
+2759 ulfkjær 7 ræjkflu
+2760 ulstrup (kalundborg) 20 )grobdnulak( purtslu
+2761 ulstrup kro 11 ork purtslu
+2762 ulsø olstrup 12 purtslo øslu
+2763 ulzburg 7 grubzlu
+2764 urup 4 puru
+2765 usserød 7 døressu
+2766 vagur 5 rugav
+2767 vallekilde 10 edlikellav
+2768 vallensbæk strand 17 dnarts kæbsnellav
+2769 vallø 5 øllav
+2770 valsbøl 7 løbslav
+2771 vandborg 8 grobdnav
+2772 vandet thy 10 yht tednav
+2773 vandling 8 gnildnav
+2774 vandrup 7 purdnav
+2775 vang (hasle) 12 )elsah( gnav
+2776 vang (thisted) 14 )detsiht( gnav
+2777 vangede 7 edegnav
+2778 vanløse 7 esølnav
+2779 varmark 7 kramrav
+2780 vassingerød 11 døregnissav
+2781 vedby 5 ybdev
+2782 vedbæk 6 kæbdev
+2783 vedsted station 15 noitats detsdev
+2784 veerst 6 tsreev
+2785 vejbyvad 8 davybjev
+2786 vejers strand 13 dnarts srejev
+2787 vejgaard 8 draagjev
+2788 vejle jpx mm 12 mm xpj eljev
+2789 vejlefjord 10 drojfeljev
+2790 vejrup 6 purjev
+2791 vejstrup kirke 14 ekrik purtsjev
+2792 vejstruprød 11 dørpurtsjev
+2793 veksø sjælland 14 dnallæjs øskev
+2794 vellerup sommerby 17 ybremmos purellev
+2795 velling (brædstrup) 19 )purtsdærb( gnillev
+2796 vemmelev 8 velemmev
+2797 vemmenæs 8 sænemmev
+2798 vemmetofte 10 etfotemmev
+2799 venge 5 egnev
+2800 vestbirk 8 kribtsev
+2801 vestegnens pakkeomdelingscenter 31 retnecsgniledmoekkap snengetsev
+2802 vestenskov 10 voksnetsev
+2803 vester brønderslev 18 velsrednørb retsev
+2804 vester grønning 15 gninnørg retsev
+2805 vester karleby 14 ybelrak retsev
+2806 vester lindet 13 tednil retsev
+2807 vester marie 12 eiram retsev
+2808 vester nebel (esbjerg) 22 )grejbse( leben retsev
+2809 vester tirsted 14 detsrit retsev
+2810 vester tørslev 14 velsrøt retsev
+2811 vester vandet 13 tednav retsev
+2812 vesterborg 10 grobretsev
+2813 vesterby 8 ybretsev
+2814 vesterby (tøm) 14 )møt( ybretsev
+2815 vesterlund 10 dnulretsev
+2816 vesterø 7 øretsev
+2817 vestmanna 9 annamtsev
+2818 viborg jpx mm 13 mm xpj grobiv
+2819 viby j 6 j ybiv
+2820 viby sjælland 13 dnallæjs ybiv
+2821 vidareidi 9 idieradiv
+2822 vidskende 9 edneksdiv
+2823 viemose 7 esomeiv
+2824 vildsund vest 13 tsev dnusdliv
+2825 villestofte 11 etfotselliv
+2826 vindbyholt 10 tlohybdniv
+2827 vindehelsinge 13 egnislehedniv
+2828 vinding 7 gnidniv
+2829 vindum 6 mudniv
+2830 vingsted mølle 14 elløm detsgniv
+2831 vinten enner skole 18 eloks renne netniv
+2832 virum 5 muriv
+2833 visby sønderj 13 jrednøs ybsiv
+2834 vistoft 7 tfotsiv
+2835 vittrup 7 purttiv
+2836 voldtofte 9 etfotdlov
+2837 volkmølle 9 ellømklov
+2838 vollerup 8 purellov
+2839 vollsmose 9 esomsllov
+2840 volstrup 8 purtslov
+2841 vonsbæk 7 kæbsnov
+2842 vonsild 7 dlisnov
+2843 voorde 6 edroov
+2844 vorgod kro 10 ork dogrov
+2845 vorvadsbro 10 orbsdavrov
+2846 vostrup 7 purtsov
+2847 vrads 5 sdarv
+2848 vrangstrup 10 purtsgnarv
+2849 vreilev 7 velierv
+2850 vridsløselille 14 ellilesølsdirv
+2851 vrigsted 8 detsgirv
+2852 vrist 5 tsirv
+2853 vrøgum 6 mugørv
+2854 vrønding 8 gnidnørv
+2855 vust 4 tsuv
+2856 værebro møller 14 relløm orberæv
+2857 værebroparken 13 nekraporberæv
+2858 værløselejren 13 nerjelesølræv
+2859 værslev 7 velsræv
+2860 vøl 3 løv
+2861 vørladegaard 12 draagedalrøv
+2862 vørsa 5 asrøv
+2863 vørsaa 6 aasrøv
+2864 wandsbeck 9 kcebsdnaw
+2865 wedel 5 ledew
+2866 wentorf 7 frotnew
+2867 wewelsfleth 11 htelfslewew
+2868 wilster 7 retsliw
+2869 wolde 5 edlow
+2870 wrist 5 tsirw
+2871 wyck 4 kcyw
+2872 ødis bramdrup 13 purdmarb sidø
+2873 øksendrup 9 purdneskø
+2874 øland 5 dnalø
+2875 ølby lyng 9 gnyl yblø
+2876 ølst 4 tslø
+2877 ølstykke 8 ekkytslø
+2878 ørnstrup 8 purtsnrø
+2879 ørre 4 errø
+2880 ørslev (ringsted) 17 )detsgnir( velsrø
+2881 ørslev (skælskør) 17 )røkslæks( velsrø
+2882 ørslev (slagelse) 17 )eslegals( velsrø
+2883 ørslev (vordingborg) 20 )grobgnidrov( velsrø
+2884 ørsted (tøm) 12 )møt( detsrø
+2885 ørsø 4 øsrø
+2886 ørum djurs 10 srujd murø
+2887 ørum sønderlyng 15 gnylrednøs murø
+2888 øster assels 12 slessa retsø
+2889 øster bording 13 gnidrob retsø
+2890 øster dønse 11 esnød retsø
+2891 øster gjesten 13 netsejg retsø
+2892 øster høgild 12 dligøh retsø
+2893 øster lyby 10 ybyl retsø
+2894 øster sundby 12 ybdnus retsø
+2895 øster svenstrup 15 purtsnevs retsø
+2896 øster terp 10 pret retsø
+2897 øster uttrup 12 purttu retsø
+2898 øster vandet 12 tednav retsø
+2899 østerby læsø 12 øsæl ybretsø
+2900 østerbølle 10 elløbretsø
+2901 østervang 9 gnavretsø
+2902 øversee 7 eesrevø
