@@ -1,12 +1,12 @@
 import csv
 
-potential_words = []
+potential_words = set()
 
 
 with open("word_list.csv", "r") as word_file:
     word_list = csv.reader(word_file)
     for row in word_list:
-        potential_words.append(row[0])
+        potential_words.add(row[0])
 
 
 def remove_letter(letter, at: int = -1):
@@ -29,6 +29,8 @@ def include_letter(letter, at: int = -1):
                 potential_words.remove(word)
 
 
+memory = [potential_words.copy()]
+
 while True:
     print(potential_words)
     print(len(potential_words))
@@ -45,6 +47,7 @@ while True:
                 remove_letter(input("Letter to remove: "))
         case "e":
             remove_letter(next_action[2], int(next_action[4]))
+            include_letter(next_action[2])
         case "i":
             if len(next_action) > 4:
                 include_letter(next_action[2], int(next_action[4]))
@@ -52,3 +55,14 @@ while True:
                 include_letter(next_action[2])
             else:
                 include_letter(input("Letter to include: "))
+        case "u":
+            if len(memory) == 1:
+                print("Already at orignal")
+                continue
+            memory.pop()
+            potential_words = memory[-1]
+            continue
+        case "q":
+            break
+
+    memory.append(potential_words.copy())
