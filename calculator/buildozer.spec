@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = Pong
+title = FirstCalculator
 
 # (str) Package name
-package.name = pingapp
+package.name = calculatorapp
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -95,7 +95,7 @@ fullscreen = 0
 
 # (list) Permissions
 # (See https://python-for-android.readthedocs.io/en/latest/buildoptions/#build-options-1 for all the supported syntaxes and properties)
-#android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18)
+android.permissions = android.permission.INTERNET, (name=android.permission.MANAGE_EXTERNAL_STORAGE;maxSdkVersion=18)
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host

@@ -366,3 +366,5 @@ FodyWeavers.xsd
 
 # Mine
 venv/
+bin/
+.buildozer/

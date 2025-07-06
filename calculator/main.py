@@ -5,7 +5,7 @@ from kivy.uix.button import Button
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.textinput import TextInput
 
-Window.size = (300, 500)
+# Window.size = (300, 500)
 
 
 class Calculator(BoxLayout):
@@ -13,7 +13,7 @@ class Calculator(BoxLayout):
         super().__init__(orientation="vertical", **kwargs)
 
         self.result = TextInput(
-            font_size=45,
+            # font_size=45,
             size_hint_y=0.2,
             readonly=True,
             halign="right",
@@ -36,7 +36,7 @@ class Calculator(BoxLayout):
             for item in row:
                 button = Button(
                     text=item,
-                    font_size=32,
+                    # font_size=32,
                     on_press=self.button_clicked,
                     background_color=self.set_button_color(item),
                 )
