@@ -18,6 +18,8 @@ class Calculator(BoxLayout):
             readonly=True,
             halign="right",
             multiline=False,
+            background_color=[0.2, 0.2, 0.2, 1],
+            foreground_color=[1, 1, 1, 1],
         )
         self.add_widget(self.result)
 
@@ -32,57 +34,62 @@ class Calculator(BoxLayout):
         grid = GridLayout(cols=4, spacing=5, padding=10)
         for row in buttons:
             for item in row:
-                button = Button(text=item, font_size=32, on_press=self.button_clicked)
+                button = Button(
+                    text=item,
+                    font_size=32,
+                    on_press=self.button_clicked,
+                    background_color=self.set_button_color(item),
+                )
                 grid.add_widget(button)
         self.add_widget(grid)
 
+    def set_button_color(self, label):
+        if label in {"C", "+/-", "%"}:
+            return [0.6, 0.6, 0.6, 1]
+        if label in {"/", "*", "-", "+", "="}:
+            return [1, 0.65, 0, 1]
+        return [0.3, 0.3, 0.3, 1]
+
     def button_clicked(self, instance):
         text = instance.text
+        operators = [".", "/", "*", "-", "+"]
+
+        print(self.result.text)
+        if text == "ERROR!":
+            self.result.text = ""
 
         match text:
             case "C":
-                pass
+                self.result.text = ""
             case "+/-":
-                pass
-            case "0":
-                pass
-            case "00":
-                pass
-            case "1":
-                pass
-            case "2":
-                pass
-            case "3":
-                pass
-            case "4":
-                pass
-            case "5":
-                pass
-            case "6":
-                pass
-            case "7":
-                pass
-            case "8":
-                pass
-            case "9":
-                pass
-            case ".":
-                pass
-            case "/":
-                pass
-            case "*":
-                pass
-            case "-":
-                pass
-            case "+":
-                pass
-            case "=":
-                pass
+                self.toggle_negative()
             case "%":
-                pass
+                self.result.text += "Why?"
+            case "=":
+                self.calculate()
+            case num if num.isdigit():
+                self.result.text += num
+            case opt if opt in operators:
+                if not self.result.text[-1] in operators:
+                    self.result.text += text
             case _:
                 print("Unrecognized button Pressed")
                 # print(" " * 11, f'case "{text}":', "\n", " " * 15, "pass")
+
+    def calculate(self):
+        try:
+            self.result.text = str(eval(self.result.text))
+        except Exception:
+            self.result.text = "ERROR!"
+
+    def toggle_negative(self):
+        if not self.result.text:
+            print("Invalid text")
+
+        if self.result.text[0] == "-":
+            self.result.text = self.result.text[1:]
+        else:
+            self.result.text = "-" + self.result.text
 
 
 class CalculatorApp(App):
