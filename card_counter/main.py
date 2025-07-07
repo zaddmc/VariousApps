@@ -36,8 +36,12 @@ class CardCounter(BoxLayout):
             file.write(self.result.text)
 
     def load_data(self, instance):
-        with open("mydata.txt", "r") as file:
-            self.result.text = file.read()
+        try:
+            with open("mydata.txt", "r+") as file:
+                self.result.text = file.read()
+        except FileNotFoundError:
+            print("File not found")
+            return
 
 
 class CardCounterApp(App):
