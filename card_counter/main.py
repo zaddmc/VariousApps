@@ -19,7 +19,25 @@ class CardCounter(BoxLayout):
         self.add_widget(self.result)
 
         grid = GridLayout(cols=2, spacing=5, padding=10)
-        grid.add_widget(Button(text="Save"))
+        grid.add_widget(
+            Button(
+                text="Save", on_press=self.save_data, background_color=[1, 0.65, 0, 1]
+            )
+        )
+        grid.add_widget(
+            Button(
+                text="Load", on_press=self.load_data, background_color=[1, 0.65, 0, 1]
+            )
+        )
+        self.add_widget(grid)
+
+    def save_data(self, instance):
+        with open("mydata.txt", "w") as file:
+            file.write(self.result.text)
+
+    def load_data(self, instance):
+        with open("mydata.txt", "r") as file:
+            self.result.text = file.read()
 
 
 class CardCounterApp(App):
