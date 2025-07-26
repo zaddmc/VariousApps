@@ -15,11 +15,7 @@ class Chess(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(orientation="vertical", **kwargs)
 
-        grid = GridLayout(cols=8, rows=8, spacing=5, padding=10)
-        for x in range(8):
-            for y in range(8):
-                grid.add_widget(Tile([0, 0, 0, 1] if x % 2 == 0 else [1, 1, 1, 1]))
-        self.add_widget(grid)
+        self.add_widget(Tile.make_grid())
 
     def set_tile_color(self, label):
         return [0.3, 0.3, 0.3, 1]
@@ -39,6 +35,20 @@ class Tile(Widget):
     def update_rect(self, *args):
         self.rect.pos = self.pos
         self.rect.size = self.size
+
+    @staticmethod
+    def make_grid(grid_size: int = 8):
+        grid = GridLayout(cols=grid_size, rows=grid_size)
+        my_switch: bool = False
+        for _ in range(grid_size):
+            for _ in range(grid_size):
+                color = [0, 0, 0, 1] if my_switch else [1, 1, 1, 1]
+                my_switch = not my_switch
+                tile = Tile(color)
+                grid.add_widget(tile)
+            if grid_size % 2 == 0:
+                my_switch = not my_switch
+        return grid
 
 
 class ChessApp(App):
