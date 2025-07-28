@@ -74,7 +74,15 @@ class Piece(ButtonBehavior, Image):
         self.on_press = self.ajsf
 
     def ajsf(self):
-        print(str(self.piece_color) + " " + str(self.species))
+        print(
+            f"{str(self.piece_color)} {str(self.species)} index: {self.parent.children.index(self)}"
+        )
+        myparent = self.parent
+        myindex = myparent.children.index(self)
+
+        myparent.remove_widget(self)
+
+        myparent.add_widget(Widget(), myindex)
 
 
 class PieceColor(Enum):
@@ -101,4 +109,4 @@ class PieceSpecies(Enum):
 
 
 if __name__ == "__main__":
-    print(Piece("./Images/b_pawn.png"))
+    print(Piece("Images/b_pawn.png"))
