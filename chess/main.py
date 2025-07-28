@@ -1,27 +1,34 @@
 from kivy.app import App
 from kivy.core.window import Window
 from kivy.graphics import Color, Rectangle
-from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
+from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.gridlayout import GridLayout
+from kivy.uix.image import Image
 from kivy.uix.label import Label
 from kivy.uix.textinput import TextInput
 from kivy.uix.widget import Widget
+from kivy.utils import rgba
+
+from piece_generator import BoardGenerator
 
 Window.size = (800, 800)
 
 
-class Chess(BoxLayout):
+class Chess(FloatLayout):
     def __init__(self, **kwargs):
-        super().__init__(orientation="vertical", **kwargs)
+        super().__init__(**kwargs)
 
-        self.add_widget(Tile.make_grid())
+        self.surface_grid = Tile.make_grid()
+        self.add_widget(self.surface_grid)
 
-    def set_tile_color(self, label):
-        return [0.3, 0.3, 0.3, 1]
+        board_generator = BoardGenerator()
+        self.piece_grid = board_generator.get_board()
+        self.add_widget(self.piece_grid)
 
-    def button_clicked(self, instance):
+    def piece_clicked(self, instance):
         text = instance.text
+        print("I am a button")
 
 
 class Tile(Widget):
@@ -42,7 +49,7 @@ class Tile(Widget):
         my_switch: bool = False
         for _ in range(grid_size):
             for _ in range(grid_size):
-                color = [0, 0, 0, 1] if my_switch else [1, 1, 1, 1]
+                color = rgba("#c3a082") if my_switch else rgba("#f2e1c3")
                 my_switch = not my_switch
                 tile = Tile(color)
                 grid.add_widget(tile)
