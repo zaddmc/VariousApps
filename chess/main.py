@@ -26,10 +26,6 @@ class Chess(FloatLayout):
         self.piece_grid = board_generator.get_board()
         self.add_widget(self.piece_grid)
 
-    def piece_clicked(self, instance):
-        text = instance.text
-        print("I am a button")
-
 
 class Tile(Widget):
     def __init__(self, rgba, **kwargs):

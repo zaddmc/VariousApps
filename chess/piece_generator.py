@@ -1,13 +1,17 @@
 from enum import Enum
 
+from kivy.uix.behaviors import ButtonBehavior
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.image import Image
 from kivy.uix.widget import Widget
 
 
 class BoardGenerator:
-    def __init__(self, grid_size: int = 8):
-        self.grid: GridLayout = GridLayout(cols=grid_size, rows=grid_size)
+    """There is some magic numbers, that assume a normal board and
+    that the grid remains a 8x8"""
+
+    def __init__(self):
+        self.grid: GridLayout = GridLayout(cols=8, rows=8)
 
         self.place_backline("b")
         self.place_pawns("b")
@@ -51,8 +55,8 @@ class BoardGenerator:
             self.grid.add_widget(Piece(source))
 
 
-class Piece(Image):
-    def __init__(self, source: str):
+class Piece(ButtonBehavior, Image):
+    def __init__(self, source: str, **kwargs):
         """Give the source to an image and it will auto detect
           which species and color the piece will be.
         Given the constraint that the source is formulated like 'Images/c_name.png'
@@ -62,10 +66,15 @@ class Piece(Image):
         super().__init__()
 
         self.piece_color: PieceColor = (
-            PieceColor.BLACK if source[0] == "b" else PieceColor.WHITE
+            PieceColor.BLACK if source[7] == "b" else PieceColor.WHITE
         )
         self.species: PieceSpecies = PieceSpecies(source[9:-4])
         self.source: str = source
+
+        self.on_press = self.ajsf
+
+    def ajsf(self):
+        print(str(self.piece_color) + " " + str(self.species))
 
 
 class PieceColor(Enum):
