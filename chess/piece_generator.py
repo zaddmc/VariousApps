@@ -84,17 +84,6 @@ class Piece(ButtonBehavior, Image):
     def on_press(self):
         Behavior.tile_clicked(self)
 
-    def ajsf(self):
-        print(
-            f"{str(self.piece_color)} {str(self.species)} index: {self.parent.children.index(self)}"
-        )
-        myparent = self.parent
-        myindex = myparent.children.index(self)
-
-        myparent.remove_widget(self)
-
-        myparent.add_widget(Blank(), myindex)
-
 
 class PieceColor(Enum):
     """This allows the color to also be used like a bool, but preferred to be a enum"""
