@@ -5,6 +5,8 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.image import Image
 from kivy.uix.widget import Widget
 
+from piece_behavior import Behavior
+
 
 class BoardGenerator:
     """There is some magic numbers, that assume a normal board and
@@ -49,10 +51,18 @@ class BoardGenerator:
 
     def placer(self, species: str):
         if species == "blank":
-            self.grid.add_widget(Widget())
+            self.grid.add_widget(Blank())
         else:
             source = "Images/" + species + ".png"
             self.grid.add_widget(Piece(source))
+
+
+class Blank(ButtonBehavior, Widget):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def on_press(self):
+        Behavior.tile_clicked(self)
 
 
 class Piece(ButtonBehavior, Image):
@@ -71,7 +81,8 @@ class Piece(ButtonBehavior, Image):
         self.species: PieceSpecies = PieceSpecies(source[9:-4])
         self.source: str = source
 
-        self.on_press = self.ajsf
+    def on_press(self):
+        Behavior.tile_clicked(self)
 
     def ajsf(self):
         print(
@@ -82,7 +93,7 @@ class Piece(ButtonBehavior, Image):
 
         myparent.remove_widget(self)
 
-        myparent.add_widget(Widget(), myindex)
+        myparent.add_widget(Blank(), myindex)
 
 
 class PieceColor(Enum):
