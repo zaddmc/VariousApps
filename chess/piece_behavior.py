@@ -11,7 +11,7 @@ class Behavior:
 
         match caller.species:
             case PieceSpecies.BLANK:
-                print("I AM BLANK", caller.parent.children.index(caller))
+                print("I AM BLANK", caller.get_index())
 
             case PieceSpecies.PAWN:
                 Behavior.last_call = Pawn(caller)
@@ -28,8 +28,8 @@ class Behavior:
 
     @staticmethod
     def swap_tiles(tile1, tile2):
-        tile1_index = tile1.parent.children.index(tile1)
-        tile2_index = tile2.parent.children.index(tile2)
+        tile1_index = tile1.get_index()
+        tile2_index = tile2.get_index()
 
         parent = tile1.parent
 
@@ -43,17 +43,32 @@ class Behavior:
             parent.add_widget(tile1, tile2_index)
             parent.add_widget(tile2, tile1_index)
 
+    @staticmethod
+    def move_tile(origin, dest):
+        """'origin' is a piece that should be moved, leaving a blank in its place
+        'dest' can be another piece/blank or an index for the first piece to move to
+        Note: This function will not validate the given move,
+        it will only ensure it is whitin bounderies
+        """
+
+        dest_index = dest if isinstance(dest, int) else dest.parent.children.index(dest)
+        if 0 > dest_index >= 63:
+            IndexError(f"'dest_index' is out of bounds ({dest_index})")
+
+        orig_index = origin.get_index()
+
 
 class PieceAction:
     def __init__(self, caller):
         self.innitiater = caller
-        caller_index = caller.parent.children.index(caller)
+        caller_index = caller.get_index()
         print(caller_index)
         self.possible_tiles = set()
 
     def follow_up(self, caller):
         print(
-            f"iniitiater: {self.innitiater.parent.children.index(self.innitiater)}   Other: {caller.parent.children.index(caller)}"
+            f"innitiater: {self.innitiater.get_index()}  "
+            + f"Other: {caller.get_index()}"
         )
 
     def find_possible_tiles(self):

@@ -56,17 +56,22 @@ class BoardGenerator:
             self.grid.add_widget(Piece(source))
 
 
-class Blank(ButtonBehavior, Widget):
+class BasePiece(ButtonBehavior):
+    def on_press(self):
+        Behavior.tile_clicked(self)
+
+    def get_index(self) -> int:
+        return self.parent.children.index(self)
+
+
+class Blank(BasePiece, Widget):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.species: PieceSpecies = PieceSpecies.BLANK
         self.piece_color: PieceColor = PieceColor.BLANK
 
-    def on_press(self):
-        Behavior.tile_clicked(self)
 
-
-class Piece(ButtonBehavior, Image):
+class Piece(BasePiece, Image):
     def __init__(self, source: str, **kwargs):
         """Give the source to an image and it will auto detect
           which species and color the piece will be.
@@ -81,9 +86,6 @@ class Piece(ButtonBehavior, Image):
         )
         self.species: PieceSpecies = PieceSpecies(source[9:-4])
         self.source: str = source
-
-    def on_press(self):
-        Behavior.tile_clicked(self)
 
 
 if __name__ == "__main__":
