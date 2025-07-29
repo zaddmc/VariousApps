@@ -6,6 +6,7 @@ from kivy.uix.image import Image
 from kivy.uix.widget import Widget
 
 from piece_behavior import Behavior
+from piece_enums import PieceColor, PieceSpecies
 
 
 class BoardGenerator:
@@ -60,6 +61,8 @@ class BoardGenerator:
 class Blank(ButtonBehavior, Widget):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        self.species: PieceSpecies = PieceSpecies.BLANK
+        self.piece_color: PieceColor = PieceColor.BLANK
 
     def on_press(self):
         Behavior.tile_clicked(self)
@@ -83,29 +86,6 @@ class Piece(ButtonBehavior, Image):
 
     def on_press(self):
         Behavior.tile_clicked(self)
-
-
-class PieceColor(Enum):
-    """This allows the color to also be used like a bool, but preferred to be a enum"""
-
-    BLACK = 0
-    WHITE = 1
-
-
-class PieceSpecies(Enum):
-    """It has self casting, i.e if 'PieceSpecies' is called with a parramater,
-      of a string it can be casted as that species.
-
-    Note: i wanted the call it 'PieceClass' but class is protected (i wonder why /s)
-      and it interferred with the 'Piece' class
-    """
-
-    PAWN = "pawn"
-    ROOK = "rook"
-    KNIGHT = "knight"
-    BISHOP = "bishop"
-    QUEEN = "queen"
-    KING = "king"
 
 
 if __name__ == "__main__":

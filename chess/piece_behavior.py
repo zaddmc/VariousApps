@@ -1,14 +1,17 @@
+from piece_enums import PieceColor, PieceSpecies
+
+
 class Behavior:
     last_caller = None
 
     @staticmethod
     def tile_clicked(caller):
-        print(caller.parent.children.index(caller))
-        if caller and Behavior.last_caller:
-            Behavior.swap_tiles(caller, Behavior.last_caller)
-            Behavior.last_caller = None
-            return
 
+        match caller.species:
+            case PieceSpecies.BLANK:
+                return
+            case PieceSpecies.PAWN:
+                Pawn(caller)
         Behavior.last_caller = caller
 
     @staticmethod
@@ -30,7 +33,9 @@ class Behavior:
 
 
 class Pawn:
-    pass
+    def __init__(self, caller):
+        caller_index = caller.parent.children.index(caller)
+        print(caller_index)
 
 
 class Rook:
