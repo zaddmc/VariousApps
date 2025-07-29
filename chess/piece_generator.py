@@ -1,5 +1,3 @@
-from enum import Enum
-
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.image import Image
@@ -16,25 +14,25 @@ class BoardGenerator:
     def __init__(self):
         self.grid: GridLayout = GridLayout(cols=8, rows=8)
 
-        self.place_backline("b")
-        self.place_pawns("b")
-        self.place_blanks()
-        self.place_pawns("w")
-        self.place_backline("w")
+        self.__place_backline("b")
+        self.__place_pawns("b")
+        self.__place_blanks()
+        self.__place_pawns("w")
+        self.__place_backline("w")
 
     def get_board(self):
         return self.grid
 
-    def place_pawns(self, color: str):
+    def __place_pawns(self, color: str):
         for _ in range(8):
-            self.placer(color + "_pawn")
+            self.__placer(color + "_pawn")
 
-    def place_blanks(self):
+    def __place_blanks(self):
         for _ in range(4):
             for _ in range(8):
-                self.placer("blank")
+                self.__placer("blank")
 
-    def place_backline(self, color: str):
+    def __place_backline(self, color: str):
         """Input 'color' is expected to be either 'w' or 'b'"""
         backline = [
             "rook",
@@ -48,9 +46,9 @@ class BoardGenerator:
         ]
 
         for piece in backline:
-            self.placer(color + "_" + piece)
+            self.__placer(color + "_" + piece)
 
-    def placer(self, species: str):
+    def __placer(self, species: str):
         if species == "blank":
             self.grid.add_widget(Blank())
         else:
