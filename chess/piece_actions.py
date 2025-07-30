@@ -9,6 +9,7 @@ class Behavior:
     def tile_clicked(caller):
         if Behavior.last_call:
             Behavior.last_call.follow_up(caller)
+            return
 
         match caller.species:
             case PieceSpecies.BLANK:
@@ -29,6 +30,8 @@ class Behavior:
 
 
 class PieceAction:
+    """Base actions for the other actions"""
+
     def __init__(self, caller):
         self.innitiater = caller
         caller_index = caller.get_index()

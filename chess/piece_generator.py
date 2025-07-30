@@ -1,9 +1,10 @@
+import importlib
+
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.image import Image
 from kivy.uix.widget import Widget
 
-from piece_behavior import Behavior
 from piece_enums import PieceColor, PieceSpecies
 
 
@@ -58,6 +59,7 @@ class BoardGenerator:
 
 class BasePiece(ButtonBehavior):
     def on_press(self):
+        Behavior = getattr(importlib.import_module("piece_actions"), "Behavior")
         Behavior.tile_clicked(self)
 
     def get_index(self) -> int:
