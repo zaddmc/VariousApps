@@ -9,6 +9,7 @@ class Behavior:
     def tile_clicked(caller):
         if Behavior.last_call:
             Behavior.last_call.follow_up(caller)
+            Behavior.last_call = None
             return
 
         match caller.species:
@@ -35,29 +36,53 @@ class PieceAction:
     def __init__(self, caller):
         self.innitiater = caller
         caller_index = caller.get_index()
-        print(caller_index)
+        print(f"{caller.piece_color} {caller.species} index: {caller_index}")
         self.possible_tiles = set()
+        self.find_possible_tiles()
+        print(self.possible_tiles)
 
     def follow_up(self, caller):
         print(
-            f"innitiater: {self.innitiater.get_index()}  "
-            + f"Other: {caller.get_index()}"
+            f"innitiater: {self.innitiater.get_index()}",
+            f"Other: {caller.get_index()}",
         )
-        MovementHandler.move_tile(self.innitiater, caller)
+        if caller.get_index() in self.possible_tiles:
+            MovementHandler.move_tile(self.innitiater, caller)
 
     def find_possible_tiles(self):
-        NotImplementedError("This function should be implemented by an inherinter")
+        raise NotImplementedError(
+            "This function should be implemented by an inherinter"
+        )
 
-    def get_possible_tiles(self):
-        return self.possible_tiles
+    def get_relative_index(self, check):
+        modifier = 1 if self.innitiater.piece_color == PieceColor.WHITE else -1
+        return self.innitiater.get_index() + (check * modifier)
+
+    def get_relative(self, check):
+        return self.innitiater.get_sibling(self.get_relative_index(check))
+
+    def add_tile(self, index):
+        self.possible_tiles.add(self.get_relative_index(index))
+
+    def assume_tile(self, index: int, assumption: PieceSpecies = PieceSpecies.BLANK):
+        if self.get_relative(index).species == assumption:
+            self.add_tile(index)
+            return True
+        return False
 
 
 class Pawn(PieceAction):
     def find_possible_tiles(self):
-        pass
+        self.forward()
+        self.double_forward()
 
     def forward(self):
-        pass
+        self.assume_tile(8)
+
+    def double_forward(self):
+        if self.innitiater.has_moved:
+            return
+        self.assume_tile(16)
 
 
 class Rook(PieceAction):

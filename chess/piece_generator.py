@@ -80,6 +80,10 @@ class BasePiece(ButtonBehavior):
     def get_index(self) -> int:
         return self.parent.children.index(self)
 
+    def get_sibling(self, sibling: int):
+        """Get sibling by index"""
+        return self.parent.children[sibling]
+
 
 class Blank(BasePiece, Widget):
     def __init__(self, **kwargs):
@@ -103,3 +107,6 @@ class Piece(BasePiece, Image):
         )
         self.species: PieceSpecies = PieceSpecies(source[9:-4])
         self.source: str = source
+
+        # Used for certain logic for movement
+        self.has_moved: bool = False

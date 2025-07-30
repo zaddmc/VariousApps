@@ -29,7 +29,7 @@ class MovementHandler:
 
         dest_index = dest if isinstance(dest, int) else dest.get_index()
         if 0 > dest_index >= 63:
-            IndexError(f"'dest_index' is out of bounds ({dest_index})")
+            raise IndexError(f"'dest_index' is out of bounds ({dest_index})")
 
         parent = origin.parent
 
