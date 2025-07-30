@@ -65,17 +65,21 @@ class PieceAction:
     def add_tile(self, index):
         self.possible_tiles.add(self.get_relative_index(index))
 
-    def assume_tile(self, index: int, assumption: PieceSpecies = PieceSpecies.BLANK):
-        if self.get_relative(index).species == assumption:
+    def assume_tile(self, index: int):
+        """Assume tile to check is blank"""
+        if self.get_relative(index).species == PieceSpecies.BLANK:
             self.add_tile(index)
-            return True
-        return False
+
+    def assume_enemy(self, index: int):
+        if self.get_relative(index).species != PieceSpecies.BLANK:
+            self.add_tile(index)
 
 
 class Pawn(PieceAction):
     def find_possible_tiles(self):
         self.forward()
         self.double_forward()
+        self.attack()
 
     def forward(self):
         self.assume_tile(8)
@@ -83,7 +87,12 @@ class Pawn(PieceAction):
     def double_forward(self):
         if self.innitiater.has_moved:
             return
-        self.assume_tile(16)
+        if self.get_relative(8).species == PieceSpecies.BLANK:
+            self.assume_tile(16)
+
+    def attack(self):
+        self.assume_enemy(7)
+        self.assume_enemy(9)
 
 
 class Rook(PieceAction):
