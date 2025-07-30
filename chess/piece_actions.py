@@ -48,6 +48,7 @@ class PieceAction:
         )
         if caller.get_index() in self.possible_tiles:
             MovementHandler.move_tile(self.innitiater, caller)
+            self.innitiater.has_moved = True
 
     def find_possible_tiles(self):
         raise NotImplementedError(
