@@ -79,14 +79,10 @@ class Piece(BasePiece, Image):
           where c is one letter for either w for white and b for black
           and name is lower caps for the species of the wanted piece
           Note, It does not have to be 'Images/' it just needs that length"""
-        super().__init__()
+        super().__init__(**kwargs)
 
         self.piece_color: PieceColor = (
             PieceColor.BLACK if source[7] == "b" else PieceColor.WHITE
         )
         self.species: PieceSpecies = PieceSpecies(source[9:-4])
         self.source: str = source
-
-
-if __name__ == "__main__":
-    print(Piece("Images/b_pawn.png"))
