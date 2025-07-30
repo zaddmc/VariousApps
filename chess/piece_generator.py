@@ -59,8 +59,23 @@ class BoardGenerator:
 
 class BasePiece(ButtonBehavior):
     def on_press(self):
-        Behavior = getattr(importlib.import_module("piece_actions"), "Behavior")
-        Behavior.tile_clicked(self)
+        """This is function is cursed
+        If i import normally, it will result in a circle
+        due to 'MovementHandler' using 'Blank' which is a derivative of this
+        To solve this issue, behavior is imported dynammically, which is cursed"""
+        BasePiece.get_behavior().tile_clicked(self)
+
+    behavior = None
+
+    @staticmethod
+    def get_behavior():
+        """To avoid importing the module multiple times
+        Making it statically dynammic"""
+        if not BasePiece.behavior:
+            module = importlib.import_module("piece_actions")
+            BasePiece.behavior = getattr(module, "Behavior")
+
+        return BasePiece.behavior
 
     def get_index(self) -> int:
         return self.parent.children.index(self)
