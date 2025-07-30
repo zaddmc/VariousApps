@@ -109,4 +109,4 @@ class Piece(BasePiece, Image):
         self.source: str = source
 
         # Used for certain logic for movement
-        self.has_moved: bool = False
+        self.moves: int = 0

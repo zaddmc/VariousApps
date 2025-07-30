@@ -48,7 +48,7 @@ class PieceAction:
         )
         if caller.get_index() in self.possible_tiles:
             MovementHandler.move_tile(self.innitiater, caller)
-            self.innitiater.has_moved = True
+            self.innitiater.moves += 1
 
     def find_possible_tiles(self):
         raise NotImplementedError(
@@ -62,17 +62,17 @@ class PieceAction:
     def get_relative(self, check):
         return self.innitiater.get_sibling(self.get_relative_index(check))
 
-    def add_tile(self, index):
+    def add_rel_tile(self, index):
         self.possible_tiles.add(self.get_relative_index(index))
 
     def assume_tile(self, index: int):
         """Assume tile to check is blank"""
         if self.get_relative(index).species == PieceSpecies.BLANK:
-            self.add_tile(index)
+            self.add_rel_tile(index)
 
     def assume_enemy(self, index: int):
         if self.get_relative(index).species != PieceSpecies.BLANK:
-            self.add_tile(index)
+            self.add_rel_tile(index)
 
 
 class Pawn(PieceAction):
@@ -80,12 +80,13 @@ class Pawn(PieceAction):
         self.forward()
         self.double_forward()
         self.attack()
+        self.en_passant()
 
     def forward(self):
         self.assume_tile(8)
 
     def double_forward(self):
-        if self.innitiater.has_moved:
+        if self.innitiater.moves:
             return
         if self.get_relative(8).species == PieceSpecies.BLANK:
             self.assume_tile(16)
@@ -93,6 +94,15 @@ class Pawn(PieceAction):
     def attack(self):
         self.assume_enemy(7)
         self.assume_enemy(9)
+
+    def en_passant(self):
+        def validate(pawn_index):
+            pawn = self.get_relative(pawn_index)
+            if pawn.species == PieceSpecies.PAWN and pawn.moves == 1:
+                self.add_rel_tile(pawn_index + 8)
+
+        validate(1)
+        validate(-1)
 
 
 class Rook(PieceAction):
