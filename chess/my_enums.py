@@ -24,3 +24,10 @@ class PieceSpecies(Enum):
     QUEEN = "queen"
     KING = "king"
     BLANK = "blank"
+
+
+class ActionEdgeCases(Enum):
+    """Used by 'piece_actions' when special moves are used"""
+
+    ENPASSANT = "enpassant"
+    CASTLING = "castling"

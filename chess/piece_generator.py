@@ -5,7 +5,7 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.image import Image
 from kivy.uix.widget import Widget
 
-from piece_enums import PieceColor, PieceSpecies
+from my_enums import PieceColor, PieceSpecies
 
 
 class BoardGenerator:
@@ -83,6 +83,12 @@ class BasePiece(ButtonBehavior):
     def get_sibling(self, sibling: int):
         """Get sibling by index"""
         return self.parent.children[sibling]
+
+    def __str__(self):
+        try:
+            return f"{self.species} {self.piece_color} {self.get_index()}"
+        except:
+            return "BasePiece"
 
 
 class Blank(BasePiece, Widget):

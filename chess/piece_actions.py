@@ -1,4 +1,4 @@
-from piece_enums import PieceColor, PieceSpecies
+from my_enums import ActionEdgeCases, PieceColor, PieceSpecies
 from piece_movement import MovementHandler
 
 
@@ -35,25 +35,33 @@ class PieceAction:
 
     def __init__(self, caller):
         self.innitiater = caller
-        caller_index = caller.get_index()
-        print(f"{caller.piece_color} {caller.species} index: {caller_index}")
         self.possible_tiles = set()
+        self.special_tiles = {}
         self.find_possible_tiles()
+
         print(self.possible_tiles)
 
     def follow_up(self, caller):
-        print(
-            f"innitiater: {self.innitiater.get_index()}",
-            f"Other: {caller.get_index()}",
-        )
-        if caller.get_index() in self.possible_tiles:
+        caller_index = caller.get_index()
+
+        if caller_index in self.special_tiles.keys():
+            edgecase, special_tile = self.special_tiles[caller_index]
+            match edgecase:
+                case ActionEdgeCases.ENPASSANT:
+                    self.handle_en_passant(caller, special_tile)
+                    self.innitiater.moves += 1
+                case ActionEdgeCases.CASTLING:
+                    pass
+                case _:
+                    raise NotImplementedError(f"Should not exist {_}")
+            return
+
+        if caller_index in self.possible_tiles:
             MovementHandler.move_tile(self.innitiater, caller)
             self.innitiater.moves += 1
 
     def find_possible_tiles(self):
-        raise NotImplementedError(
-            "This function should be implemented by an inherinter"
-        )
+        print("This piece does not have logic")
 
     def get_relative_index(self, check):
         modifier = 1 if self.innitiater.piece_color == PieceColor.WHITE else -1
@@ -62,8 +70,13 @@ class PieceAction:
     def get_relative(self, check):
         return self.innitiater.get_sibling(self.get_relative_index(check))
 
-    def add_rel_tile(self, index):
-        self.possible_tiles.add(self.get_relative_index(index))
+    def add_rel_tile(
+        self, index: int, edgecase: ActionEdgeCases = None, special_tile: int = 0
+    ):
+        rel_index = self.get_relative_index(index)
+        if edgecase:
+            self.special_tiles[rel_index] = (edgecase, special_tile)
+        self.possible_tiles.add(rel_index)
 
     def assume_tile(self, index: int):
         """Assume tile to check is blank"""
@@ -99,10 +112,16 @@ class Pawn(PieceAction):
         def validate(pawn_index):
             pawn = self.get_relative(pawn_index)
             if pawn.species == PieceSpecies.PAWN and pawn.moves == 1:
-                self.add_rel_tile(pawn_index + 8)
+                self.add_rel_tile(pawn_index + 8, ActionEdgeCases.ENPASSANT, pawn_index)
 
         validate(1)
         validate(-1)
+
+    def handle_en_passant(self, caller, special_tile):
+        caller_index = caller.get_index()
+        special_tile = self.get_relative(special_tile)
+        MovementHandler.swap_tiles(caller, special_tile)
+        MovementHandler.move_tile(self.innitiater, caller_index)
 
 
 class Rook(PieceAction):
