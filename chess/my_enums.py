@@ -26,8 +26,10 @@ class PieceSpecies(Enum):
     BLANK = "blank"
 
 
-class ActionEdgeCases(Enum):
-    """Used by 'piece_actions' when special moves are used"""
+class Actions(Enum):
+    """Used by piece_actions to describe actions"""
 
+    MOVE = "move"
+    ATTACK = "attack"
     ENPASSANT = "enpassant"
     CASTLING = "castling"

@@ -1,4 +1,4 @@
-from my_enums import ActionEdgeCases, PieceColor, PieceSpecies
+from my_enums import Actions, PieceColor, PieceSpecies
 from piece_movement import MovementHandler
 
 
@@ -35,8 +35,7 @@ class PieceAction:
 
     def __init__(self, caller):
         self.innitiater = caller
-        self.possible_tiles = set()
-        self.special_tiles = {}
+        self.possible_tiles = {}
         self.find_possible_tiles()
 
         print(self.possible_tiles)
@@ -44,21 +43,21 @@ class PieceAction:
     def follow_up(self, caller):
         caller_index = caller.get_index()
 
-        if caller_index in self.special_tiles.keys():
-            edgecase, special_tile = self.special_tiles[caller_index]
-            match edgecase:
-                case ActionEdgeCases.ENPASSANT:
+        if caller_index in self.possible_tiles.keys():
+            values = self.possible_tiles[caller_index]
+            action = values[0]
+            special_tile = values[1] if len(values) > 1 else None
+            match action:
+                case Actions.MOVE | Actions.ATTACK:
+                    MovementHandler.move_tile(self.innitiater, caller)
+                    self.innitiater.moves += 1
+                case Actions.ENPASSANT:
                     self.handle_en_passant(caller, special_tile)
                     self.innitiater.moves += 1
-                case ActionEdgeCases.CASTLING:
+                case Actions.CASTLING:
                     pass
-                case _:
-                    raise NotImplementedError(f"Should not exist {_}")
-            return
-
-        if caller_index in self.possible_tiles:
-            MovementHandler.move_tile(self.innitiater, caller)
-            self.innitiater.moves += 1
+                case x:
+                    raise NotImplementedError(f"Should not exist {x}")
 
     def find_possible_tiles(self):
         print("This piece does not have logic")
@@ -70,22 +69,19 @@ class PieceAction:
     def get_relative(self, check):
         return self.innitiater.get_sibling(self.get_relative_index(check))
 
-    def add_rel_tile(
-        self, index: int, edgecase: ActionEdgeCases = None, special_tile: int = 0
-    ):
+    def add_rel_tile(self, index: int, action: Actions, special_tile: int = None):
         rel_index = self.get_relative_index(index)
-        if edgecase:
-            self.special_tiles[rel_index] = (edgecase, special_tile)
-        self.possible_tiles.add(rel_index)
+        assignmet = [action, special_tile] if special_tile else [action]
+        self.possible_tiles[rel_index] = assignmet
 
     def assume_tile(self, index: int):
         """Assume tile to check is blank"""
         if self.get_relative(index).species == PieceSpecies.BLANK:
-            self.add_rel_tile(index)
+            self.add_rel_tile(index, Actions.MOVE)
 
     def assume_enemy(self, index: int):
         if self.get_relative(index).species != PieceSpecies.BLANK:
-            self.add_rel_tile(index)
+            self.add_rel_tile(index, Actions.ATTACK)
 
 
 class Pawn(PieceAction):
@@ -112,15 +108,14 @@ class Pawn(PieceAction):
         def validate(pawn_index):
             pawn = self.get_relative(pawn_index)
             if pawn.species == PieceSpecies.PAWN and pawn.moves == 1:
-                self.add_rel_tile(pawn_index + 8, ActionEdgeCases.ENPASSANT, pawn_index)
+                self.add_rel_tile(pawn_index + 8, Actions.ENPASSANT, pawn.get_index())
 
         validate(1)
         validate(-1)
 
     def handle_en_passant(self, caller, special_tile):
         caller_index = caller.get_index()
-        special_tile = self.get_relative(special_tile)
-        MovementHandler.swap_tiles(caller, special_tile)
+        MovementHandler.swap_tiles(caller, caller.get_sibling(special_tile))
         MovementHandler.move_tile(self.innitiater, caller_index)
 
 
