@@ -80,8 +80,12 @@ class PieceAction:
             self.add_rel_tile(index, Actions.MOVE)
 
     def assume_enemy(self, index: int):
-        if self.get_relative(index).species != PieceSpecies.BLANK:
-            self.add_rel_tile(index, Actions.ATTACK)
+        other = self.get_relative(index)
+        if other.species == PieceSpecies.BLANK:
+            return
+        if self.innitiater.piece_color == other.piece_color:
+            return
+        self.add_rel_tile(index, Actions.ATTACK)
 
 
 class Pawn(PieceAction):
