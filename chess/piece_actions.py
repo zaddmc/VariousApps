@@ -15,6 +15,7 @@ class Behavior:
         match caller.species:
             case PieceSpecies.BLANK:
                 print("I AM BLANK", caller.get_index())
+                caller.highligt_me()
 
             case PieceSpecies.PAWN:
                 Behavior.last_call = Pawn(caller)
@@ -47,6 +48,9 @@ class PieceAction:
             values = self.possible_tiles[caller_index]
             action = values[0]
             special_tile = values[1] if len(values) > 1 else None
+
+            self.innitiater.remove_highlights()
+
             match action:
                 case Actions.MOVE | Actions.ATTACK:
                     MovementHandler.move_tile(self.innitiater, caller)

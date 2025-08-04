@@ -1,9 +1,11 @@
 import importlib
 
+from kivy.graphics import Color, Ellipse
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.image import Image
 from kivy.uix.widget import Widget
+from kivy.utils import rgba
 
 from my_enums import PieceColor, PieceSpecies
 
@@ -58,6 +60,10 @@ class BoardGenerator:
 
 
 class BasePiece(ButtonBehavior):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.ellipse = None
+
     def on_press(self):
         """This is function is cursed
         If i import normally, it will result in a circle
@@ -89,6 +95,29 @@ class BasePiece(ButtonBehavior):
             return f"{self.species} {self.piece_color} {self.get_index()}"
         except:
             return "BasePiece"
+
+    def highligt_me(self):
+        with self.canvas:
+            Color(*rgba("#444444"))
+            self.ellipse = Ellipse(pos=self.pos, size=self.size)
+
+        self.bind(pos=self.update_shape, size=self.update_shape)
+        self.update_shape()
+
+    def update_shape(self, *args):
+        if self.ellipse:
+            diameter = min(self.width, self.height) / 2
+            self.ellipse.pos = (
+                self.x + (self.width - diameter) / 2,
+                self.y + (self.height - diameter) / 2,
+            )
+            self.ellipse.size = (diameter, diameter)
+
+    def remove_highlights(self):
+        for piece in self.parent.children:
+            if piece.ellipse:
+                piece.canvas.remove(piece.ellipse)
+                piece.ellipse = None
 
 
 class Blank(BasePiece, Widget):
