@@ -62,7 +62,7 @@ class BoardGenerator:
 class BasePiece(ButtonBehavior):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.ellipse = None
+        self.outline = None
 
     def on_press(self):
         """This is function is cursed
@@ -107,21 +107,25 @@ class BasePiece(ButtonBehavior):
 
         with self.canvas:
             Color(*color)
-            self.ellipse = Line(
-                rectangle=(
+            self.outline = Line(
+                rounded_rectangle=(
                     self.pos[0],
                     self.pos[1],
                     self.size[0],
                     self.size[1],
+                    40,
+                    40,
+                    40,
+                    40,
                 ),
                 width=5,
             )
 
     def remove_highlights(self):
         for piece in self.parent.children:
-            if piece.ellipse:
-                piece.canvas.remove(piece.ellipse)
-                piece.ellipse = None
+            if piece.outline:
+                piece.canvas.remove(piece.outline)
+                piece.outline = None
 
 
 class Blank(BasePiece, Widget):
