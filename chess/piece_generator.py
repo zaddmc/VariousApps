@@ -1,13 +1,13 @@
 import importlib
 
-from kivy.graphics import Color, Ellipse
+from kivy.graphics import Color, Line
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.image import Image
 from kivy.uix.widget import Widget
 from kivy.utils import rgba
 
-from my_enums import PieceColor, PieceSpecies
+from my_enums import Actions, PieceColor, PieceSpecies
 
 
 class BoardGenerator:
@@ -96,22 +96,26 @@ class BasePiece(ButtonBehavior):
         except:
             return "BasePiece"
 
-    def highligt_me(self):
+    def highligt_me(self, action: Actions = Actions.MOVE):
+        match action:
+            case Actions.MOVE:
+                color = [0.196, 0.659, 0.322, 1]
+            case Actions.ATTACK:
+                color = [0.612, 0.055, 0.102, 1]
+            case _:
+                color = [0.267, 0.267, 0.267, 1]
+
         with self.canvas:
-            Color(*rgba("#444444"))
-            self.ellipse = Ellipse(pos=self.pos, size=self.size)
-
-        self.bind(pos=self.update_shape, size=self.update_shape)
-        self.update_shape()
-
-    def update_shape(self, *args):
-        if self.ellipse:
-            diameter = min(self.width, self.height) / 2
-            self.ellipse.pos = (
-                self.x + (self.width - diameter) / 2,
-                self.y + (self.height - diameter) / 2,
+            Color(*color)
+            self.ellipse = Line(
+                rectangle=(
+                    self.pos[0],
+                    self.pos[1],
+                    self.size[0],
+                    self.size[1],
+                ),
+                width=5,
             )
-            self.ellipse.size = (diameter, diameter)
 
     def remove_highlights(self):
         for piece in self.parent.children:

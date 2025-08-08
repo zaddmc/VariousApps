@@ -15,7 +15,6 @@ class Behavior:
         match caller.species:
             case PieceSpecies.BLANK:
                 print("I AM BLANK", caller.get_index())
-                caller.highligt_me()
 
             case PieceSpecies.PAWN:
                 Behavior.last_call = Pawn(caller)
@@ -77,6 +76,8 @@ class PieceAction:
         rel_index = self.get_relative_index(index)
         assignmet = [action, special_tile] if special_tile else [action]
         self.possible_tiles[rel_index] = assignmet
+
+        self.innitiater.get_sibling(rel_index).highligt_me(action)
 
     def assume_blank(self, index: int):
         """Assume tile to check is blank"""
