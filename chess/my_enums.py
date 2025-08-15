@@ -33,3 +33,4 @@ class Actions(Enum):
     ATTACK = "attack"
     ENPASSANT = "enpassant"
     CASTLING = "castling"
+    PROMOTEABLE = "promoteable"

@@ -1,9 +1,9 @@
-from piece_generator import Blank
+from piece_generator import BasePiece, Blank, Piece
 
 
 class MovementHandler:
     @staticmethod
-    def swap_tiles(tile1, tile2):
+    def swap_tiles(tile1: BasePiece, tile2: BasePiece):
         tile1_index = tile1.get_index()
         tile2_index = tile2.get_index()
 
@@ -20,7 +20,7 @@ class MovementHandler:
             parent.add_widget(tile2, tile1_index)
 
     @staticmethod
-    def move_tile(origin, dest):
+    def move_tile(origin: Piece, dest: int | BasePiece):
         """'origin' is a piece that should be moved, leaving a blank in its place
         'dest' can be another piece/blank or an index for the first piece to move to
         Note: This function will not validate the given move,
@@ -39,3 +39,25 @@ class MovementHandler:
 
         parent.remove_widget(parent.children[dest_index])
         parent.add_widget(origin, dest_index)
+
+    @staticmethod
+    def promote(origin: Piece):
+        idx = origin.get_index()
+        parent = origin.parent
+
+        parent.remove_widget(origin)
+        del origin
+
+        choice = ""
+
+
+class Promoter:
+    from kivy.uix.button import Button
+    from kivy.uix.dropdown import DropDown
+
+    def __init__(self):
+        pass
+
+
+if __name__ == "__main__":
+    asd = Promoter()

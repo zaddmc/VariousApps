@@ -1,5 +1,5 @@
 from my_enums import Actions, PieceColor, PieceSpecies
-from piece_movement import MovementHandler
+from piece_movement import MovementHandler as MH
 
 
 class Behavior:
@@ -52,7 +52,7 @@ class PieceAction:
 
             match action:
                 case Actions.MOVE | Actions.ATTACK:
-                    MovementHandler.move_tile(self.innitiater, caller)
+                    MH.move_tile(self.innitiater, caller)
                     self.innitiater.moves += 1
                 case Actions.ENPASSANT:
                     self.handle_en_passant(caller, special_tile)
@@ -70,7 +70,10 @@ class PieceAction:
         return self.innitiater.get_index() + (check * modifier)
 
     def get_relative(self, check):
-        return self.innitiater.get_sibling(self.get_relative_index(check))
+        rel_index = self.get_relative_index(check)
+        if not (0 <= rel_index <= 63):
+            return None
+        return self.innitiater.get_sibling(rel_index)
 
     def add_rel_tile(self, index: int, action: Actions, special_tile: int = None):
         rel_index = self.get_relative_index(index)
@@ -120,6 +123,7 @@ class Pawn(PieceAction):
         self.double_forward()
         self.attack()
         self.en_passant()
+        self.promotion()
 
     def forward(self):
         self.assume_blank(8)
@@ -137,6 +141,9 @@ class Pawn(PieceAction):
     def en_passant(self):
         def validate(pawn_index):
             pawn = self.get_relative(pawn_index)
+            if not pawn:
+                return
+
             if pawn.species == PieceSpecies.PAWN and pawn.moves == 1:
                 self.add_rel_tile(pawn_index + 8, Actions.ENPASSANT, pawn.get_index())
 
@@ -145,8 +152,15 @@ class Pawn(PieceAction):
 
     def handle_en_passant(self, caller, special_tile):
         caller_index = caller.get_index()
-        MovementHandler.swap_tiles(caller, caller.get_sibling(special_tile))
-        MovementHandler.move_tile(self.innitiater, caller_index)
+        MH.swap_tiles(caller, caller.get_sibling(special_tile))
+        MH.move_tile(self.innitiater, caller_index)
+
+    def promotion(self):
+        # TODO: Lots of bugs in this logic
+        print(self.innitiater.get_index() // 8)
+        if self.innitiater.get_index() // 8 in [0, 7]:
+            print("Called Promote")
+            MH.promote(self.innitiater)
 
 
 class Rook(PieceAction):
