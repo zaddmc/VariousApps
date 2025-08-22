@@ -73,12 +73,33 @@ class PieceAction:
     def find_possible_tiles(self):
         print("This piece does not have logic")
 
-    def get_relative_index(self, check):
+    def get_relative_index(self, check: tuple):
+        print("asd", check)
         modifier = 1 if self.innitiater.piece_color == PieceColor.WHITE else -1
-        return self.innitiater.get_index() + (check * modifier)
+        x, y = divmod(self.innitiater.get_index(), self.grid_size)
+
+        # Legacy code
+        if isinstance(check, int):
+            raise TypeError("int is no longer an accepted type in this function")
+            rel_index = self.innitiater.get_index() + (check * modifier)
+            if not (0 <= rel_index < self.grid_size * self.grid_size - 1):
+                return None
+            return rel_index
+
+        x += check[0] * modifier
+        y += check[1] * modifier
+
+        if not (0 <= x < self.grid_size):
+            return None
+        if not (0 <= y < self.grid_size):
+            return None
+
+        return x * self.grid_size + y
 
     def get_relative(self, check):
         rel_index = self.get_relative_index(check)
+        if rel_index == None:
+            return None
         if not (0 <= rel_index <= 63):
             return None
         return self.innitiater.get_sibling(rel_index)
@@ -103,6 +124,8 @@ class PieceAction:
 
     def assume_enemy(self, index: int):
         rel_index = self.get_relative_index(index)
+        if rel_index == None:
+            return None
         if not (0 <= rel_index <= 63):
             return False
 
@@ -133,28 +156,26 @@ class Pawn(PieceAction):
         self.en_passant()
 
     def forward(self):
-        self.assume_blank(self.grid_size)
+        self.assume_blank((1, 0))
 
     def double_forward(self):
         if self.innitiater.moves:
             return
-        if self.get_relative(self.grid_size).species == PieceSpecies.BLANK:
-            self.assume_blank(self.grid_size * 2)
+        if self.get_relative((1, 0)).species == PieceSpecies.BLANK:
+            self.assume_blank((2, 0))
 
     def attack(self):
-        self.assume_enemy(self.grid_size - 1)
-        self.assume_enemy(self.grid_size + 1)
+        self.assume_enemy((1, 1))
+        self.assume_enemy((1, -1))
 
     def en_passant(self):
         def validate(pawn_index):
-            pawn = self.get_relative(pawn_index)
+            pawn = self.get_relative((0, pawn_index))
             if not pawn:
                 return
 
             if pawn.species == PieceSpecies.PAWN and pawn.moves == 1:
-                self.add_rel_tile(
-                    pawn_index + self.grid_size, Actions.ENPASSANT, pawn.get_index()
-                )
+                self.add_rel_tile((1, pawn_index), Actions.ENPASSANT, pawn.get_index())
 
         validate(1)
         validate(-1)
