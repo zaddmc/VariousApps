@@ -74,7 +74,6 @@ class PieceAction:
         print("This piece does not have logic")
 
     def get_relative_index(self, check: tuple):
-        print("asd", check)
         modifier = 1 if self.innitiater.piece_color == PieceColor.WHITE else -1
         x, y = divmod(self.innitiater.get_index(), self.grid_size)
 
@@ -106,6 +105,9 @@ class PieceAction:
 
     def add_rel_tile(self, index: int, action: Actions, special_tile: int = None):
         rel_index = self.get_relative_index(index)
+        self.add_tile(rel_index, action, special_tile)
+
+    def add_tile(self, rel_index: int, action: Actions, special_tile: int = None):
         assignmet = [action, special_tile] if special_tile else [action]
         self.possible_tiles[rel_index] = assignmet
 
@@ -114,11 +116,11 @@ class PieceAction:
     def assume_blank(self, index: int):
         """Assume tile to check is blank"""
         rel_index = self.get_relative_index(index)
-        if not (0 <= rel_index <= 63):
-            return False
+        if rel_index == None:
+            return None
 
         if self.innitiater.get_sibling(rel_index).species == PieceSpecies.BLANK:
-            self.add_rel_tile(index, Actions.MOVE)
+            self.add_tile(rel_index, Actions.MOVE)
             return True
         return False
 
@@ -129,12 +131,12 @@ class PieceAction:
         if not (0 <= rel_index <= 63):
             return False
 
-        other = self.get_relative(index)
+        other = self.innitiater.get_sibling(rel_index)
         if other.species == PieceSpecies.BLANK:
             return False
         if self.innitiater.piece_color == other.piece_color:
             return False
-        self.add_rel_tile(index, Actions.ATTACK)
+        self.add_tile(rel_index, Actions.ATTACK)
         return True
 
     def assume_any(self, index: int):
@@ -144,7 +146,7 @@ class PieceAction:
             return True
         return False
 
-    def assume_diagonal(self):
+    def assume_any_diagonal(self):
         pass
 
 
