@@ -63,6 +63,7 @@ class BasePiece(ButtonBehavior):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.outline = None
+        self.grid_size = 8
 
     def on_press(self):
         """This is function is cursed

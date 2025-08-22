@@ -35,6 +35,7 @@ class PieceAction:
 
     def __init__(self, caller):
         self.innitiater = caller
+        self.grid_size = caller.grid_size
         self.possible_tiles = {}
         self.find_possible_tiles()
 
@@ -53,14 +54,21 @@ class PieceAction:
             match action:
                 case Actions.MOVE | Actions.ATTACK:
                     MH.move_tile(self.innitiater, caller)
-                    self.innitiater.moves += 1
+
+                    # Bit of a hack, but works
+                    if self.innitiater.species == PieceSpecies.PAWN:
+                        self.handle_promotion()
+
                 case Actions.ENPASSANT:
                     self.handle_en_passant(caller, special_tile)
-                    self.innitiater.moves += 1
+
                 case Actions.CASTLING:
                     pass
+
                 case x:
                     raise NotImplementedError(f"Should not exist {x}")
+
+            self.innitiater.moves += 1
 
     def find_possible_tiles(self):
         print("This piece does not have logic")
@@ -123,20 +131,19 @@ class Pawn(PieceAction):
         self.double_forward()
         self.attack()
         self.en_passant()
-        self.promotion()
 
     def forward(self):
-        self.assume_blank(8)
+        self.assume_blank(self.grid_size)
 
     def double_forward(self):
         if self.innitiater.moves:
             return
-        if self.get_relative(8).species == PieceSpecies.BLANK:
-            self.assume_blank(16)
+        if self.get_relative(self.grid_size).species == PieceSpecies.BLANK:
+            self.assume_blank(self.grid_size * 2)
 
     def attack(self):
-        self.assume_enemy(7)
-        self.assume_enemy(9)
+        self.assume_enemy(self.grid_size - 1)
+        self.assume_enemy(self.grid_size + 1)
 
     def en_passant(self):
         def validate(pawn_index):
@@ -145,7 +152,9 @@ class Pawn(PieceAction):
                 return
 
             if pawn.species == PieceSpecies.PAWN and pawn.moves == 1:
-                self.add_rel_tile(pawn_index + 8, Actions.ENPASSANT, pawn.get_index())
+                self.add_rel_tile(
+                    pawn_index + self.grid_size, Actions.ENPASSANT, pawn.get_index()
+                )
 
         validate(1)
         validate(-1)
@@ -155,11 +164,8 @@ class Pawn(PieceAction):
         MH.swap_tiles(caller, caller.get_sibling(special_tile))
         MH.move_tile(self.innitiater, caller_index)
 
-    def promotion(self):
-        # TODO: Lots of bugs in this logic
-        print(self.innitiater.get_index() // 8)
-        if self.innitiater.get_index() // 8 in [0, 7]:
-            print("Called Promote")
+    def handle_promotion(self):
+        if self.innitiater.get_index() // self.grid_size in [0, 7]:
             MH.promote(self.innitiater)
 
 
