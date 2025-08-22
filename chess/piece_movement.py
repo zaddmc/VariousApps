@@ -45,10 +45,19 @@ class MovementHandler:
         idx = origin.get_index()
         parent = origin.parent
 
-        parent.remove_widget(origin)
-        del origin
+        promoter = Promoter()
+        promoter.dropdown.open(origin)
 
-        choice = ""
+        def on_choice(instance, choice, origin=origin):
+            color = origin.piece_color
+
+            parent.remove_widget(origin)
+            del origin
+
+            choice = f"Images/{str(color)[11].lower()}_{choice.lower()}.png"
+            parent.add_widget(Piece(choice), idx)
+
+        promoter.dropdown.bind(on_select=on_choice)
 
 
 class Promoter:
@@ -56,8 +65,8 @@ class Promoter:
     from kivy.uix.dropdown import DropDown
 
     def __init__(self):
-        pass
-
-
-if __name__ == "__main__":
-    asd = Promoter()
+        self.dropdown = self.DropDown()
+        for item in ["Queen", "Bishop", "Knight", "Rook"]:
+            btn = self.Button(text=item, size_hint_y=None)
+            btn.bind(on_release=lambda btn: self.dropdown.select(btn.text))
+            self.dropdown.add_widget(btn)
