@@ -227,8 +227,24 @@ class Bishop(PieceAction):
 
 
 class Queen(PieceAction):
-    pass
+    def find_possible_tiles(self):
+        self.moves()
+
+    def moves(self):
+        dirs = [(1, 1), (-1, 1), (-1, -1), (1, -1), (1, 0), (-1, 0), (0, 1), (0, -1)]
+        for dir in dirs:
+            self.assume_any_diagonal(dir)
 
 
 class King(PieceAction):
-    pass
+    def find_possible_tiles(self):
+        self.moves()
+        self.castling()
+
+    def moves(self):
+        dirs = [(1, 1), (-1, 1), (-1, -1), (1, -1), (1, 0), (-1, 0), (0, 1), (0, -1)]
+        for dir in dirs:
+            self.assume_any(dir)
+
+    def castling(self):
+        pass
