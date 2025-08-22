@@ -150,17 +150,9 @@ class PieceAction:
         def tmul(base: tuple, multiplier: int):
             return tuple(a * multiplier for a in base)
 
-        def go_dir(direction):
-            i = 1
-            while self.assume_any(tmul(direction, i)) == Actions.MOVE:
-                i += 1
-
-        def reverse(direction):
-            go_dir(direction)
-            go_dir(direction[::-1])
-
-        reverse(direction)
-        reverse((direction[0] * -1, direction[1] * -1))
+        i = 1
+        while self.assume_any(tmul(direction, i)) == Actions.MOVE:
+            i += 1
 
 
 class Pawn(PieceAction):
@@ -210,7 +202,8 @@ class Rook(PieceAction):
         self.moves()
 
     def moves(self):
-        self.assume_any_diagonal((1, 0))
+        for dir in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
+            self.assume_any_diagonal(dir)
 
 
 class Knight(PieceAction):
@@ -225,7 +218,12 @@ class Knight(PieceAction):
 
 
 class Bishop(PieceAction):
-    pass
+    def find_possible_tiles(self):
+        self.moves()
+
+    def moves(self):
+        for dir in [(1, 1), (-1, 1), (-1, -1), (1, -1)]:
+            self.assume_any_diagonal(dir)
 
 
 class Queen(PieceAction):
