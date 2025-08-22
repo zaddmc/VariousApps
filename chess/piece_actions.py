@@ -194,11 +194,21 @@ class Pawn(PieceAction):
 
 class Rook(PieceAction):
     def find_possible_tiles(self):
+        self.moves()
+
+    def moves(self):
         pass
 
 
 class Knight(PieceAction):
-    pass
+    def find_possible_tiles(self):
+        self.moves()
+
+    def moves(self):
+        # pre generated list cuz im lazy
+        m = [(2, 1), (2, -1), (-2, 1), (-2, -1), (1, 2), (1, -2), (-1, 2), (-1, -2)]
+        for spot in m:
+            self.assume_any(spot)
 
 
 class Bishop(PieceAction):
