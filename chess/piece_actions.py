@@ -141,13 +141,26 @@ class PieceAction:
 
     def assume_any(self, index: int):
         if self.assume_blank(index):
-            return True
+            return Actions.MOVE
         if self.assume_enemy(index):
-            return True
+            return Actions.ATTACK
         return False
 
-    def assume_any_diagonal(self):
-        pass
+    def assume_any_diagonal(self, direction: tuple):
+        def tmul(base: tuple, multiplier: int):
+            return tuple(a * multiplier for a in base)
+
+        def go_dir(direction):
+            i = 1
+            while self.assume_any(tmul(direction, i)) == Actions.MOVE:
+                i += 1
+
+        def reverse(direction):
+            go_dir(direction)
+            go_dir(direction[::-1])
+
+        reverse(direction)
+        reverse((direction[0] * -1, direction[1] * -1))
 
 
 class Pawn(PieceAction):
@@ -197,7 +210,7 @@ class Rook(PieceAction):
         self.moves()
 
     def moves(self):
-        pass
+        self.assume_any_diagonal((1, 0))
 
 
 class Knight(PieceAction):
