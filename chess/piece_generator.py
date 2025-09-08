@@ -18,8 +18,8 @@ class BoardGenerator:
         self.grid: GridLayout = GridLayout(cols=8, rows=8)
 
         self.__place_backline("b")
-        # self.__place_pawns("b")
-        self.__place_blank_row()
+        self.__place_pawns("b")
+        # self.__place_blank_row()
         self.__place_blanks()
         self.__place_pawns("w")
         self.__place_backline("w")
