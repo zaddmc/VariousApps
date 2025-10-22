@@ -11,15 +11,12 @@ from kivy.utils import rgba
 class Tile(Button):
     Color_Alive = rgba("#f2e1c3")
     Color_Dead = rgba("#c3a082")
-    Cells = None
 
-    def __init__(self, alive, idx, idy, **kwargs):
+    def __init__(self, idx, idy, **kwargs):
         super().__init__(**kwargs)
 
-        self.idx = idx
-        self.idy = idy
-        self.is_alive = alive
-        color = Tile.Color_Alive if alive else Tile.Color_Dead
+        self.is_alive = False
+        color = Tile.Color_Alive if self.is_alive else Tile.Color_Dead
 
         with self.canvas:
             Color(*color)
@@ -31,7 +28,14 @@ class Tile(Button):
         self.rect.size = self.size
 
     def on_press(self):
-        self.is_alive = not self.is_alive
+        self.switch()
+
+    def switch(self, to_state: bool = None):
+        if to_state == None:
+            self.is_alive = not self.is_alive
+        else:
+            self.is_alive = to_state
+
         color = Tile.Color_Alive if self.is_alive else Tile.Color_Dead
         with self.canvas:
             Color(*color)
@@ -53,31 +57,28 @@ class Tile(Button):
         return neighbors.count(True)
 
     @staticmethod
-    def step_cells(cells):
-        new_cells = deepcopy(cells)
-        for idx, row in enumerate(cells):
-            for idy, val in enumerate(row):
+    def step_cells(grid):
+        new_cells = grid.children
+        for idx in range(grid.rows):
+            for idy in range(grid.cols):
                 alive_neigh = Tile.count_neighbors(cells, idx, idy)
                 if val and alive_neigh < 2:
-                    new_cells[idx][idy] = False
+                    new_state = False
                 elif val and alive_neigh in [2, 3]:
-                    new_cells[idx][idy] = True
+                    new_state = True
                 elif val and alive_neigh > 3:
-                    new_cells[idx][idy] = False
+                    new_state = False
                 elif not val and alive_neigh == 3:
-                    new_cells[idx][idy] = True
+                    new_state = True
+
         return new_cells
 
     @staticmethod
-    def make_grid(grid_size, cells=None):
+    def make_grid(grid_size):
         grid = GridLayout(cols=grid_size, rows=grid_size)
-        if cells == None:
-            Tile.Cells = [[False] * grid_size] * grid_size
-        else:
-            Tile.Cells = cells
 
         for idx in range(grid_size):
             for idy in range(grid_size):
-                tile = Tile(Tile.Cells[idx][idy], idx, idy)
+                tile = Tile(idx, idy)
                 grid.add_widget(tile)
         return grid

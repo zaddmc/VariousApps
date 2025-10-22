@@ -34,11 +34,16 @@ class ConwayGame(BoxLayout):
         self.options.add_widget(set_grid_size)
 
         def step_on_press(instance):
-            old_cells = Tile.Cells
-            new_cells = Tile.step_cells(old_cells)
-            self.remove_widget(self.grid)
-            self.grid = Tile.make_grid(self.grid_size, new_cells)
-            self.add_widget(self.grid)
+            print(Tile.Cells)
+            new_cells = Tile.step_cells(self.grid)
+            for row_idx, cells_state in enumerate(new_cells):
+                for cell_state, cell in zip(
+                    cells_state,
+                    self.grid.children[
+                        self.grid_size * row_idx : self.grid_size * (row_idx + 1)
+                    ],
+                ):
+                    cell.switch(cell_state)
 
         step_button = Button(text="Step one evolution")
         step_button.bind(on_press=step_on_press)
