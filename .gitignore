@@ -369,3 +369,4 @@ venv/
 bin/
 .buildozer/
 mydata.txt
+target/
