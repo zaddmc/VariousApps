@@ -370,3 +370,4 @@ bin/
 .buildozer/
 mydata.txt
 target/
+images/
